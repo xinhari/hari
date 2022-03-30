@@ -3,7 +3,7 @@ package network
 import (
 	"fmt"
 
-	"github.com/micro/micro/v2/plugin"
+	"github.com/ebelanja/micro/plugin"
 )
 
 var (

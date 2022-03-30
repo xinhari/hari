@@ -24,11 +24,11 @@ import (
 	"github.com/micro/go-micro/v2/transport/quic"
 	"github.com/micro/go-micro/v2/tunnel"
 	"github.com/micro/go-micro/v2/util/mux"
-	mcli "github.com/micro/micro/v2/client/cli"
-	"github.com/micro/micro/v2/internal/helper"
-	"github.com/micro/micro/v2/service/network/api"
-	netdns "github.com/micro/micro/v2/service/network/dns"
-	"github.com/micro/micro/v2/service/network/handler"
+	mcli "github.com/ebelanja/micro/client/cli"
+	"github.com/ebelanja/micro/internal/helper"
+	"github.com/ebelanja/micro/service/network/api"
+	netdns "github.com/ebelanja/micro/service/network/dns"
+	"github.com/ebelanja/micro/service/network/handler"
 )
 
 var (

@@ -11,8 +11,8 @@ import (
 	log "github.com/micro/go-micro/v2/logger"
 	gorun "github.com/micro/go-micro/v2/runtime"
 	handler "github.com/micro/go-micro/v2/util/file"
-	"github.com/micro/micro/v2/internal/platform"
-	"github.com/micro/micro/v2/internal/update"
+	"github.com/ebelanja/micro/internal/platform"
+	"github.com/ebelanja/micro/internal/update"
 )
 
 var (

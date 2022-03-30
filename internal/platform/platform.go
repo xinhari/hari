@@ -15,8 +15,8 @@ import (
 
 	// include usage
 
-	"github.com/micro/micro/v2/internal/update"
-	_ "github.com/micro/micro/v2/internal/usage"
+	"github.com/ebelanja/micro/internal/update"
+	_ "github.com/ebelanja/micro/internal/usage"
 )
 
 var (

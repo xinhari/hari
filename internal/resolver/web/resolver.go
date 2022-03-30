@@ -9,7 +9,7 @@ import (
 
 	res "github.com/micro/go-micro/v2/api/resolver"
 	"github.com/micro/go-micro/v2/client/selector"
-	"github.com/micro/micro/v2/internal/namespace"
+	"github.com/ebelanja/micro/internal/namespace"
 	"golang.org/x/net/publicsuffix"
 )
 

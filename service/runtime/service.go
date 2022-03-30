@@ -21,9 +21,9 @@ import (
 	"github.com/micro/go-micro/v2/runtime/local/git"
 	srvRuntime "github.com/micro/go-micro/v2/runtime/service"
 	"github.com/micro/go-micro/v2/util/file"
-	cliutil "github.com/micro/micro/v2/client/cli/util"
-	"github.com/micro/micro/v2/internal/client"
-	"github.com/micro/micro/v2/service/runtime/handler"
+	cliutil "github.com/ebelanja/micro/client/cli/util"
+	"github.com/ebelanja/micro/internal/client"
+	"github.com/ebelanja/micro/service/runtime/handler"
 )
 
 const (

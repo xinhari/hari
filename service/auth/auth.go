@@ -16,13 +16,13 @@ import (
 	"github.com/micro/go-micro/v2/config/cmd"
 	"github.com/micro/go-micro/v2/errors"
 	log "github.com/micro/go-micro/v2/logger"
-	cliutil "github.com/micro/micro/v2/client/cli/util"
-	"github.com/micro/micro/v2/internal/client"
-	"github.com/micro/micro/v2/internal/config"
-	"github.com/micro/micro/v2/internal/helper"
-	"github.com/micro/micro/v2/service/auth/api"
-	authHandler "github.com/micro/micro/v2/service/auth/handler/auth"
-	rulesHandler "github.com/micro/micro/v2/service/auth/handler/rules"
+	cliutil "github.com/ebelanja/micro/client/cli/util"
+	"github.com/ebelanja/micro/internal/client"
+	"github.com/ebelanja/micro/internal/config"
+	"github.com/ebelanja/micro/internal/helper"
+	"github.com/ebelanja/micro/service/auth/api"
+	authHandler "github.com/ebelanja/micro/service/auth/handler/auth"
+	rulesHandler "github.com/ebelanja/micro/service/auth/handler/rules"
 )
 
 var (

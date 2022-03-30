@@ -1,4 +1,4 @@
-module github.com/micro/micro/v2
+module github.com/ebelanja/micro
 
 go 1.13
 

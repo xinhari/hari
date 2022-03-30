@@ -10,7 +10,7 @@ import (
 	"github.com/micro/cli/v2"
 	"github.com/micro/go-micro/v2/registry"
 	"github.com/micro/go-micro/v2/util/backoff"
-	"github.com/micro/micro/v2/plugin"
+	"github.com/ebelanja/micro/plugin"
 )
 
 func init() {

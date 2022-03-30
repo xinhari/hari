@@ -21,8 +21,8 @@ import (
 	"github.com/micro/go-micro/v2/metadata"
 	"github.com/micro/go-micro/v2/registry"
 	"github.com/micro/go-micro/v2/registry/service"
-	inclient "github.com/micro/micro/v2/internal/client"
-	dns "github.com/micro/micro/v2/service/network/dns/proto/dns"
+	inclient "github.com/ebelanja/micro/internal/client"
+	dns "github.com/ebelanja/micro/service/network/dns/proto/dns"
 
 	"github.com/olekukonko/tablewriter"
 	"github.com/serenize/snaker"

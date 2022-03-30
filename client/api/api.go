@@ -30,13 +30,13 @@ import (
 	httpapi "github.com/micro/go-micro/v2/api/server/http"
 	log "github.com/micro/go-micro/v2/logger"
 	"github.com/micro/go-micro/v2/sync/memory"
-	"github.com/micro/micro/v2/client/api/auth"
-	"github.com/micro/micro/v2/internal/handler"
-	"github.com/micro/micro/v2/internal/helper"
-	"github.com/micro/micro/v2/internal/namespace"
-	rrmicro "github.com/micro/micro/v2/internal/resolver/api"
-	"github.com/micro/micro/v2/internal/stats"
-	"github.com/micro/micro/v2/plugin"
+	"github.com/ebelanja/micro/client/api/auth"
+	"github.com/ebelanja/micro/internal/handler"
+	"github.com/ebelanja/micro/internal/helper"
+	"github.com/ebelanja/micro/internal/namespace"
+	rrmicro "github.com/ebelanja/micro/internal/resolver/api"
+	"github.com/ebelanja/micro/internal/stats"
+	"github.com/ebelanja/micro/plugin"
 )
 
 var (

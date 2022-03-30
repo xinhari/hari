@@ -12,9 +12,9 @@ import (
 	"github.com/micro/go-micro/v2/config/cmd"
 	proto "github.com/micro/go-micro/v2/config/source/service/proto"
 	log "github.com/micro/go-micro/v2/logger"
-	"github.com/micro/micro/v2/internal/client"
-	"github.com/micro/micro/v2/internal/helper"
-	"github.com/micro/micro/v2/service/config/handler"
+	"github.com/ebelanja/micro/internal/client"
+	"github.com/ebelanja/micro/internal/helper"
+	"github.com/ebelanja/micro/service/config/handler"
 )
 
 var (

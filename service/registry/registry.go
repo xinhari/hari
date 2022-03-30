@@ -11,9 +11,9 @@ import (
 	"github.com/micro/go-micro/v2/registry"
 	"github.com/micro/go-micro/v2/registry/service"
 	pb "github.com/micro/go-micro/v2/registry/service/proto"
-	rcli "github.com/micro/micro/v2/client/cli"
-	"github.com/micro/micro/v2/internal/helper"
-	"github.com/micro/micro/v2/service/registry/handler"
+	rcli "github.com/ebelanja/micro/client/cli"
+	"github.com/ebelanja/micro/internal/helper"
+	"github.com/ebelanja/micro/service/registry/handler"
 )
 
 var (

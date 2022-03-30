@@ -10,9 +10,9 @@ import (
 	"strings"
 
 	ccli "github.com/micro/cli/v2"
-	"github.com/micro/micro/v2/internal/config"
-	"github.com/micro/micro/v2/internal/platform"
-	"github.com/micro/micro/v2/service/runtime/profile"
+	"github.com/ebelanja/micro/internal/config"
+	"github.com/ebelanja/micro/internal/platform"
+	"github.com/ebelanja/micro/service/runtime/profile"
 )
 
 const (

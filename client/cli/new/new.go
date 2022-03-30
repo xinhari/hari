@@ -15,8 +15,8 @@ import (
 	"time"
 
 	"github.com/micro/cli/v2"
-	tmpl "github.com/micro/micro/v2/internal/template"
-	"github.com/micro/micro/v2/internal/usage"
+	tmpl "github.com/ebelanja/micro/internal/template"
+	"github.com/ebelanja/micro/internal/usage"
 	"github.com/xlab/treeprint"
 )
 
@@ -27,7 +27,7 @@ func protoComments(goDir, alias string) []string {
 		"\ndownload protobuf for micro:\n",
 		"go get -u github.com/golang/protobuf/proto",
 		"go get -u github.com/golang/protobuf/protoc-gen-go",
-		"go get github.com/micro/micro/v2/cmd/protoc-gen-micro",
+		"go get github.com/ebelanja/micro/cmd/protoc-gen-micro",
 		"\ncompile the proto file " + alias + ".proto:\n",
 		"cd " + goDir,
 		"make proto\n",

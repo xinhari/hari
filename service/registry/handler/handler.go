@@ -12,7 +12,7 @@ import (
 	"github.com/micro/go-micro/v2/registry"
 	"github.com/micro/go-micro/v2/registry/service"
 	pb "github.com/micro/go-micro/v2/registry/service/proto"
-	"github.com/micro/micro/v2/internal/namespace"
+	"github.com/ebelanja/micro/internal/namespace"
 )
 
 type Registry struct {

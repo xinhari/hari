@@ -12,8 +12,8 @@ import (
 	"github.com/micro/go-micro/v2/auth"
 	"github.com/micro/go-micro/v2/logger"
 	"github.com/micro/go-micro/v2/util/ctx"
-	inauth "github.com/micro/micro/v2/internal/auth"
-	"github.com/micro/micro/v2/internal/namespace"
+	inauth "github.com/ebelanja/micro/internal/auth"
+	"github.com/ebelanja/micro/internal/namespace"
 )
 
 // Wrapper wraps a handler and authenticates requests

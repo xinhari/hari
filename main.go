@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/micro/micro/v2/cmd"
+	"github.com/ebelanja/micro/cmd"
 )
 
 func main() {
