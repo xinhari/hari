@@ -3,6 +3,6 @@ module example-service
 go 1.13
 
 require (
+	github.com/ebelanja/go-micro v1.0.0-alpha
 	github.com/golang/protobuf v1.4.1
-	github.com/ebelanja/go-micro v2.8.1-0.20200609104731-cdd8f9fd82c5
 )
