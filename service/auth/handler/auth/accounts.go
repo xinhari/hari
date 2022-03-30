@@ -5,10 +5,10 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/micro/go-micro/v2/auth"
-	pb "github.com/micro/go-micro/v2/auth/service/proto"
-	"github.com/micro/go-micro/v2/errors"
-	"github.com/micro/go-micro/v2/store"
+	"github.com/ebelanja/go-micro/auth"
+	pb "github.com/ebelanja/go-micro/auth/service/proto"
+	"github.com/ebelanja/go-micro/errors"
+	"github.com/ebelanja/go-micro/store"
 	"github.com/ebelanja/micro/internal/namespace"
 )
 

@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/micro/go-micro/v2/runtime"
-	"github.com/micro/go-micro/v2/store"
+	"github.com/ebelanja/go-micro/runtime"
+	"github.com/ebelanja/go-micro/store"
 	"github.com/ebelanja/micro/internal/namespace"
 )
 

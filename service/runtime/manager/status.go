@@ -6,9 +6,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/micro/go-micro/v2/logger"
-	"github.com/micro/go-micro/v2/runtime"
-	"github.com/micro/go-micro/v2/store"
+	"github.com/ebelanja/go-micro/logger"
+	"github.com/ebelanja/go-micro/runtime"
+	"github.com/ebelanja/go-micro/store"
 )
 
 // statusPrefix is prefixed to every status key written to the memory store

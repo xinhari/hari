@@ -3,9 +3,9 @@ package api
 import (
 	"context"
 
-	"github.com/micro/go-micro/v2"
-	"github.com/micro/go-micro/v2/auth"
-	"github.com/micro/go-micro/v2/errors"
+	"github.com/ebelanja/go-micro"
+	"github.com/ebelanja/go-micro/auth"
+	"github.com/ebelanja/go-micro/errors"
 	pb "github.com/ebelanja/micro/service/auth/api/proto"
 )
 

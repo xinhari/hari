@@ -2,8 +2,8 @@ package api
 
 import (
 	"github.com/micro/cli/v2"
-	"github.com/micro/go-micro/v2"
-	log "github.com/micro/go-micro/v2/logger"
+	"github.com/ebelanja/go-micro"
+	log "github.com/ebelanja/go-micro/logger"
 
 	pb "github.com/ebelanja/micro/service/auth/api/proto"
 )

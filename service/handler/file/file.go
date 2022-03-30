@@ -8,9 +8,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/micro/go-micro/v2/errors"
-	"github.com/micro/go-micro/v2/proxy"
-	"github.com/micro/go-micro/v2/server"
+	"github.com/ebelanja/go-micro/errors"
+	"github.com/ebelanja/go-micro/proxy"
+	"github.com/ebelanja/go-micro/server"
 )
 
 //Proxy for a proxy instance

@@ -9,8 +9,8 @@ import (
 	"text/tabwriter"
 
 	"github.com/micro/cli/v2"
-	pb "github.com/micro/go-micro/v2/auth/service/proto"
-	"github.com/micro/go-micro/v2/errors"
+	pb "github.com/ebelanja/go-micro/auth/service/proto"
+	"github.com/ebelanja/go-micro/errors"
 	"github.com/ebelanja/micro/internal/client"
 )
 

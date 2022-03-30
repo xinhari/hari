@@ -5,13 +5,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/micro/go-micro/v2"
-	"github.com/micro/go-micro/v2/auth"
-	"github.com/micro/go-micro/v2/errors"
-	log "github.com/micro/go-micro/v2/logger"
-	"github.com/micro/go-micro/v2/registry"
-	"github.com/micro/go-micro/v2/registry/service"
-	pb "github.com/micro/go-micro/v2/registry/service/proto"
+	"github.com/ebelanja/go-micro"
+	"github.com/ebelanja/go-micro/auth"
+	"github.com/ebelanja/go-micro/errors"
+	log "github.com/ebelanja/go-micro/logger"
+	"github.com/ebelanja/go-micro/registry"
+	"github.com/ebelanja/go-micro/registry/service"
+	pb "github.com/ebelanja/go-micro/registry/service/proto"
 	"github.com/ebelanja/micro/internal/namespace"
 )
 

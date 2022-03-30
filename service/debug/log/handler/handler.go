@@ -4,8 +4,8 @@ import (
 	"context"
 	"sync"
 
-	"github.com/micro/go-micro/v2/debug/log"
-	"github.com/micro/go-micro/v2/errors"
+	"github.com/ebelanja/go-micro/debug/log"
+	"github.com/ebelanja/go-micro/errors"
 	pb "github.com/ebelanja/micro/service/debug/log/proto"
 )
 

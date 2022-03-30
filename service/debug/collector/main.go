@@ -4,8 +4,8 @@ import (
 	"os"
 	"path"
 
-	"github.com/micro/go-micro/v2"
-	log "github.com/micro/go-micro/v2/logger"
+	"github.com/ebelanja/go-micro"
+	log "github.com/ebelanja/go-micro/logger"
 	plugin "github.com/ebelanja/micro/service/debug/collector/micro"
 	"github.com/netdata/go-orchestrator"
 	"github.com/netdata/go-orchestrator/cli"

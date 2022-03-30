@@ -3,11 +3,11 @@ package debug
 
 import (
 	"github.com/micro/cli/v2"
-	"github.com/micro/go-micro/v2"
-	"github.com/micro/go-micro/v2/debug/log"
-	"github.com/micro/go-micro/v2/debug/log/kubernetes"
-	dservice "github.com/micro/go-micro/v2/debug/service"
-	ulog "github.com/micro/go-micro/v2/logger"
+	"github.com/ebelanja/go-micro"
+	"github.com/ebelanja/go-micro/debug/log"
+	"github.com/ebelanja/go-micro/debug/log/kubernetes"
+	dservice "github.com/ebelanja/go-micro/debug/service"
+	ulog "github.com/ebelanja/go-micro/logger"
 	logHandler "github.com/ebelanja/micro/service/debug/log/handler"
 	pblog "github.com/ebelanja/micro/service/debug/log/proto"
 	statshandler "github.com/ebelanja/micro/service/debug/stats/handler"

@@ -3,7 +3,7 @@ package namespace
 import (
 	"context"
 
-	"github.com/micro/go-micro/v2/metadata"
+	"github.com/ebelanja/go-micro/metadata"
 )
 
 const (

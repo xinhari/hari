@@ -2,10 +2,10 @@ package store
 
 import (
 	"github.com/micro/cli/v2"
-	"github.com/micro/go-micro/v2"
-	log "github.com/micro/go-micro/v2/logger"
-	"github.com/micro/go-micro/v2/store"
-	pb "github.com/micro/go-micro/v2/store/service/proto"
+	"github.com/ebelanja/go-micro"
+	log "github.com/ebelanja/go-micro/logger"
+	"github.com/ebelanja/go-micro/store"
+	pb "github.com/ebelanja/go-micro/store/service/proto"
 	mcli "github.com/ebelanja/micro/client/cli"
 	"github.com/ebelanja/micro/internal/helper"
 	"github.com/ebelanja/micro/service/store/handler"

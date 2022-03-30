@@ -4,8 +4,8 @@ import (
 	"strings"
 
 	"github.com/micro/cli/v2"
-	"github.com/micro/go-micro/v2/config/cmd"
-	"github.com/micro/go-micro/v2/store"
+	"github.com/ebelanja/go-micro/config/cmd"
+	"github.com/ebelanja/go-micro/store"
 	"github.com/pkg/errors"
 )
 

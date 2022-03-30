@@ -5,9 +5,9 @@ import (
 	"io"
 	"time"
 
-	"github.com/micro/go-micro/v2/errors"
-	"github.com/micro/go-micro/v2/router"
-	pb "github.com/micro/go-micro/v2/router/service/proto"
+	"github.com/ebelanja/go-micro/errors"
+	"github.com/ebelanja/go-micro/router"
+	pb "github.com/ebelanja/go-micro/router/service/proto"
 )
 
 // Router implements router handler

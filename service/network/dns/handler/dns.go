@@ -3,8 +3,8 @@ package handler
 import (
 	"context"
 
-	log "github.com/micro/go-micro/v2/logger"
-	"github.com/micro/go-micro/v2/metadata"
+	log "github.com/ebelanja/go-micro/logger"
+	"github.com/ebelanja/go-micro/metadata"
 	dns "github.com/ebelanja/micro/service/network/dns/proto/dns"
 	"github.com/ebelanja/micro/service/network/dns/provider"
 	"github.com/pkg/errors"

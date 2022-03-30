@@ -7,10 +7,10 @@ import (
 	"time"
 
 	"github.com/micro/cli/v2"
-	"github.com/micro/go-micro/v2"
-	log "github.com/micro/go-micro/v2/logger"
-	"github.com/micro/go-micro/v2/router"
-	pb "github.com/micro/go-micro/v2/router/service/proto"
+	"github.com/ebelanja/go-micro"
+	log "github.com/ebelanja/go-micro/logger"
+	"github.com/ebelanja/go-micro/router"
+	pb "github.com/ebelanja/go-micro/router/service/proto"
 	"github.com/ebelanja/micro/service/router/handler"
 )
 

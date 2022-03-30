@@ -7,10 +7,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/micro/go-micro/v2/api/server/cors"
-	"github.com/micro/go-micro/v2/client"
-	"github.com/micro/go-micro/v2/config/cmd"
-	"github.com/micro/go-micro/v2/errors"
+	"github.com/ebelanja/go-micro/api/server/cors"
+	"github.com/ebelanja/go-micro/client"
+	"github.com/ebelanja/go-micro/config/cmd"
+	"github.com/ebelanja/go-micro/errors"
 	"github.com/ebelanja/micro/internal/helper"
 )
 

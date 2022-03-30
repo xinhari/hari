@@ -11,9 +11,9 @@ import (
 
 	context "context"
 
-	client "github.com/micro/go-micro/v2/client"
+	client "github.com/ebelanja/go-micro/client"
 
-	server "github.com/micro/go-micro/v2/server"
+	server "github.com/ebelanja/go-micro/server"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

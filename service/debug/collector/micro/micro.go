@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/micro/go-micro/v2/client"
+	"github.com/ebelanja/go-micro/client"
 	stats "github.com/ebelanja/micro/service/debug/stats/proto"
 	"github.com/netdata/go-orchestrator/module"
 )

@@ -10,8 +10,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/micro/go-micro/v2/runtime"
-	pb "github.com/micro/go-micro/v2/runtime/service/proto"
+	"github.com/ebelanja/go-micro/runtime"
+	pb "github.com/ebelanja/go-micro/runtime/service/proto"
 	"github.com/ebelanja/micro/internal/namespace"
 )
 

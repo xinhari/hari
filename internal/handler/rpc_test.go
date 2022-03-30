@@ -9,12 +9,12 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/micro/go-micro/v2/client"
-	"github.com/micro/go-micro/v2/client/selector"
-	"github.com/micro/go-micro/v2/config/cmd"
-	"github.com/micro/go-micro/v2/metadata"
-	"github.com/micro/go-micro/v2/registry/memory"
-	"github.com/micro/go-micro/v2/server"
+	"github.com/ebelanja/go-micro/client"
+	"github.com/ebelanja/go-micro/client/selector"
+	"github.com/ebelanja/go-micro/config/cmd"
+	"github.com/ebelanja/go-micro/metadata"
+	"github.com/ebelanja/go-micro/registry/memory"
+	"github.com/ebelanja/go-micro/server"
 )
 
 type TestHandler struct {

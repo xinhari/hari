@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/micro/cli/v2"
-	log "github.com/micro/go-micro/v2/logger"
-	goplugin "github.com/micro/go-micro/v2/plugin"
+	log "github.com/ebelanja/go-micro/logger"
+	goplugin "github.com/ebelanja/go-micro/plugin"
 	"github.com/ebelanja/micro/plugin"
 )
 

@@ -1,7 +1,7 @@
 package web
 
 import (
-	"github.com/micro/go-micro/v2/registry"
+	"github.com/ebelanja/go-micro/registry"
 )
 
 type sortedServices struct {

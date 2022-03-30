@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/micro/cli/v2"
-	"github.com/micro/go-micro/v2/agent/command"
+	"github.com/ebelanja/go-micro/agent/command"
 	clic "github.com/ebelanja/micro/internal/command/cli"
 )
 

@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/micro/go-micro/v2/runtime"
-	"github.com/micro/go-micro/v2/store/memory"
+	"github.com/ebelanja/go-micro/runtime"
+	"github.com/ebelanja/go-micro/store/memory"
 	"github.com/ebelanja/micro/internal/namespace"
 )
 

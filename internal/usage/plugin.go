@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/micro/cli/v2"
-	"github.com/micro/go-micro/v2/registry"
-	"github.com/micro/go-micro/v2/util/backoff"
+	"github.com/ebelanja/go-micro/registry"
+	"github.com/ebelanja/go-micro/util/backoff"
 	"github.com/ebelanja/micro/plugin"
 )
 

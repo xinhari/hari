@@ -7,11 +7,11 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/micro/go-micro/v2/api/resolver"
-	"github.com/micro/go-micro/v2/api/server"
-	"github.com/micro/go-micro/v2/auth"
-	"github.com/micro/go-micro/v2/logger"
-	"github.com/micro/go-micro/v2/util/ctx"
+	"github.com/ebelanja/go-micro/api/resolver"
+	"github.com/ebelanja/go-micro/api/server"
+	"github.com/ebelanja/go-micro/auth"
+	"github.com/ebelanja/go-micro/logger"
+	"github.com/ebelanja/go-micro/util/ctx"
 	inauth "github.com/ebelanja/micro/internal/auth"
 	"github.com/ebelanja/micro/internal/namespace"
 )

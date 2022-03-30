@@ -7,13 +7,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/micro/go-micro/v2/client"
-	"github.com/micro/go-micro/v2/config/cmd"
-	debug "github.com/micro/go-micro/v2/debug/service/proto"
-	"github.com/micro/go-micro/v2/errors"
-	log "github.com/micro/go-micro/v2/logger"
-	"github.com/micro/go-micro/v2/registry"
-	"github.com/micro/go-micro/v2/util/ring"
+	"github.com/ebelanja/go-micro/client"
+	"github.com/ebelanja/go-micro/config/cmd"
+	debug "github.com/ebelanja/go-micro/debug/service/proto"
+	"github.com/ebelanja/go-micro/errors"
+	log "github.com/ebelanja/go-micro/logger"
+	"github.com/ebelanja/go-micro/registry"
+	"github.com/ebelanja/go-micro/util/ring"
 	trace "github.com/ebelanja/micro/service/debug/trace/proto"
 )
 

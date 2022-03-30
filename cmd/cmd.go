@@ -8,9 +8,9 @@ import (
 	"sort"
 
 	ccli "github.com/micro/cli/v2"
-	"github.com/micro/go-micro/v2"
-	"github.com/micro/go-micro/v2/config/cmd"
-	gostore "github.com/micro/go-micro/v2/store"
+	"github.com/ebelanja/go-micro"
+	"github.com/ebelanja/go-micro/config/cmd"
+	gostore "github.com/ebelanja/go-micro/store"
 	"github.com/ebelanja/micro/plugin"
 	"github.com/ebelanja/micro/plugin/build"
 	"github.com/ebelanja/micro/server"

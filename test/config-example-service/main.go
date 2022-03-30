@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/micro/go-micro/v2"
+	"github.com/ebelanja/go-micro"
 )
 
 func main() {

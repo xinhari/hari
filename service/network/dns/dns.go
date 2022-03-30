@@ -3,8 +3,8 @@ package dns
 
 import (
 	"github.com/micro/cli/v2"
-	"github.com/micro/go-micro/v2"
-	log "github.com/micro/go-micro/v2/logger"
+	"github.com/ebelanja/go-micro"
+	log "github.com/ebelanja/go-micro/logger"
 
 	"github.com/ebelanja/micro/service/network/dns/handler"
 	dns "github.com/ebelanja/micro/service/network/dns/proto/dns"

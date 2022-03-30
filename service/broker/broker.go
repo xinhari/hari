@@ -5,9 +5,9 @@ import (
 	"time"
 
 	"github.com/micro/cli/v2"
-	"github.com/micro/go-micro/v2"
-	pb "github.com/micro/go-micro/v2/broker/service/proto"
-	log "github.com/micro/go-micro/v2/logger"
+	"github.com/ebelanja/go-micro"
+	pb "github.com/ebelanja/go-micro/broker/service/proto"
+	log "github.com/ebelanja/go-micro/logger"
 	"github.com/ebelanja/micro/service/broker/handler"
 )
 

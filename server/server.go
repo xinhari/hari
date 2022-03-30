@@ -6,11 +6,11 @@ import (
 	"path/filepath"
 
 	"github.com/micro/cli/v2"
-	"github.com/micro/go-micro/v2"
-	"github.com/micro/go-micro/v2/config/cmd"
-	log "github.com/micro/go-micro/v2/logger"
-	gorun "github.com/micro/go-micro/v2/runtime"
-	handler "github.com/micro/go-micro/v2/util/file"
+	"github.com/ebelanja/go-micro"
+	"github.com/ebelanja/go-micro/config/cmd"
+	log "github.com/ebelanja/go-micro/logger"
+	gorun "github.com/ebelanja/go-micro/runtime"
+	handler "github.com/ebelanja/go-micro/util/file"
 	"github.com/ebelanja/micro/internal/platform"
 	"github.com/ebelanja/micro/internal/update"
 )
