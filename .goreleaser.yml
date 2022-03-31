@@ -15,7 +15,7 @@ builds:
   ldflags: -s -w -X github.com/ebelanja/micro/cmd.GitCommit={{ .ShortCommit }} -X github.com/ebelanja/micro/cmd.GitTag={{ .Tag }} -X github.com/ebelanja/micro/cmd.BuildDate={{ .Timestamp }}
   goos:
   - linux
-  - darwin
+#  - darwin
   - windows
   goarch:
   - 386
@@ -29,7 +29,7 @@ builds:
 archives:
 - name_template: '{{.ProjectName}}-{{.Tag}}-{{.Os}}-{{.Arch}}{{if .Arm}}{{.Arm}}{{end}}'
   replacements:
-    darwin: darwin
+#    darwin: darwin
     linux: linux
     windows: windows
     amd64: amd64
