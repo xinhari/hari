@@ -41,7 +41,7 @@ import (
 	"{{.Dir}}/handler"
 	"{{.Dir}}/subscriber"
 
-	{{dehyphen .Alias}} "{{.Dir}}/proto/{{.Alias}}"
+	{{dehyphen .Alias}} "{{.Dir}}/proto"
 )
 
 func main() {
@@ -75,7 +75,7 @@ import (
 	"{{.Dir}}/handler"
 	"{{.Dir}}/client"
 
-	{{dehyphen .Alias}} "{{.Dir}}/proto/{{.Alias}}"
+	{{dehyphen .Alias}} "{{.Dir}}/proto"
 )
 
 func main() {
