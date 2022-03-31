@@ -5,7 +5,6 @@ package test
 import (
 	"encoding/json"
 	"errors"
-	"fmt"
 	"io/ioutil"
 	"os"
 	"os/exec"
@@ -232,7 +231,6 @@ func testLocalOutsideRepo(t *t) {
 }
 
 func statusRunning(service string, statusOutput []byte) bool {
-	fmt.Println(string(statusOutput))
 	reg, _ := regexp.Compile(service + "\\s+latest\\s+\\S+\\s+running")
 
 	return reg.Match(statusOutput)
