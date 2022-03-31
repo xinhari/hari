@@ -6,12 +6,12 @@ set -x
 git branch -D go-mod
 git branch go-mod
 git checkout go-mod
-git pull origin master
+git pull origin main
 GOPROXY=direct go get github.com/ebelanja/go-micro@main
 go fmt
 go mod tidy
 git add go.mod go.sum
 git commit -m "Update go.mod"
 git push origin go-mod
-git checkout master
+git checkout main
 git branch -D go-mod
