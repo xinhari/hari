@@ -7,7 +7,7 @@ git branch -D go-mod
 git branch go-mod
 git checkout go-mod
 git pull origin master
-GOPROXY=direct go get github.com/ebelanja/go-micro@master
+GOPROXY=direct go get github.com/ebelanja/go-micro@main
 go fmt
 go mod tidy
 git add go.mod go.sum
