@@ -232,6 +232,7 @@ func testLocalOutsideRepo(t *t) {
 }
 
 func statusRunning(service string, statusOutput []byte) bool {
+	fmt.Println(string(statusOutput))
 	reg, _ := regexp.Compile(service + "\\s+latest\\s+\\S+\\s+running")
 
 	return reg.Match(statusOutput)
@@ -270,7 +271,6 @@ func testRunGithubSource(t *t) {
 			return outp, err
 		}
 
-		fmt.Println(string(outp))
 		if !statusRunning("helloworld", outp) {
 			return outp, errors.New("Output should contain hello world")
 		}
