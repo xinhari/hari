@@ -1,7 +1,7 @@
 project_name: micro
 release:
   github:
-    owner: micro
+    owner: ebelanja
     name: micro
   name_template: 'Release {{.Tag}}'
 before:
