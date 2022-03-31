@@ -186,7 +186,7 @@ func Commands(options ...micro.Option) []*cli.Command {
 			micro update github.com/ebelanja/examples/helloworld
 			micro update .  # deploy local folder to your local micro server
 			micro update ../path/to/folder # deploy local folder to your local micro server
-			micro update helloworld # deploy master branch, translates to micro update github.com/micro/services/helloworld
+			micro update helloworld # deploy master branch, translates to micro update github.com/ebelanja/services/helloworld
 			micro update helloworld@branchname	# deploy certain branch`,
 			Flags: Flags(),
 			Action: func(ctx *cli.Context) error {
@@ -202,7 +202,7 @@ func Commands(options ...micro.Option) []*cli.Command {
 			micro kill github.com/ebelanja/examples/helloworld
 			micro kill .  # kill service deployed from local folder
 			micro kill ../path/to/folder # kill service deployed from local folder
-			micro kill helloworld # kill serviced deployed from master branch, translates to micro kill github.com/micro/services/helloworld
+			micro kill helloworld # kill serviced deployed from master branch, translates to micro kill github.com/ebelanja/services/helloworld
 			micro kill helloworld@branchname	# kill service deployed from certain branch`,
 			Action: func(ctx *cli.Context) error {
 				killService(ctx, options...)
