@@ -270,7 +270,7 @@ func testRunGithubSource(t *t) {
 			return outp, err
 		}
 
-		fmt.Println(outp)
+		fmt.Println(string(outp))
 		if !statusRunning("helloworld", outp) {
 			return outp, errors.New("Output should contain hello world")
 		}
