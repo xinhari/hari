@@ -264,18 +264,18 @@ func testRunGithubSource(t *t) {
 	}
 
 	try("Find hello world", t, func() ([]byte, error) {
-		fmt.Println("micro", serv.envFlag(), "status")
 		psCmd := exec.Command("micro", serv.envFlag(), "status")
 		outp, err = psCmd.CombinedOutput()
 		if err != nil {
 			return outp, err
 		}
 
+		fmt.Println(outp)
 		if !statusRunning("helloworld", outp) {
 			return outp, errors.New("Output should contain hello world")
 		}
 		return outp, nil
-	}, 120*time.Second)
+	}, 60*time.Second)
 
 	try("Call hello world", t, func() ([]byte, error) {
 		callCmd := exec.Command("micro", serv.envFlag(), "call", "go.micro.service.helloworld", "Helloworld.Call", `{"name": "Joe"}`)
