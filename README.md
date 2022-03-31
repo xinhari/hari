@@ -8,10 +8,6 @@ Micro addresses the key requirements for building distributed systems. It levera
 architecture pattern and provides a set of services which act as the building blocks of a platform. Micro deals
 with the complexity of distributed systems and provides simpler programmable abstractions to build on.
 
-<p>
-<img src="https://micro.mu/images/runtime.svg?5" style="width: 100%; height: auto;" />
-</p>
-
 Technology is constantly evolving. The infrastructure stack is always changing. Micro is a platform which
 addresses these issues with a pluggable foundation and strongly defined apis to build on. Plug into any stack or cloud.
 
@@ -66,7 +62,7 @@ query them directly.
 
 To write applications which run on Micro you can use the framework Go Micro.
 
-- **go-micro:** Leverage the powerful [Go Micro](https://github.com/micro/go-micro) framework to develop microservices easily and quickly.
+- **go-micro:** Leverage the powerful [Go Micro](https://github.com/ebelanja/go-micro) framework to develop microservices easily and quickly.
 Go Micro abstracts away the complexity of distributed systems and provides simpler abstractions to build highly scalable microservices.
 
 ## Install
@@ -80,20 +76,20 @@ go get github.com/ebelanja/micro
 Docker image
 
 ```
-docker pull micro/micro
+docker pull ebelanja/micro
 ```
 
 Latest release binaries
 
 ```
 # MacOS
-curl -fsSL https://raw.githubusercontent.com/micro/micro/master/scripts/install.sh | /bin/bash
+curl -fsSL https://raw.githubusercontent.com/ebelanja/micro/main/scripts/install.sh | /bin/bash
 
 # Linux
-wget -q  https://raw.githubusercontent.com/micro/micro/master/scripts/install.sh -O - | /bin/bash
+wget -q  https://raw.githubusercontent.com/ebelanja/micro/main/scripts/install.sh -O - | /bin/bash
 
 # Windows
-powershell -Command "iwr -useb https://raw.githubusercontent.com/micro/micro/master/scripts/install.ps1 | iex"
+powershell -Command "iwr -useb https://raw.githubusercontent.com/ebelanja/micro/main/scripts/install.ps1 | iex"
 ```
 
 ## Getting Started
@@ -131,4 +127,6 @@ See all the options
 micro --help
 ```
 
+<!--
 See the [docs](https://dev.m3o.com) for detailed information on the architecture, installation and use of the platform.
+-->
