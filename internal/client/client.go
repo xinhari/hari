@@ -3,7 +3,6 @@ package client
 import (
 	"context"
 
-	ccli "github.com/micro/cli/v2"
 	"github.com/ebelanja/go-micro/auth"
 	"github.com/ebelanja/go-micro/client"
 	"github.com/ebelanja/go-micro/client/grpc"
@@ -11,6 +10,7 @@ import (
 	"github.com/ebelanja/micro/client/cli/util"
 	cliutil "github.com/ebelanja/micro/client/cli/util"
 	"github.com/ebelanja/micro/internal/config"
+	ccli "github.com/micro/cli/v2"
 )
 
 // New returns a wrapped grpc client which will inject the
@@ -36,8 +36,8 @@ func (a *wrapper) Call(ctx context.Context, req client.Request, rsp interface{},
 		// @todo this is temporarily removed because multi tenancy is not there yet
 		// and the moment core and non core services run in different environments, we
 		// get issues. To test after `micro env add mine 127.0.0.1:8081` do,
-		// `micro run github.com/crufter/micro-services/logspammer` works but
-		// `micro -env=mine run github.com/crufter/micro-services/logspammer` is broken.
+		// `micro run github.com/ebelanja/services/logspammer` works but
+		// `micro -env=mine run github.com/ebelanja/services/logspammer` is broken.
 		// Related ticket https://github.com/micro/development/issues/193
 		//
 		// env := strings.ReplaceAll(a.env, "/", "-")

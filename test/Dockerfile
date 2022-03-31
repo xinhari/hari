@@ -33,7 +33,7 @@ RUN cd ${GOPATH}/src/example-service && go get && \
     cd ${GOPATH}/src/config-example-service && go get && \
     go get github.com/micro/services/helloworld
 
-# RUN go get github.com/crufter/micro-services/logspammer
+# RUN go get github.com/ebelanja/services/logspammer
 
 COPY ./micro /micro
 
