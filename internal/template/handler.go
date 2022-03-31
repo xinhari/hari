@@ -6,7 +6,7 @@ var (
 import (
 	"context"
 
-	{{dehyphen .Alias}} "{{.Dir}}/proto/{{.Alias}}"
+	{{dehyphen .Alias}} "{{.Dir}}/proto"
 )
 
 type {{title .Alias}} struct{}
@@ -25,7 +25,7 @@ import (
 
 	log "github.com/ebelanja/go-micro/logger"
 
-	{{dehyphen .Alias}} "{{.Dir}}/proto/{{.Alias}}"
+	{{dehyphen .Alias}} "{{.Dir}}/proto"
 )
 
 type {{title .Alias}} struct{}
@@ -75,7 +75,7 @@ import (
 
 	log "github.com/ebelanja/go-micro/logger"
 
-	{{dehyphen .Alias}} "{{.Dir}}/proto/{{.Alias}}"
+	{{dehyphen .Alias}} "{{.Dir}}/proto"
 )
 
 type {{title .Alias}} struct{}
@@ -92,7 +92,7 @@ import (
 	"context"
 	log "github.com/ebelanja/go-micro/logger"
 
-	{{dehyphen .Alias}} "{{.Dir}}/proto/{{.Alias}}"
+	{{dehyphen .Alias}} "{{.Dir}}/proto"
 )
 
 type {{title .Alias}} struct{}
@@ -118,7 +118,7 @@ import (
 	"{{.Dir}}/client"
 	"github.com/ebelanja/go-micro/errors"
 	api "github.com/ebelanja/go-micro/api/proto"
-	{{dehyphen .Alias}} "path/to/service/proto/{{.Alias}}"
+	{{dehyphen .Alias}} "path/to/service/proto"
 )
 
 type {{title .Alias}} struct{}
@@ -169,7 +169,7 @@ import (
 	"time"
 
 	"github.com/ebelanja/go-micro/client"
-	{{dehyphen .Alias}} "path/to/service/proto/{{.Alias}}"
+	{{dehyphen .Alias}} "path/to/service/proto"
 )
 
 func {{title .Alias}}Call(w http.ResponseWriter, r *http.Request) {
