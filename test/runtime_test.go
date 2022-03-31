@@ -257,7 +257,7 @@ func testRunGithubSource(t *t) {
 	serv.launch()
 	defer serv.close()
 
-	runCmd := exec.Command("micro", serv.envFlag(), "run", "github.com/ebelanja/examples/helloworld@main")
+	runCmd := exec.Command("micro", serv.envFlag(), "run", "github.com/ebelanja/micro-examples/helloworld")
 	outp, err := runCmd.CombinedOutput()
 	if err != nil {
 		t.Fatalf("micro run failure, output: %v", string(outp))
@@ -387,7 +387,7 @@ func testExistingLogs(t *t) {
 	serv.launch()
 	defer serv.close()
 
-	runCmd := exec.Command("micro", serv.envFlag(), "run", "github.com/ebelanja/services/logspammer@main")
+	runCmd := exec.Command("micro", serv.envFlag(), "run", "github.com/ebelanja/micro-services/logspammer")
 	outp, err := runCmd.CombinedOutput()
 	if err != nil {
 		t.Fatalf("micro run failure, output: %v", string(outp))
@@ -395,7 +395,7 @@ func testExistingLogs(t *t) {
 	}
 
 	try("logspammer logs", t, func() ([]byte, error) {
-		psCmd := exec.Command("micro", serv.envFlag(), "logs", "-n", "5", "ebelanja/services/logspammer")
+		psCmd := exec.Command("micro", serv.envFlag(), "logs", "-n", "5", "ebelanja/micro-services/logspammer")
 		outp, err = psCmd.CombinedOutput()
 		if err != nil {
 			return outp, err
@@ -418,7 +418,7 @@ func testStreamLogsAndThirdPartyRepo(t *t) {
 	serv.launch()
 	defer serv.close()
 
-	runCmd := exec.Command("micro", serv.envFlag(), "run", "github.com/ebelanja/services/logspammer@main")
+	runCmd := exec.Command("micro", serv.envFlag(), "run", "github.com/ebelanja/micro-services/logspammer")
 	outp, err := runCmd.CombinedOutput()
 	if err != nil {
 		t.Fatalf("micro run failure, output: %v", string(outp))
@@ -426,7 +426,7 @@ func testStreamLogsAndThirdPartyRepo(t *t) {
 	}
 
 	try("logspammer logs", t, func() ([]byte, error) {
-		psCmd := exec.Command("micro", serv.envFlag(), "logs", "-n", "5", "ebelanja/services/logspammer")
+		psCmd := exec.Command("micro", serv.envFlag(), "logs", "-n", "5", "ebelanja/micro-services/logspammer")
 		outp, err = psCmd.CombinedOutput()
 		if err != nil {
 			return outp, err
@@ -439,7 +439,7 @@ func testStreamLogsAndThirdPartyRepo(t *t) {
 	}, 50*time.Second)
 
 	// Test streaming logs
-	cmd := exec.Command("micro", serv.envFlag(), "logs", "-n", "1", "-f", "crufter-micro-services-logspammer")
+	cmd := exec.Command("micro", serv.envFlag(), "logs", "-n", "1", "-f", "ebelanja-micro-services-logspammer")
 
 	time.Sleep(7 * time.Second)
 

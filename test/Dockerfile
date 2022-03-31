@@ -31,9 +31,9 @@ COPY ./test/config-example-service ${GOPATH}/src/config-example-service
 # Speeding up tests by predownloading dependencies for services used.
 RUN cd ${GOPATH}/src/example-service && go get && \
     cd ${GOPATH}/src/config-example-service && go get && \
-    go get github.com/ebelanja/examples/helloworld@main
+    go get github.com/ebelanja/micro-examples/helloworld
 
-# RUN go get github.com/ebelanja/services/logspammer
+# RUN go get github.com/ebelanja/micro-services/logspammer
 RUN go get github.com/ebelanja/go-micro
 
 COPY ./micro /micro
