@@ -156,13 +156,13 @@ func copyAPIProto(c config) (string, error) {
 	// wasn't built on the user's machine
 	basedir := build.Default.GOPATH
 
-	contents, err := ioutil.ReadDir(filepath.Join(basedir, "pkg", "mod", "github.com", "ebelanja", "go-micro"))
+	contents, err := ioutil.ReadDir(filepath.Join(basedir, "pkg", "mod", "github.com", "ebelanja"))
 	if err != nil {
 		return "", errors.New("Unable to find go-micro version. Please try `go get github.com/ebelanja/go-micro`")
 	}
 	newestDir := ""
 	for _, v := range contents {
-		if v.IsDir() && strings.HasPrefix(v.Name(), "v2") && strings.Compare(newestDir, v.Name()) < 0 {
+		if v.IsDir() && strings.Compare(newestDir, v.Name()) < 0 {
 			newestDir = v.Name()
 		}
 	}
@@ -170,7 +170,7 @@ func copyAPIProto(c config) (string, error) {
 		return "", errors.New("Unable to find go-micro version. Please try `go get github.com/ebelanja/go-micro`")
 	}
 
-	input, err := ioutil.ReadFile(fmt.Sprintf("%s/pkg/mod/github.com/ebelanja/go-micro/%s/api/proto/api.proto", basedir, newestDir))
+	input, err := ioutil.ReadFile(fmt.Sprintf("%s/pkg/mod/github.com/ebelanja/%s/api/proto/api.proto", basedir, newestDir))
 	if err != nil {
 		return "", err
 	}
