@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # GitHub Org and Repo to get archives from
-GITHUB_ORG="micro"
+GITHUB_ORG="ebelanja"
 GITHUB_REPO="micro"
 
 # micro install directory
@@ -136,7 +136,7 @@ fail_trap() {
     result=$?
     if [ "$result" != "0" ]; then
         echo "Failed to install micro"
-        echo "For support, please file an issue in https://github.com/micro/micro/issues"
+        echo "For support, please file an issue in https://github.com/ebelanja/micro/issues"
     fi
     cleanup
     exit $result
@@ -150,7 +150,7 @@ cleanup() {
 
 printInfo() {
     echo -e "\nTo get started with micro please visit official documentation https://micro.mu/docs"
-    echo "To start contributing to micro please visit https://github.com/micro"
+    echo "To start contributing to micro please visit https://github.com/ebelanja"
     echo "Join micro community on slack https://micro.mu/slack"
 }
 
