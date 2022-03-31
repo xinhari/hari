@@ -255,7 +255,7 @@ func testRunGithubSource(t *t) {
 	serv.launch()
 	defer serv.close()
 
-	runCmd := exec.Command("micro", serv.envFlag(), "run", "github.com/micro/examples/helloworld")
+	runCmd := exec.Command("micro", serv.envFlag(), "run", "github.com/ebelanja/examples/helloworld")
 	outp, err := runCmd.CombinedOutput()
 	if err != nil {
 		t.Fatalf("micro run failure, output: %v", string(outp))

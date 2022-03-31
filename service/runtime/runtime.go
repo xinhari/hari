@@ -4,7 +4,6 @@ package runtime
 import (
 	"os"
 
-	"github.com/micro/cli/v2"
 	"github.com/ebelanja/go-micro"
 	"github.com/ebelanja/go-micro/config/cmd"
 	log "github.com/ebelanja/go-micro/logger"
@@ -13,6 +12,7 @@ import (
 	"github.com/ebelanja/micro/service/runtime/handler"
 	"github.com/ebelanja/micro/service/runtime/manager"
 	"github.com/ebelanja/micro/service/runtime/profile"
+	"github.com/micro/cli/v2"
 )
 
 var (
@@ -167,7 +167,7 @@ func Commands(options ...micro.Option) []*cli.Command {
 			Name:  "run",
 			Usage: RunUsage,
 			Description: `Examples:
-			micro run github.com/micro/examples/helloworld
+			micro run github.com/ebelanja/examples/helloworld
 			micro run .  # deploy local folder to your local micro server
 			micro run ../path/to/folder # deploy local folder to your local micro server
 			micro run helloworld # deploy latest version, translates to micro run github.com/micro/services/helloworld
@@ -183,7 +183,7 @@ func Commands(options ...micro.Option) []*cli.Command {
 			Name:  "update",
 			Usage: UpdateUsage,
 			Description: `Examples:
-			micro update github.com/micro/examples/helloworld
+			micro update github.com/ebelanja/examples/helloworld
 			micro update .  # deploy local folder to your local micro server
 			micro update ../path/to/folder # deploy local folder to your local micro server
 			micro update helloworld # deploy master branch, translates to micro update github.com/micro/services/helloworld
@@ -199,7 +199,7 @@ func Commands(options ...micro.Option) []*cli.Command {
 			Usage: KillUsage,
 			Flags: Flags(),
 			Description: `Examples:
-			micro kill github.com/micro/examples/helloworld
+			micro kill github.com/ebelanja/examples/helloworld
 			micro kill .  # kill service deployed from local folder
 			micro kill ../path/to/folder # kill service deployed from local folder
 			micro kill helloworld # kill serviced deployed from master branch, translates to micro kill github.com/micro/services/helloworld
