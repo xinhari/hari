@@ -5,6 +5,7 @@ package test
 import (
 	"encoding/json"
 	"errors"
+	"fmt"
 	"io/ioutil"
 	"os"
 	"os/exec"
@@ -263,6 +264,7 @@ func testRunGithubSource(t *t) {
 	}
 
 	try("Find hello world", t, func() ([]byte, error) {
+		fmt.Println("micro", serv.envFlag(), "status")
 		psCmd := exec.Command("micro", serv.envFlag(), "status")
 		outp, err = psCmd.CombinedOutput()
 		if err != nil {
