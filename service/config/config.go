@@ -7,14 +7,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/micro/cli/v2"
 	"github.com/ebelanja/go-micro"
 	"github.com/ebelanja/go-micro/config/cmd"
 	proto "github.com/ebelanja/go-micro/config/source/service/proto"
 	log "github.com/ebelanja/go-micro/logger"
-	"github.com/ebelanja/micro/internal/client"
-	"github.com/ebelanja/micro/internal/helper"
-	"github.com/ebelanja/micro/service/config/handler"
+	"github.com/ebelanja/hari/internal/client"
+	"github.com/ebelanja/hari/internal/helper"
+	"github.com/ebelanja/hari/service/config/handler"
+	"github.com/micro/cli/v2"
 )
 
 var (

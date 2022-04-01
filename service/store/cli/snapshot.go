@@ -3,9 +3,9 @@ package cli
 import (
 	"net/url"
 
-	"github.com/micro/cli/v2"
 	"github.com/ebelanja/go-micro/logger"
-	"github.com/ebelanja/micro/service/store/snapshot"
+	"github.com/ebelanja/hari/service/store/snapshot"
+	"github.com/micro/cli/v2"
 	"github.com/pkg/errors"
 )
 

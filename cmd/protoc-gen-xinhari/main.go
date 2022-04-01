@@ -52,8 +52,8 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/ebelanja/micro/cmd/protoc-gen-xinhari/generator"
-	_ "github.com/ebelanja/micro/cmd/protoc-gen-xinhari/plugin/xinhari"
+	"github.com/ebelanja/hari/cmd/protoc-gen-xinhari/generator"
+	_ "github.com/ebelanja/hari/cmd/protoc-gen-xinhari/plugin/xinhari"
 	"github.com/golang/protobuf/proto"
 )
 

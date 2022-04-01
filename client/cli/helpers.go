@@ -10,13 +10,13 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/micro/cli/v2"
 	"github.com/ebelanja/go-micro/client"
 	cbytes "github.com/ebelanja/go-micro/codec/bytes"
 	"github.com/ebelanja/go-micro/config/cmd"
 	"github.com/ebelanja/go-micro/util/file"
-	cliutil "github.com/ebelanja/micro/client/cli/util"
-	clic "github.com/ebelanja/micro/internal/command/cli"
+	cliutil "github.com/ebelanja/hari/client/cli/util"
+	clic "github.com/ebelanja/hari/internal/command/cli"
+	"github.com/micro/cli/v2"
 )
 
 type exec func(*cli.Context, []string) ([]byte, error)

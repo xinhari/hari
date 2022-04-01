@@ -7,7 +7,7 @@ import (
 	pb "github.com/ebelanja/go-micro/broker/service/proto"
 	"github.com/ebelanja/go-micro/errors"
 	log "github.com/ebelanja/go-micro/logger"
-	"github.com/ebelanja/micro/internal/namespace"
+	"github.com/ebelanja/hari/internal/namespace"
 )
 
 type Broker struct {

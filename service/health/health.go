@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/micro/cli/v2"
 	"github.com/ebelanja/go-micro"
 	"github.com/ebelanja/go-micro/client"
 	proto "github.com/ebelanja/go-micro/debug/service/proto"
 	log "github.com/ebelanja/go-micro/logger"
-	mcli "github.com/ebelanja/micro/client/cli"
-	qcli "github.com/ebelanja/micro/internal/command/cli"
+	mcli "github.com/ebelanja/hari/client/cli"
+	qcli "github.com/ebelanja/hari/internal/command/cli"
+	"github.com/micro/cli/v2"
 	"golang.org/x/net/context"
 )
 

@@ -1,14 +1,14 @@
 package store
 
 import (
-	"github.com/micro/cli/v2"
 	"github.com/ebelanja/go-micro"
 	log "github.com/ebelanja/go-micro/logger"
 	"github.com/ebelanja/go-micro/store"
 	pb "github.com/ebelanja/go-micro/store/service/proto"
-	mcli "github.com/ebelanja/micro/client/cli"
-	"github.com/ebelanja/micro/internal/helper"
-	"github.com/ebelanja/micro/service/store/handler"
+	mcli "github.com/ebelanja/hari/client/cli"
+	"github.com/ebelanja/hari/internal/helper"
+	"github.com/ebelanja/hari/service/store/handler"
+	"github.com/micro/cli/v2"
 	"github.com/pkg/errors"
 )
 

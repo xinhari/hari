@@ -5,7 +5,6 @@ import (
 	"os"
 	"strings"
 
-	"github.com/micro/cli/v2"
 	"github.com/ebelanja/go-micro"
 	log "github.com/ebelanja/go-micro/logger"
 	"github.com/ebelanja/go-micro/proxy"
@@ -14,8 +13,9 @@ import (
 	"github.com/ebelanja/go-micro/proxy/mucp"
 	"github.com/ebelanja/go-micro/runtime"
 	"github.com/ebelanja/go-micro/server"
-	"github.com/ebelanja/micro/service/handler/exec"
-	"github.com/ebelanja/micro/service/handler/file"
+	"github.com/ebelanja/hari/service/handler/exec"
+	"github.com/ebelanja/hari/service/handler/file"
+	"github.com/micro/cli/v2"
 )
 
 func Run(ctx *cli.Context, opts ...micro.Option) {

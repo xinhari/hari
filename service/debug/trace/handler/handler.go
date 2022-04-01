@@ -14,7 +14,7 @@ import (
 	log "github.com/ebelanja/go-micro/logger"
 	"github.com/ebelanja/go-micro/registry"
 	"github.com/ebelanja/go-micro/util/ring"
-	trace "github.com/ebelanja/micro/service/debug/trace/proto"
+	trace "github.com/ebelanja/hari/service/debug/trace/proto"
 )
 
 // New initialises and returns a new trace service handler

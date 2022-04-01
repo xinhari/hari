@@ -2,7 +2,7 @@
 package handler
 
 import (
-	"github.com/ebelanja/micro/service/network/dns/provider"
+	"github.com/ebelanja/hari/service/network/dns/provider"
 )
 
 // New returns a new handler

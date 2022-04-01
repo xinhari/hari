@@ -7,7 +7,7 @@ import (
 
 	"github.com/ebelanja/go-micro/runtime"
 	"github.com/ebelanja/go-micro/store"
-	"github.com/ebelanja/micro/internal/namespace"
+	"github.com/ebelanja/hari/internal/namespace"
 )
 
 // service is the object persisted in the store

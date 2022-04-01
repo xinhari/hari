@@ -7,16 +7,16 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/micro/cli/v2"
 	"github.com/ebelanja/go-micro/config/cmd"
 	log "github.com/ebelanja/go-micro/logger"
 	gorun "github.com/ebelanja/go-micro/runtime"
 	signalutil "github.com/ebelanja/go-micro/util/signal"
+	"github.com/micro/cli/v2"
 
 	// include usage
 
-	"github.com/ebelanja/micro/internal/update"
-	_ "github.com/ebelanja/micro/internal/usage"
+	"github.com/ebelanja/hari/internal/update"
+	_ "github.com/ebelanja/hari/internal/usage"
 )
 
 var (

@@ -4,9 +4,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/micro/cli/v2"
 	"github.com/ebelanja/go-micro/agent/command"
-	clic "github.com/ebelanja/micro/internal/command/cli"
+	clic "github.com/ebelanja/hari/internal/command/cli"
+	"github.com/micro/cli/v2"
 )
 
 // Echo returns the same message

@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ebelanja/micro/cmd/protoc-gen-xinhari/generator"
+	"github.com/ebelanja/hari/cmd/protoc-gen-xinhari/generator"
 	"github.com/golang/protobuf/proto"
 	pb "github.com/golang/protobuf/protoc-gen-go/descriptor"
 	options "google.golang.org/genproto/googleapis/api/annotations"

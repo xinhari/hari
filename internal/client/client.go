@@ -7,9 +7,9 @@ import (
 	"github.com/ebelanja/go-micro/client"
 	"github.com/ebelanja/go-micro/client/grpc"
 	"github.com/ebelanja/go-micro/metadata"
-	"github.com/ebelanja/micro/client/cli/util"
-	cliutil "github.com/ebelanja/micro/client/cli/util"
-	"github.com/ebelanja/micro/internal/config"
+	"github.com/ebelanja/hari/client/cli/util"
+	cliutil "github.com/ebelanja/hari/client/cli/util"
+	"github.com/ebelanja/hari/internal/config"
 	ccli "github.com/micro/cli/v2"
 )
 

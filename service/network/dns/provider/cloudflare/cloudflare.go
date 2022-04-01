@@ -11,8 +11,8 @@ import (
 	"github.com/pkg/errors"
 
 	log "github.com/ebelanja/go-micro/logger"
-	dns "github.com/ebelanja/micro/service/network/dns/proto/dns"
-	"github.com/ebelanja/micro/service/network/dns/provider"
+	dns "github.com/ebelanja/hari/service/network/dns/proto/dns"
+	"github.com/ebelanja/hari/service/network/dns/provider"
 )
 
 type cfProvider struct {

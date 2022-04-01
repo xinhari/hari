@@ -6,7 +6,7 @@ import (
 
 	"github.com/ebelanja/go-micro"
 	log "github.com/ebelanja/go-micro/logger"
-	plugin "github.com/ebelanja/micro/service/debug/collector/micro"
+	plugin "github.com/ebelanja/hari/service/debug/collector/micro"
 	"github.com/netdata/go-orchestrator"
 	"github.com/netdata/go-orchestrator/cli"
 	"github.com/netdata/go-orchestrator/pkg/multipath"

@@ -13,9 +13,9 @@ import (
 	"time"
 
 	"github.com/boltdb/bolt"
+	pb "github.com/ebelanja/hari/cmd/usage/proto"
 	"github.com/golang/protobuf/proto"
 	"github.com/gorilla/handlers"
-	pb "github.com/ebelanja/micro/cmd/usage/proto"
 )
 
 var (

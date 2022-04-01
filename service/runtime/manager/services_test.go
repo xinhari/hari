@@ -5,7 +5,7 @@ import (
 
 	"github.com/ebelanja/go-micro/runtime"
 	"github.com/ebelanja/go-micro/store/memory"
-	"github.com/ebelanja/micro/internal/namespace"
+	"github.com/ebelanja/hari/internal/namespace"
 )
 
 func TestServices(t *testing.T) {

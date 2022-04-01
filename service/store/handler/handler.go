@@ -11,7 +11,7 @@ import (
 	"github.com/ebelanja/go-micro/metadata"
 	"github.com/ebelanja/go-micro/store"
 	pb "github.com/ebelanja/go-micro/store/service/proto"
-	"github.com/ebelanja/micro/internal/namespace"
+	"github.com/ebelanja/hari/internal/namespace"
 )
 
 type Store struct {

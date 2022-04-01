@@ -9,9 +9,9 @@ import (
 	log "github.com/ebelanja/go-micro/logger"
 	"github.com/ebelanja/go-micro/runtime"
 	pb "github.com/ebelanja/go-micro/runtime/service/proto"
-	"github.com/ebelanja/micro/service/runtime/handler"
-	"github.com/ebelanja/micro/service/runtime/manager"
-	"github.com/ebelanja/micro/service/runtime/profile"
+	"github.com/ebelanja/hari/service/runtime/handler"
+	"github.com/ebelanja/hari/service/runtime/manager"
+	"github.com/ebelanja/hari/service/runtime/profile"
 	"github.com/micro/cli/v2"
 )
 

@@ -1,4 +1,4 @@
-# Micro [![License](https://img.shields.io/:license-apache-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![GoDoc](https://godoc.org/github.com/ebelanja/micro?status.svg)](https://godoc.org/github.com/ebelanja/micro) [![Travis CI](https://travis-ci.org/ebelanja/micro.svg?branch=main)](https://travis-ci.org/ebelanja/micro) [![Go Report Card](https://goreportcard.com/badge/ebelanja/micro)](https://goreportcard.com/report/github.com/ebelanja/micro)
+# Micro [![License](https://img.shields.io/:license-apache-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![GoDoc](https://godoc.org/github.com/ebelanja/hari?status.svg)](https://godoc.org/github.com/ebelanja/hari) [![Travis CI](https://travis-ci.org/ebelanja/micro.svg?branch=main)](https://travis-ci.org/ebelanja/micro) [![Go Report Card](https://goreportcard.com/badge/ebelanja/micro)](https://goreportcard.com/report/github.com/ebelanja/hari)
 
 Micro is a distributed systems runtime for the Cloud and beyond.
 
@@ -70,7 +70,7 @@ Go Micro abstracts away the complexity of distributed systems and provides simpl
 From source
 
 ```
-go get github.com/ebelanja/micro
+go get github.com/ebelanja/hari
 ```
 
 Docker image

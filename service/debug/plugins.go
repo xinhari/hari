@@ -3,7 +3,7 @@ package debug
 import (
 	"fmt"
 
-	"github.com/ebelanja/micro/plugin"
+	"github.com/ebelanja/hari/plugin"
 )
 
 var (

@@ -5,11 +5,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/uuid"
 	"github.com/ebelanja/go-micro/logger"
 	"github.com/ebelanja/go-micro/runtime"
 	"github.com/ebelanja/go-micro/store"
-	"github.com/ebelanja/micro/internal/namespace"
+	"github.com/ebelanja/hari/internal/namespace"
+	"github.com/google/uuid"
 )
 
 var (

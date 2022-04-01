@@ -2,13 +2,13 @@
 package dns
 
 import (
-	"github.com/micro/cli/v2"
 	"github.com/ebelanja/go-micro"
 	log "github.com/ebelanja/go-micro/logger"
+	"github.com/micro/cli/v2"
 
-	"github.com/ebelanja/micro/service/network/dns/handler"
-	dns "github.com/ebelanja/micro/service/network/dns/proto/dns"
-	"github.com/ebelanja/micro/service/network/dns/provider/cloudflare"
+	"github.com/ebelanja/hari/service/network/dns/handler"
+	dns "github.com/ebelanja/hari/service/network/dns/proto/dns"
+	"github.com/ebelanja/hari/service/network/dns/provider/cloudflare"
 )
 
 // Run is the entrypoint for network/dns

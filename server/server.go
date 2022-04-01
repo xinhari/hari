@@ -5,14 +5,14 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/micro/cli/v2"
 	"github.com/ebelanja/go-micro"
 	"github.com/ebelanja/go-micro/config/cmd"
 	log "github.com/ebelanja/go-micro/logger"
 	gorun "github.com/ebelanja/go-micro/runtime"
 	handler "github.com/ebelanja/go-micro/util/file"
-	"github.com/ebelanja/micro/internal/platform"
-	"github.com/ebelanja/micro/internal/update"
+	"github.com/ebelanja/hari/internal/platform"
+	"github.com/ebelanja/hari/internal/update"
+	"github.com/micro/cli/v2"
 )
 
 var (

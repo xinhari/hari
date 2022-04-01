@@ -8,8 +8,9 @@ import (
 	ckStore "github.com/ebelanja/go-micro/store/cockroach"
 	fileStore "github.com/ebelanja/go-micro/store/file"
 	memStore "github.com/ebelanja/go-micro/store/memory"
+
 	// we only use CF internally for certs
-	cfStore "github.com/ebelanja/micro/internal/plugins/store/cloudflare"
+	cfStore "github.com/ebelanja/hari/internal/plugins/store/cloudflare"
 )
 
 func init() {

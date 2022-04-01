@@ -4,11 +4,11 @@ package broker
 import (
 	"time"
 
-	"github.com/micro/cli/v2"
 	"github.com/ebelanja/go-micro"
 	pb "github.com/ebelanja/go-micro/broker/service/proto"
 	log "github.com/ebelanja/go-micro/logger"
-	"github.com/ebelanja/micro/service/broker/handler"
+	"github.com/ebelanja/hari/service/broker/handler"
+	"github.com/micro/cli/v2"
 )
 
 var (

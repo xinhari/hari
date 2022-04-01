@@ -13,7 +13,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/micro/cli/v2"
 	"github.com/ebelanja/go-micro/client"
 	cbytes "github.com/ebelanja/go-micro/codec/bytes"
 	"github.com/ebelanja/go-micro/config/cmd"
@@ -21,8 +20,9 @@ import (
 	"github.com/ebelanja/go-micro/metadata"
 	"github.com/ebelanja/go-micro/registry"
 	"github.com/ebelanja/go-micro/registry/service"
-	inclient "github.com/ebelanja/micro/internal/client"
-	dns "github.com/ebelanja/micro/service/network/dns/proto/dns"
+	inclient "github.com/ebelanja/hari/internal/client"
+	dns "github.com/ebelanja/hari/service/network/dns/proto/dns"
+	"github.com/micro/cli/v2"
 
 	"github.com/olekukonko/tablewriter"
 	"github.com/serenize/snaker"

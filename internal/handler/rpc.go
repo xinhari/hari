@@ -11,7 +11,7 @@ import (
 	"github.com/ebelanja/go-micro/client"
 	"github.com/ebelanja/go-micro/config/cmd"
 	"github.com/ebelanja/go-micro/errors"
-	"github.com/ebelanja/micro/internal/helper"
+	"github.com/ebelanja/hari/internal/helper"
 )
 
 type rpcRequest struct {

@@ -13,7 +13,6 @@ import (
 	"text/tabwriter"
 	"time"
 
-	"github.com/micro/cli/v2"
 	"github.com/ebelanja/go-micro"
 	"github.com/ebelanja/go-micro/config/cmd"
 	log "github.com/ebelanja/go-micro/logger"
@@ -21,9 +20,10 @@ import (
 	"github.com/ebelanja/go-micro/runtime/local/git"
 	srvRuntime "github.com/ebelanja/go-micro/runtime/service"
 	"github.com/ebelanja/go-micro/util/file"
-	cliutil "github.com/ebelanja/micro/client/cli/util"
-	"github.com/ebelanja/micro/internal/client"
-	"github.com/ebelanja/micro/service/runtime/handler"
+	cliutil "github.com/ebelanja/hari/client/cli/util"
+	"github.com/ebelanja/hari/internal/client"
+	"github.com/ebelanja/hari/service/runtime/handler"
+	"github.com/micro/cli/v2"
 )
 
 const (

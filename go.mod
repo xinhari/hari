@@ -1,4 +1,4 @@
-module github.com/ebelanja/micro
+module github.com/ebelanja/hari
 
 go 1.13
 

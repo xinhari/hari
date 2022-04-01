@@ -5,8 +5,8 @@ import (
 
 	log "github.com/ebelanja/go-micro/logger"
 	"github.com/ebelanja/go-micro/metadata"
-	dns "github.com/ebelanja/micro/service/network/dns/proto/dns"
-	"github.com/ebelanja/micro/service/network/dns/provider"
+	dns "github.com/ebelanja/hari/service/network/dns/proto/dns"
+	"github.com/ebelanja/hari/service/network/dns/provider"
 	"github.com/pkg/errors"
 )
 

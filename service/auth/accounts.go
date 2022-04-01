@@ -8,10 +8,10 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/micro/cli/v2"
 	"github.com/ebelanja/go-micro/auth"
 	pb "github.com/ebelanja/go-micro/auth/service/proto"
-	"github.com/ebelanja/micro/internal/client"
+	"github.com/ebelanja/hari/internal/client"
+	"github.com/micro/cli/v2"
 )
 
 func listAccounts(ctx *cli.Context) {

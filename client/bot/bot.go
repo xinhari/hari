@@ -11,13 +11,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/micro/cli/v2"
 	"github.com/ebelanja/go-micro"
+	"github.com/micro/cli/v2"
 
 	"github.com/ebelanja/go-micro/agent/command"
 	"github.com/ebelanja/go-micro/agent/input"
 	log "github.com/ebelanja/go-micro/logger"
-	botc "github.com/ebelanja/micro/internal/command/bot"
+	botc "github.com/ebelanja/hari/internal/command/bot"
 
 	proto "github.com/ebelanja/go-micro/agent/proto"
 

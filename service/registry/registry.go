@@ -5,15 +5,15 @@ import (
 	"context"
 	"time"
 
-	"github.com/micro/cli/v2"
 	"github.com/ebelanja/go-micro"
 	log "github.com/ebelanja/go-micro/logger"
 	"github.com/ebelanja/go-micro/registry"
 	"github.com/ebelanja/go-micro/registry/service"
 	pb "github.com/ebelanja/go-micro/registry/service/proto"
-	rcli "github.com/ebelanja/micro/client/cli"
-	"github.com/ebelanja/micro/internal/helper"
-	"github.com/ebelanja/micro/service/registry/handler"
+	rcli "github.com/ebelanja/hari/client/cli"
+	"github.com/ebelanja/hari/internal/helper"
+	"github.com/ebelanja/hari/service/registry/handler"
+	"github.com/micro/cli/v2"
 )
 
 var (

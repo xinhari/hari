@@ -5,8 +5,6 @@ import (
 	"os"
 	"strings"
 
-	"github.com/go-acme/lego/v3/providers/dns/cloudflare"
-	"github.com/micro/cli/v2"
 	"github.com/ebelanja/go-micro"
 	"github.com/ebelanja/go-micro/api/server/acme"
 	"github.com/ebelanja/go-micro/api/server/acme/autocert"
@@ -18,6 +16,8 @@ import (
 	"github.com/ebelanja/go-micro/config/cmd"
 	log "github.com/ebelanja/go-micro/logger"
 	"github.com/ebelanja/go-micro/proxy"
+	"github.com/go-acme/lego/v3/providers/dns/cloudflare"
+	"github.com/micro/cli/v2"
 
 	//"github.com/ebelanja/go-micro/proxy/grpc"
 	"github.com/ebelanja/go-micro/proxy/http"
@@ -31,7 +31,7 @@ import (
 	"github.com/ebelanja/go-micro/sync/memory"
 	"github.com/ebelanja/go-micro/util/mux"
 	"github.com/ebelanja/go-micro/util/wrapper"
-	"github.com/ebelanja/micro/internal/helper"
+	"github.com/ebelanja/hari/internal/helper"
 )
 
 var (

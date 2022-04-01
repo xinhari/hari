@@ -1,11 +1,11 @@
 package api
 
 import (
-	"github.com/micro/cli/v2"
 	"github.com/ebelanja/go-micro"
 	log "github.com/ebelanja/go-micro/logger"
+	"github.com/micro/cli/v2"
 
-	pb "github.com/ebelanja/micro/service/auth/api/proto"
+	pb "github.com/ebelanja/hari/service/auth/api/proto"
 )
 
 var (

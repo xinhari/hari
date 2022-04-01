@@ -14,7 +14,7 @@ import (
 	pb "github.com/ebelanja/go-micro/config/source/service/proto"
 	"github.com/ebelanja/go-micro/errors"
 	"github.com/ebelanja/go-micro/store"
-	"github.com/ebelanja/micro/internal/namespace"
+	"github.com/ebelanja/hari/internal/namespace"
 )
 
 var (
