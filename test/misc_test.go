@@ -7,6 +7,8 @@ import (
 	"os/exec"
 	"strings"
 	"testing"
+
+	"xinhari.com/xinhari/util/log"
 )
 
 func TestNew(t *testing.T) {
@@ -104,7 +106,7 @@ func testWrongCommands(t *t) {
 
 	t.Parallel()
 
-	comm := exec.Command("micro", serv.envFlag())
+	comm := exec.Command("hari", serv.envFlag())
 	outp, err := comm.CombinedOutput()
 	if err == nil {
 		t.Fatal("Missing command should error")
@@ -114,7 +116,7 @@ func testWrongCommands(t *t) {
 		t.Fatalf("Unexpected output for no command: %v", string(outp))
 	}
 
-	comm = exec.Command("micro", serv.envFlag(), "asdasd")
+	comm = exec.Command("hari", serv.envFlag(), "asdasd")
 	outp, err = comm.CombinedOutput()
 	if err == nil {
 		t.Fatal("Wrong command should error")
@@ -124,7 +126,7 @@ func testWrongCommands(t *t) {
 		t.Fatalf("Unexpected output for unrecognized command: %v", string(outp))
 	}
 
-	comm = exec.Command("micro", serv.envFlag(), "config", "asdasd")
+	comm = exec.Command("hari", serv.envFlag(), "config", "asdasd")
 	outp, err = comm.CombinedOutput()
 	if err == nil {
 		t.Fatal("Wrong subcommand should error")
@@ -162,11 +164,12 @@ func testHelps(t *t) {
 		comm = exec.Command("hari", commandName, "--help")
 		outp, err = comm.CombinedOutput()
 
+		log.Info(comm)
 		if err != nil {
 			t.Fatal(fmt.Errorf("Command %v output is wrong: %v", commandName, string(outp)))
 			break
 		}
-		if !strings.Contains(string(outp), "micro "+commandName+" -") {
+		if !strings.Contains(string(outp), "hari "+commandName+" -") {
 			t.Fatal(commandName + " output is wrong: " + string(outp))
 			break
 		}
