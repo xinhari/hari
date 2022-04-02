@@ -5,7 +5,7 @@ var (
 {{define "layout"}}
 <html>
 	<head>
-		<title>Micro Web</title>
+		<title>Hari Web</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -61,7 +61,7 @@ var (
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span> 
                 </button>
-                <a class="navbar-brand logo" href="/"><img src="https://micro.mu/logo.png" height=50px width=auto style="margin-bottom: 5px;" /> Micro</a>
+                <a class="navbar-brand logo" href="/"><!-- <img src="https://xinhari.com/logo.png" height=50px width=auto style="margin-bottom: 5px;" /> -->Xinhari</a>
               </div>
               <div class="collapse navbar-collapse" id="navBar">
 	        <ul class="nav navbar-nav navbar-right" id="dev">
