@@ -142,12 +142,12 @@ func TestHelps(t *testing.T) {
 }
 
 func testHelps(t *t) {
-	comm := exec.Command("micro", "help")
+	comm := exec.Command("hari", "help")
 	outp, err := comm.CombinedOutput()
 	if err != nil {
 		t.Fatal(err)
 	}
-	fmt.Println(outp)
+
 	commands := strings.Split(strings.Split(string(outp), "COMMANDS:")[1], "GLOBAL OPTIONS:")[0]
 	for _, line := range strings.Split(commands, "\n") {
 		trimmed := strings.TrimSpace(line)
@@ -159,7 +159,7 @@ func testHelps(t *t) {
 			continue
 		}
 		commandName := strings.Split(trimmed, " ")[0]
-		comm = exec.Command("micro", commandName, "--help")
+		comm = exec.Command("hari", commandName, "--help")
 		outp, err = comm.CombinedOutput()
 
 		if err != nil {
