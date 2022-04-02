@@ -135,7 +135,7 @@ installFile() {
 fail_trap() {
     result=$?
     if [ "$result" != "0" ]; then
-        echo "Failed to install micro"
+        echo "Failed to install hari"
         echo "For support, please file an issue in https://xinhari.com/hari/issues"
     fi
     cleanup
@@ -149,9 +149,9 @@ cleanup() {
 }
 
 printInfo() {
-    echo -e "\nTo get started with micro please visit official documentation https://xinhari.com/docs"
-    echo "To start contributing to micro please visit https://github.com/xinhari"
-    echo "Join micro community on slack https://xinhari.com/slack"
+    echo -e "\nTo get started with hari please visit official documentation https://xinhari.com/docs"
+    echo "To start contributing to hari please visit https://github.com/xinhari"
+    echo "Join hari community on slack https://xinhari.com/slack"
 }
 
 # catch errors and print help
