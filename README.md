@@ -5,10 +5,10 @@ Hari is a distributed systems runtime for the Cloud and beyond.
 ## Overview
 
 Hari addresses the key requirements for building distributed systems. It leverages the microservices
-architecture pattern and provides a set of services which act as the building blocks of a platform. Micro deals
+architecture pattern and provides a set of services which act as the building blocks of a platform. Xinhari deals
 with the complexity of distributed systems and provides simpler programmable abstractions to build on.
 
-Technology is constantly evolving. The infrastructure stack is always changing. Micro is a platform which
+Technology is constantly evolving. The infrastructure stack is always changing. Hari is a platform which
 addresses these issues with a pluggable foundation and strongly defined apis to build on. Plug into any stack or cloud.
 
 ## Features
@@ -49,7 +49,7 @@ Clients are entrypoints into the system. They enable access to your services thr
 
 - **api:** An api gateway which acts as a single entry point for the frontend with dynamic request routing using service discovery. 
 
-- **bot:** A slack bot which enables you to query and interact with Micro directly from within slack. It's great for ChatOps.
+- **bot:** A slack bot which enables you to query and interact with Hari directly from within slack. It's great for ChatOps.
 
 - **cli:** Access services via the terminal. Every good developer tool needs a CLI as a defacto standard for operating a system. 
 
@@ -60,7 +60,7 @@ query them directly.
 
 ### Framework
 
-To write applications which run on Micro you can use the framework Go Micro.
+To write applications which run on Hari you can use the framework Xinhari.
 
 - **xinhari:** Leverage the powerful [Xinhari](https://xinhari.com/xinhari) framework to develop microservices easily and quickly.
 Xinhari abstracts away the complexity of distributed systems and provides simpler abstractions to build highly scalable microservices.
@@ -79,16 +79,19 @@ Docker image
 docker pull xinhari/hari
 ```
 
-Latest release binaries
+Linux install
 
 ```
-# MacOS
-curl -fsSL https://raw.githubusercontent.com/xinhari/hari/main/scripts/install.sh | /bin/bash
-
-# Linux
 wget -q  https://raw.githubusercontent.com/xinhari/hari/main/scripts/install.sh -O - | /bin/bash
+```
 
-# Windows
+Mac OS install
+```
+curl -fsSL https://raw.githubusercontent.com/xinhari/hari/main/scripts/install.sh | /bin/bash
+```
+
+Windows install
+```
 powershell -Command "iwr -useb https://raw.githubusercontent.com/xinhari/hari/main/scripts/install.ps1 | iex"
 ```
 
