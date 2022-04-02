@@ -152,7 +152,7 @@ func (s server) launch() {
 	// @todo find a way to know everything is up and running
 	try("Calling hari server", s.t, func() ([]byte, error) {
 		outp, err := exec.Command("hari", s.envFlag(), "list", "services").CombinedOutput()
-		fmt.Println(outp)
+		fmt.Println(string(outp))
 		if !strings.Contains(string(outp), "runtime") ||
 			!strings.Contains(string(outp), "router") ||
 			!strings.Contains(string(outp), "registry") ||
