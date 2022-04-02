@@ -146,13 +146,13 @@ func newServer(t *t, opts ...options) server {
 func (s server) launch() {
 	go func() {
 		if err := s.cmd.Start(); err != nil {
+			fmt.Println(err)
 			s.t.t.Fatal(err)
 		}
 	}()
 	// @todo find a way to know everything is up and running
 	try("Calling hari server", s.t, func() ([]byte, error) {
 		outp, err := exec.Command("hari", s.envFlag(), "list", "services").CombinedOutput()
-		fmt.Println(string(outp))
 		if !strings.Contains(string(outp), "runtime") ||
 			!strings.Contains(string(outp), "router") ||
 			!strings.Contains(string(outp), "registry") ||
