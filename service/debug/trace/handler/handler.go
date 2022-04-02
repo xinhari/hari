@@ -7,14 +7,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ebelanja/go-micro/client"
-	"github.com/ebelanja/go-micro/config/cmd"
-	debug "github.com/ebelanja/go-micro/debug/service/proto"
-	"github.com/ebelanja/go-micro/errors"
-	log "github.com/ebelanja/go-micro/logger"
-	"github.com/ebelanja/go-micro/registry"
-	"github.com/ebelanja/go-micro/util/ring"
 	trace "xinhari.com/hari/service/debug/trace/proto"
+	"xinhari.com/xinhari/client"
+	"xinhari.com/xinhari/config/cmd"
+	debug "xinhari.com/xinhari/debug/service/proto"
+	"xinhari.com/xinhari/errors"
+	log "xinhari.com/xinhari/logger"
+	"xinhari.com/xinhari/registry"
+	"xinhari.com/xinhari/util/ring"
 )
 
 // New initialises and returns a new trace service handler

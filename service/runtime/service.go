@@ -13,17 +13,17 @@ import (
 	"text/tabwriter"
 	"time"
 
-	"github.com/ebelanja/go-micro"
-	"github.com/ebelanja/go-micro/config/cmd"
-	log "github.com/ebelanja/go-micro/logger"
-	"github.com/ebelanja/go-micro/runtime"
-	"github.com/ebelanja/go-micro/runtime/local/git"
-	srvRuntime "github.com/ebelanja/go-micro/runtime/service"
-	"github.com/ebelanja/go-micro/util/file"
 	"github.com/micro/cli/v2"
 	cliutil "xinhari.com/hari/client/cli/util"
 	"xinhari.com/hari/internal/client"
 	"xinhari.com/hari/service/runtime/handler"
+	"xinhari.com/xinhari"
+	"xinhari.com/xinhari/config/cmd"
+	log "xinhari.com/xinhari/logger"
+	"xinhari.com/xinhari/runtime"
+	"xinhari.com/xinhari/runtime/local/git"
+	srvRuntime "xinhari.com/xinhari/runtime/service"
+	"xinhari.com/xinhari/util/file"
 )
 
 const (

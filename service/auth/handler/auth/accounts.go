@@ -5,11 +5,11 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/ebelanja/go-micro/auth"
-	pb "github.com/ebelanja/go-micro/auth/service/proto"
-	"github.com/ebelanja/go-micro/errors"
-	"github.com/ebelanja/go-micro/store"
 	"xinhari.com/hari/internal/namespace"
+	"xinhari.com/xinhari/auth"
+	pb "xinhari.com/xinhari/auth/service/proto"
+	"xinhari.com/xinhari/errors"
+	"xinhari.com/xinhari/store"
 )
 
 // List returns all auth accounts

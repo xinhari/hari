@@ -1,9 +1,9 @@
 package api
 
 import (
-	"github.com/ebelanja/go-micro"
-	log "github.com/ebelanja/go-micro/logger"
 	"github.com/micro/cli/v2"
+	"xinhari.com/xinhari"
+	log "xinhari.com/xinhari/logger"
 
 	pb "xinhari.com/hari/service/auth/api/proto"
 )

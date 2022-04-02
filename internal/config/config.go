@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	conf "github.com/ebelanja/go-micro/config"
-	"github.com/ebelanja/go-micro/config/source/file"
-	"github.com/ebelanja/go-micro/util/log"
+	conf "xinhari.com/xinhari/config"
+	"xinhari.com/xinhari/config/source/file"
+	"xinhari.com/xinhari/util/log"
 )
 
 // FileName for global micro config

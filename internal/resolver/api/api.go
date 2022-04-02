@@ -4,7 +4,7 @@ package micro
 import (
 	"net/http"
 
-	"github.com/ebelanja/go-micro/api/resolver"
+	"xinhari.com/xinhari/api/resolver"
 )
 
 // default resolver for legacy purposes

@@ -3,7 +3,7 @@ package namespace
 import (
 	"context"
 
-	"github.com/ebelanja/go-micro/metadata"
+	"xinhari.com/xinhari/metadata"
 )
 
 const (

@@ -3,11 +3,11 @@ package handler
 import (
 	"context"
 
-	log "github.com/ebelanja/go-micro/logger"
-	"github.com/ebelanja/go-micro/metadata"
 	"github.com/pkg/errors"
 	dns "xinhari.com/hari/service/network/dns/proto/dns"
 	"xinhari.com/hari/service/network/dns/provider"
+	log "xinhari.com/xinhari/logger"
+	"xinhari.com/xinhari/metadata"
 )
 
 // DNS handles incoming gRPC requests

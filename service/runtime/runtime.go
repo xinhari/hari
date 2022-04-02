@@ -4,15 +4,15 @@ package runtime
 import (
 	"os"
 
-	"github.com/ebelanja/go-micro"
-	"github.com/ebelanja/go-micro/config/cmd"
-	log "github.com/ebelanja/go-micro/logger"
-	"github.com/ebelanja/go-micro/runtime"
-	pb "github.com/ebelanja/go-micro/runtime/service/proto"
 	"github.com/micro/cli/v2"
 	"xinhari.com/hari/service/runtime/handler"
 	"xinhari.com/hari/service/runtime/manager"
 	"xinhari.com/hari/service/runtime/profile"
+	"xinhari.com/xinhari"
+	"xinhari.com/xinhari/config/cmd"
+	log "xinhari.com/xinhari/logger"
+	"xinhari.com/xinhari/runtime"
+	pb "xinhari.com/xinhari/runtime/service/proto"
 )
 
 var (

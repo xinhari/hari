@@ -9,8 +9,8 @@ import (
 	"text/template"
 
 	"github.com/emicklei/proto"
-	registry "github.com/ebelanja/go-micro/registry/service/proto"
 	"github.com/spf13/cobra"
+	registry "xinhari.com/xinhari/registry/service/proto"
 )
 
 var (

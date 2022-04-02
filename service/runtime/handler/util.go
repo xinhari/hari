@@ -10,9 +10,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/ebelanja/go-micro/runtime"
-	pb "github.com/ebelanja/go-micro/runtime/service/proto"
 	"xinhari.com/hari/internal/namespace"
+	"xinhari.com/xinhari/runtime"
+	pb "xinhari.com/xinhari/runtime/service/proto"
 )
 
 func toProto(s *runtime.Service) *pb.Service {

@@ -2,11 +2,6 @@
 package debug
 
 import (
-	"github.com/ebelanja/go-micro"
-	"github.com/ebelanja/go-micro/debug/log"
-	"github.com/ebelanja/go-micro/debug/log/kubernetes"
-	dservice "github.com/ebelanja/go-micro/debug/service"
-	ulog "github.com/ebelanja/go-micro/logger"
 	"github.com/micro/cli/v2"
 	logHandler "xinhari.com/hari/service/debug/log/handler"
 	pblog "xinhari.com/hari/service/debug/log/proto"
@@ -14,6 +9,11 @@ import (
 	pbstats "xinhari.com/hari/service/debug/stats/proto"
 	tracehandler "xinhari.com/hari/service/debug/trace/handler"
 	pbtrace "xinhari.com/hari/service/debug/trace/proto"
+	"xinhari.com/xinhari"
+	"xinhari.com/xinhari/debug/log"
+	"xinhari.com/xinhari/debug/log/kubernetes"
+	dservice "xinhari.com/xinhari/debug/service"
+	ulog "xinhari.com/xinhari/logger"
 )
 
 var (

@@ -7,14 +7,14 @@ import (
 	"os/exec"
 	"sort"
 
-	"github.com/ebelanja/go-micro"
-	"github.com/ebelanja/go-micro/config/cmd"
-	gostore "github.com/ebelanja/go-micro/store"
 	ccli "github.com/micro/cli/v2"
 	"xinhari.com/hari/plugin"
 	"xinhari.com/hari/plugin/build"
 	"xinhari.com/hari/server"
 	"xinhari.com/hari/service"
+	"xinhari.com/xinhari"
+	"xinhari.com/xinhari/config/cmd"
+	gostore "xinhari.com/xinhari/store"
 
 	// clients
 	"xinhari.com/hari/client/api"

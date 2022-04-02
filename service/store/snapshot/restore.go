@@ -7,8 +7,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/ebelanja/go-micro/store"
 	"github.com/pkg/errors"
+	"xinhari.com/xinhari/store"
 )
 
 // Restore emits records from a go-micro store snapshot

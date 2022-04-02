@@ -3,11 +3,11 @@ package handler
 import (
 	"context"
 
-	"github.com/ebelanja/go-micro/broker"
-	pb "github.com/ebelanja/go-micro/broker/service/proto"
-	"github.com/ebelanja/go-micro/errors"
-	log "github.com/ebelanja/go-micro/logger"
 	"xinhari.com/hari/internal/namespace"
+	"xinhari.com/xinhari/broker"
+	pb "xinhari.com/xinhari/broker/service/proto"
+	"xinhari.com/xinhari/errors"
+	log "xinhari.com/xinhari/logger"
 )
 
 type Broker struct {

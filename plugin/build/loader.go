@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/ebelanja/go-micro/plugin"
 	"golang.org/x/tools/go/packages"
+	"xinhari.com/xinhari/plugin"
 )
 
 func buildSo(soPath string, parts []string) error {

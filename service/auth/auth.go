@@ -6,15 +6,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ebelanja/go-micro"
-	"github.com/ebelanja/go-micro/auth"
-	srvAuth "github.com/ebelanja/go-micro/auth/service"
-	pb "github.com/ebelanja/go-micro/auth/service/proto"
-	"github.com/ebelanja/go-micro/auth/token"
-	"github.com/ebelanja/go-micro/auth/token/jwt"
-	"github.com/ebelanja/go-micro/config/cmd"
-	"github.com/ebelanja/go-micro/errors"
-	log "github.com/ebelanja/go-micro/logger"
 	"github.com/micro/cli/v2"
 	cliutil "xinhari.com/hari/client/cli/util"
 	"xinhari.com/hari/internal/client"
@@ -23,6 +14,15 @@ import (
 	"xinhari.com/hari/service/auth/api"
 	authHandler "xinhari.com/hari/service/auth/handler/auth"
 	rulesHandler "xinhari.com/hari/service/auth/handler/rules"
+	"xinhari.com/xinhari"
+	"xinhari.com/xinhari/auth"
+	srvAuth "xinhari.com/xinhari/auth/service"
+	pb "xinhari.com/xinhari/auth/service/proto"
+	"xinhari.com/xinhari/auth/token"
+	"xinhari.com/xinhari/auth/token/jwt"
+	"xinhari.com/xinhari/config/cmd"
+	"xinhari.com/xinhari/errors"
+	log "xinhari.com/xinhari/logger"
 )
 
 var (

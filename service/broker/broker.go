@@ -4,11 +4,11 @@ package broker
 import (
 	"time"
 
-	"github.com/ebelanja/go-micro"
-	pb "github.com/ebelanja/go-micro/broker/service/proto"
-	log "github.com/ebelanja/go-micro/logger"
 	"github.com/micro/cli/v2"
 	"xinhari.com/hari/service/broker/handler"
+	"xinhari.com/xinhari"
+	pb "xinhari.com/xinhari/broker/service/proto"
+	log "xinhari.com/xinhari/logger"
 )
 
 var (

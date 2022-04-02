@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ebelanja/go-micro/store"
 	"github.com/pkg/errors"
+	"xinhari.com/xinhari/store"
 )
 
 // Snapshot creates snapshots of a go-micro store

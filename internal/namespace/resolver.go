@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/ebelanja/go-micro/logger"
 	"golang.org/x/net/publicsuffix"
+	"xinhari.com/xinhari/logger"
 )
 
 func NewResolver(srvType, namespace string) *Resolver {

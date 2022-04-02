@@ -3,9 +3,9 @@ package handler
 import (
 	"context"
 
-	"github.com/ebelanja/go-micro/errors"
-	"github.com/ebelanja/go-micro/router"
-	pb "github.com/ebelanja/go-micro/router/service/proto"
+	"xinhari.com/xinhari/errors"
+	"xinhari.com/xinhari/router"
+	pb "xinhari.com/xinhari/router/service/proto"
 )
 
 type Table struct {

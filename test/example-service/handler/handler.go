@@ -3,7 +3,7 @@ package handler
 import (
 	"context"
 
-	"github.com/ebelanja/go-micro/util/log"
+	"xinhari.com/xinhari/util/log"
 
 	example "example-service/proto"
 )

@@ -7,14 +7,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ebelanja/go-micro"
-	"github.com/ebelanja/go-micro/config/cmd"
-	proto "github.com/ebelanja/go-micro/config/source/service/proto"
-	log "github.com/ebelanja/go-micro/logger"
 	"github.com/micro/cli/v2"
 	"xinhari.com/hari/internal/client"
 	"xinhari.com/hari/internal/helper"
 	"xinhari.com/hari/service/config/handler"
+	"xinhari.com/xinhari"
+	"xinhari.com/xinhari/config/cmd"
+	proto "xinhari.com/xinhari/config/source/service/proto"
+	log "xinhari.com/xinhari/logger"
 )
 
 var (

@@ -6,12 +6,12 @@ import (
 	"os"
 	"time"
 
-	"github.com/ebelanja/go-micro"
-	log "github.com/ebelanja/go-micro/logger"
-	"github.com/ebelanja/go-micro/router"
-	pb "github.com/ebelanja/go-micro/router/service/proto"
 	"github.com/micro/cli/v2"
 	"xinhari.com/hari/service/router/handler"
+	"xinhari.com/xinhari"
+	log "xinhari.com/xinhari/logger"
+	"xinhari.com/xinhari/router"
+	pb "xinhari.com/xinhari/router/service/proto"
 )
 
 var (

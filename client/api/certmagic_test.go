@@ -9,11 +9,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ebelanja/go-micro/api/server/acme"
-	cert "github.com/ebelanja/go-micro/api/server/acme/certmagic"
-	"github.com/ebelanja/go-micro/sync/memory"
 	"github.com/go-acme/lego/v3/providers/dns/cloudflare"
 	cfstore "xinhari.com/hari/internal/plugins/store/cloudflare"
+	"xinhari.com/xinhari/api/server/acme"
+	cert "xinhari.com/xinhari/api/server/acme/certmagic"
+	"xinhari.com/xinhari/sync/memory"
 )
 
 func TestCertMagic(t *testing.T) {

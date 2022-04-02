@@ -4,12 +4,12 @@ package handler
 import (
 	"context"
 
-	"github.com/ebelanja/go-micro/errors"
-	log "github.com/ebelanja/go-micro/logger"
-	"github.com/ebelanja/go-micro/network"
-	pbNet "github.com/ebelanja/go-micro/network/service/proto"
-	"github.com/ebelanja/go-micro/router"
-	pbRtr "github.com/ebelanja/go-micro/router/service/proto"
+	"xinhari.com/xinhari/errors"
+	log "xinhari.com/xinhari/logger"
+	"xinhari.com/xinhari/network"
+	pbNet "xinhari.com/xinhari/network/service/proto"
+	"xinhari.com/xinhari/router"
+	pbRtr "xinhari.com/xinhari/router/service/proto"
 )
 
 // Network implements network handler

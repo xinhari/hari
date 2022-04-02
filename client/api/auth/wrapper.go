@@ -7,13 +7,13 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/ebelanja/go-micro/api/resolver"
-	"github.com/ebelanja/go-micro/api/server"
-	"github.com/ebelanja/go-micro/auth"
-	"github.com/ebelanja/go-micro/logger"
-	"github.com/ebelanja/go-micro/util/ctx"
 	inauth "xinhari.com/hari/internal/auth"
 	"xinhari.com/hari/internal/namespace"
+	"xinhari.com/xinhari/api/resolver"
+	"xinhari.com/xinhari/api/server"
+	"xinhari.com/xinhari/auth"
+	"xinhari.com/xinhari/logger"
+	"xinhari.com/xinhari/util/ctx"
 )
 
 // Wrapper wraps a handler and authenticates requests

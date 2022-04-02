@@ -5,14 +5,14 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/ebelanja/go-micro"
-	"github.com/ebelanja/go-micro/config/cmd"
-	log "github.com/ebelanja/go-micro/logger"
-	gorun "github.com/ebelanja/go-micro/runtime"
-	handler "github.com/ebelanja/go-micro/util/file"
 	"github.com/micro/cli/v2"
 	"xinhari.com/hari/internal/platform"
 	"xinhari.com/hari/internal/update"
+	"xinhari.com/xinhari"
+	"xinhari.com/xinhari/config/cmd"
+	log "xinhari.com/xinhari/logger"
+	gorun "xinhari.com/xinhari/runtime"
+	handler "xinhari.com/xinhari/util/file"
 )
 
 var (

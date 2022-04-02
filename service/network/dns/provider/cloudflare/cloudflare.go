@@ -10,9 +10,9 @@ import (
 	miekdns "github.com/miekg/dns"
 	"github.com/pkg/errors"
 
-	log "github.com/ebelanja/go-micro/logger"
 	dns "xinhari.com/hari/service/network/dns/proto/dns"
 	"xinhari.com/hari/service/network/dns/provider"
+	log "xinhari.com/xinhari/logger"
 )
 
 type cfProvider struct {

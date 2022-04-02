@@ -8,11 +8,11 @@ import (
 	"time"
 
 	"github.com/micro/cli/v2"
-	"github.com/ebelanja/go-micro/agent/command"
-	"github.com/ebelanja/go-micro/agent/input"
+	"xinhari.com/xinhari/agent/command"
+	"xinhari.com/xinhari/agent/input"
 
-	"github.com/ebelanja/go-micro"
-	"github.com/ebelanja/go-micro/registry/memory"
+	"xinhari.com/xinhari"
+	"xinhari.com/xinhari/registry/memory"
 )
 
 type testInput struct {

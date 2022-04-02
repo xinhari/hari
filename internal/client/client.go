@@ -3,14 +3,14 @@ package client
 import (
 	"context"
 
-	"github.com/ebelanja/go-micro/auth"
-	"github.com/ebelanja/go-micro/client"
-	"github.com/ebelanja/go-micro/client/grpc"
-	"github.com/ebelanja/go-micro/metadata"
 	ccli "github.com/micro/cli/v2"
 	"xinhari.com/hari/client/cli/util"
 	cliutil "xinhari.com/hari/client/cli/util"
 	"xinhari.com/hari/internal/config"
+	"xinhari.com/xinhari/auth"
+	"xinhari.com/xinhari/client"
+	"xinhari.com/xinhari/client/grpc"
+	"xinhari.com/xinhari/metadata"
 )
 
 // New returns a wrapped grpc client which will inject the

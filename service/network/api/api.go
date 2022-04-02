@@ -11,12 +11,12 @@ import (
 	"time"
 
 	"github.com/micro/cli/v2"
-	"github.com/ebelanja/go-micro"
-	goapi "github.com/ebelanja/go-micro/api"
-	log "github.com/ebelanja/go-micro/logger"
-	"github.com/ebelanja/go-micro/network"
-	"github.com/ebelanja/go-micro/network/resolver"
-	pb "github.com/ebelanja/go-micro/network/service/proto"
+	"xinhari.com/xinhari"
+	goapi "xinhari.com/xinhari/api"
+	log "xinhari.com/xinhari/logger"
+	"xinhari.com/xinhari/network"
+	"xinhari.com/xinhari/network/resolver"
+	pb "xinhari.com/xinhari/network/service/proto"
 )
 
 var (

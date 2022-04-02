@@ -12,9 +12,9 @@ import (
 
 import (
 	context "context"
-	api "github.com/ebelanja/go-micro/api"
-	client "github.com/ebelanja/go-micro/client"
-	server "github.com/ebelanja/go-micro/server"
+	api "xinhari.com/xinhari/api"
+	client "xinhari.com/xinhari/client"
+	server "xinhari.com/xinhari/server"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

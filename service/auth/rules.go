@@ -8,10 +8,10 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	pb "github.com/ebelanja/go-micro/auth/service/proto"
-	"github.com/ebelanja/go-micro/errors"
 	"github.com/micro/cli/v2"
 	"xinhari.com/hari/internal/client"
+	pb "xinhari.com/xinhari/auth/service/proto"
+	"xinhari.com/xinhari/errors"
 )
 
 func listRules(ctx *cli.Context) {

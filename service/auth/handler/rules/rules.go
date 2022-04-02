@@ -6,12 +6,12 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ebelanja/go-micro/auth"
-	pb "github.com/ebelanja/go-micro/auth/service/proto"
-	"github.com/ebelanja/go-micro/errors"
-	"github.com/ebelanja/go-micro/store"
-	memStore "github.com/ebelanja/go-micro/store/memory"
 	"xinhari.com/hari/internal/namespace"
+	"xinhari.com/xinhari/auth"
+	pb "xinhari.com/xinhari/auth/service/proto"
+	"xinhari.com/xinhari/errors"
+	"xinhari.com/xinhari/store"
+	memStore "xinhari.com/xinhari/store/memory"
 )
 
 const (

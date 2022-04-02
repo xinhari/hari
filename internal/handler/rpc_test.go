@@ -9,12 +9,12 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/ebelanja/go-micro/client"
-	"github.com/ebelanja/go-micro/client/selector"
-	"github.com/ebelanja/go-micro/config/cmd"
-	"github.com/ebelanja/go-micro/metadata"
-	"github.com/ebelanja/go-micro/registry/memory"
-	"github.com/ebelanja/go-micro/server"
+	"xinhari.com/xinhari/client"
+	"xinhari.com/xinhari/client/selector"
+	"xinhari.com/xinhari/config/cmd"
+	"xinhari.com/xinhari/metadata"
+	"xinhari.com/xinhari/registry/memory"
+	"xinhari.com/xinhari/server"
 )
 
 type TestHandler struct {

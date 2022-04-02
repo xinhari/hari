@@ -11,20 +11,20 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ebelanja/go-micro"
 	"github.com/micro/cli/v2"
+	"xinhari.com/xinhari"
 
-	"github.com/ebelanja/go-micro/agent/command"
-	"github.com/ebelanja/go-micro/agent/input"
-	log "github.com/ebelanja/go-micro/logger"
 	botc "xinhari.com/hari/internal/command/bot"
+	"xinhari.com/xinhari/agent/command"
+	"xinhari.com/xinhari/agent/input"
+	log "xinhari.com/xinhari/logger"
 
-	proto "github.com/ebelanja/go-micro/agent/proto"
+	proto "xinhari.com/xinhari/agent/proto"
 
 	// inputs
-	_ "github.com/ebelanja/go-micro/agent/input/discord"
-	_ "github.com/ebelanja/go-micro/agent/input/slack"
-	_ "github.com/ebelanja/go-micro/agent/input/telegram"
+	_ "xinhari.com/xinhari/agent/input/discord"
+	_ "xinhari.com/xinhari/agent/input/slack"
+	_ "xinhari.com/xinhari/agent/input/telegram"
 )
 
 type bot struct {

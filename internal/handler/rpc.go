@@ -7,11 +7,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ebelanja/go-micro/api/server/cors"
-	"github.com/ebelanja/go-micro/client"
-	"github.com/ebelanja/go-micro/config/cmd"
-	"github.com/ebelanja/go-micro/errors"
 	"xinhari.com/hari/internal/helper"
+	"xinhari.com/xinhari/api/server/cors"
+	"xinhari.com/xinhari/client"
+	"xinhari.com/xinhari/config/cmd"
+	"xinhari.com/xinhari/errors"
 )
 
 type rpcRequest struct {

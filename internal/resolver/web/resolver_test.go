@@ -5,10 +5,10 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/ebelanja/go-micro/api/resolver"
-	"github.com/ebelanja/go-micro/client/selector"
-	"github.com/ebelanja/go-micro/registry"
-	"github.com/ebelanja/go-micro/registry/memory"
+	"xinhari.com/xinhari/api/resolver"
+	"xinhari.com/xinhari/client/selector"
+	"xinhari.com/xinhari/registry"
+	"xinhari.com/xinhari/registry/memory"
 )
 
 func TestWebResolver(t *testing.T) {

@@ -3,7 +3,7 @@ package handler
 import (
 	"errors"
 
-	proto "github.com/ebelanja/go-micro/config/source/service/proto"
+	proto "xinhari.com/xinhari/config/source/service/proto"
 )
 
 type watcher struct {

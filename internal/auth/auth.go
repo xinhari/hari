@@ -1,6 +1,6 @@
 package auth
 
-import "github.com/ebelanja/go-micro/auth"
+import "xinhari.com/xinhari/auth"
 
 // TokenCookieName is the name of the cookie which stores the auth token
 const TokenCookieName = "micro-token"

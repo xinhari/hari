@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/ebelanja/go-micro/runtime"
-	"github.com/ebelanja/go-micro/store"
 	"xinhari.com/hari/internal/namespace"
+	"xinhari.com/xinhari/runtime"
+	"xinhari.com/xinhari/store"
 )
 
 // service is the object persisted in the store

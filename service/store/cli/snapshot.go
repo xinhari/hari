@@ -3,10 +3,10 @@ package cli
 import (
 	"net/url"
 
-	"github.com/ebelanja/go-micro/logger"
 	"github.com/micro/cli/v2"
 	"github.com/pkg/errors"
 	"xinhari.com/hari/service/store/snapshot"
+	"xinhari.com/xinhari/logger"
 )
 
 // Snapshot in the entrypoint for micro store snapshot

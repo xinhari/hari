@@ -8,9 +8,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/ebelanja/go-micro/errors"
-	"github.com/ebelanja/go-micro/proxy"
-	"github.com/ebelanja/go-micro/server"
+	"xinhari.com/xinhari/errors"
+	"xinhari.com/xinhari/proxy"
+	"xinhari.com/xinhari/server"
 )
 
 type Proxy struct {

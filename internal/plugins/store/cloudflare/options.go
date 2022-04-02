@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/ebelanja/go-micro/store"
+	"xinhari.com/xinhari/store"
 )
 
 func getOption(ctx context.Context, key string) string {

@@ -5,11 +5,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ebelanja/go-micro/logger"
-	"github.com/ebelanja/go-micro/runtime"
-	"github.com/ebelanja/go-micro/store"
 	"github.com/google/uuid"
 	"xinhari.com/hari/internal/namespace"
+	"xinhari.com/xinhari/logger"
+	"xinhari.com/xinhari/runtime"
+	"xinhari.com/xinhari/store"
 )
 
 var (

@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ebelanja/go-micro/store"
+	"xinhari.com/xinhari/store"
 )
 
 func TestFileSnapshot(t *testing.T) {

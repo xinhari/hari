@@ -6,10 +6,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	log "github.com/ebelanja/go-micro/logger"
-	goplugin "github.com/ebelanja/go-micro/plugin"
 	"github.com/micro/cli/v2"
 	"xinhari.com/hari/plugin"
+	log "xinhari.com/xinhari/logger"
+	goplugin "xinhari.com/xinhari/plugin"
 )
 
 func build(ctx *cli.Context) error {

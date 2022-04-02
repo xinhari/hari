@@ -5,17 +5,17 @@ import (
 	"os"
 	"strings"
 
-	"github.com/ebelanja/go-micro"
-	log "github.com/ebelanja/go-micro/logger"
-	"github.com/ebelanja/go-micro/proxy"
-	"github.com/ebelanja/go-micro/proxy/grpc"
-	"github.com/ebelanja/go-micro/proxy/http"
-	"github.com/ebelanja/go-micro/proxy/mucp"
-	"github.com/ebelanja/go-micro/runtime"
-	"github.com/ebelanja/go-micro/server"
 	"github.com/micro/cli/v2"
 	"xinhari.com/hari/service/handler/exec"
 	"xinhari.com/hari/service/handler/file"
+	"xinhari.com/xinhari"
+	log "xinhari.com/xinhari/logger"
+	"xinhari.com/xinhari/proxy"
+	"xinhari.com/xinhari/proxy/grpc"
+	"xinhari.com/xinhari/proxy/http"
+	"xinhari.com/xinhari/proxy/mucp"
+	"xinhari.com/xinhari/runtime"
+	"xinhari.com/xinhari/server"
 )
 
 func Run(ctx *cli.Context, opts ...micro.Option) {

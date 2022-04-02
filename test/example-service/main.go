@@ -4,8 +4,8 @@ import (
 	"example-service/handler"
 	example "example-service/proto"
 
-	"github.com/ebelanja/go-micro"
-	"github.com/ebelanja/go-micro/util/log"
+	"xinhari.com/xinhari"
+	"xinhari.com/xinhari/util/log"
 )
 
 func main() {

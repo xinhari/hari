@@ -1,11 +1,11 @@
 package manager
 
 import (
-	"github.com/ebelanja/go-micro/config/cmd"
-	"github.com/ebelanja/go-micro/runtime"
-	"github.com/ebelanja/go-micro/store"
-	"github.com/ebelanja/go-micro/store/memory"
 	"xinhari.com/hari/internal/namespace"
+	"xinhari.com/xinhari/config/cmd"
+	"xinhari.com/xinhari/runtime"
+	"xinhari.com/xinhari/store"
+	"xinhari.com/xinhari/store/memory"
 )
 
 // Init initializes the runtime

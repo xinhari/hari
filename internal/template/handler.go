@@ -23,7 +23,7 @@ func (e *{{title .Alias}}) Call(ctx context.Context, req *{{dehyphen .Alias}}.Re
 import (
 	"context"
 
-	log "github.com/ebelanja/go-micro/logger"
+	log "xinhari.com/xinhari/logger"
 
 	{{dehyphen .Alias}} "{{.Dir}}/proto"
 )
@@ -73,7 +73,7 @@ func (e *{{title .Alias}}) PingPong(ctx context.Context, stream {{dehyphen .Alia
 import (
 	"context"
 
-	log "github.com/ebelanja/go-micro/logger"
+	log "xinhari.com/xinhari/logger"
 
 	{{dehyphen .Alias}} "{{.Dir}}/proto"
 )
@@ -90,7 +90,7 @@ func (e *{{title .Alias}}) Handle(ctx context.Context, msg *{{dehyphen .Alias}}.
 
 import (
 	"context"
-	log "github.com/ebelanja/go-micro/logger"
+	log "xinhari.com/xinhari/logger"
 
 	{{dehyphen .Alias}} "{{.Dir}}/proto"
 )
@@ -113,11 +113,11 @@ func Handler(ctx context.Context, msg *{{dehyphen .Alias}}.Message) error {
 import (
 	"context"
 	"encoding/json"
-	log "github.com/ebelanja/go-micro/logger"
+	log "xinhari.com/xinhari/logger"
 
 	"{{.Dir}}/client"
-	"github.com/ebelanja/go-micro/errors"
-	api "github.com/ebelanja/go-micro/api/proto"
+	"xinhari.com/xinhari/errors"
+	api "xinhari.com/xinhari/api/proto"
 	{{dehyphen .Alias}} "path/to/service/proto"
 )
 
@@ -168,7 +168,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/ebelanja/go-micro/client"
+	"xinhari.com/xinhari/client"
 	{{dehyphen .Alias}} "path/to/service/proto"
 )
 

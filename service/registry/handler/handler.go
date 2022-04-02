@@ -5,14 +5,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ebelanja/go-micro"
-	"github.com/ebelanja/go-micro/auth"
-	"github.com/ebelanja/go-micro/errors"
-	log "github.com/ebelanja/go-micro/logger"
-	"github.com/ebelanja/go-micro/registry"
-	"github.com/ebelanja/go-micro/registry/service"
-	pb "github.com/ebelanja/go-micro/registry/service/proto"
 	"xinhari.com/hari/internal/namespace"
+	"xinhari.com/xinhari"
+	"xinhari.com/xinhari/auth"
+	"xinhari.com/xinhari/errors"
+	log "xinhari.com/xinhari/logger"
+	"xinhari.com/xinhari/registry"
+	"xinhari.com/xinhari/registry/service"
+	pb "xinhari.com/xinhari/registry/service/proto"
 )
 
 type Registry struct {

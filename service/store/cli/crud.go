@@ -11,9 +11,9 @@ import (
 
 	"github.com/dustin/go-humanize"
 	"github.com/micro/cli/v2"
-	"github.com/ebelanja/go-micro/config/cmd"
-	"github.com/ebelanja/go-micro/store"
 	"github.com/pkg/errors"
+	"xinhari.com/xinhari/config/cmd"
+	"xinhari.com/xinhari/store"
 )
 
 // Read gets something from the store

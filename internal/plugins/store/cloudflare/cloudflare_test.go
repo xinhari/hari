@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ebelanja/go-micro/store"
+	"xinhari.com/xinhari/store"
 )
 
 func TestCloudflare(t *testing.T) {

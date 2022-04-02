@@ -7,14 +7,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ebelanja/go-micro/client"
-	cr "github.com/ebelanja/go-micro/config/reader"
-	jr "github.com/ebelanja/go-micro/config/reader/json"
-	"github.com/ebelanja/go-micro/config/source"
-	pb "github.com/ebelanja/go-micro/config/source/service/proto"
-	"github.com/ebelanja/go-micro/errors"
-	"github.com/ebelanja/go-micro/store"
 	"xinhari.com/hari/internal/namespace"
+	"xinhari.com/xinhari/client"
+	cr "xinhari.com/xinhari/config/reader"
+	jr "xinhari.com/xinhari/config/reader/json"
+	"xinhari.com/xinhari/config/source"
+	pb "xinhari.com/xinhari/config/source/service/proto"
+	"xinhari.com/xinhari/errors"
+	"xinhari.com/xinhari/store"
 )
 
 var (

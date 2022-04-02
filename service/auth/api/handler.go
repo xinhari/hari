@@ -3,10 +3,10 @@ package api
 import (
 	"context"
 
-	"github.com/ebelanja/go-micro"
-	"github.com/ebelanja/go-micro/auth"
-	"github.com/ebelanja/go-micro/errors"
 	pb "xinhari.com/hari/service/auth/api/proto"
+	"xinhari.com/xinhari"
+	"xinhari.com/xinhari/auth"
+	"xinhari.com/xinhari/errors"
 )
 
 // Handler is an impementation of the auth api

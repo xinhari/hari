@@ -34,7 +34,7 @@ RUN cd ${GOPATH}/src/example-service && go get && \
     go get github.com/ebelanja/micro-examples/helloworld
 
 # RUN go get github.com/ebelanja/micro-services/logspammer
-RUN go get github.com/ebelanja/go-micro
+RUN go get xinhari.com/xinhari
 
 COPY ./micro /micro
 

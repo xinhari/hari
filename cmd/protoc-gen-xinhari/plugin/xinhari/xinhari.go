@@ -15,10 +15,10 @@ import (
 // Paths for packages used by code generated in this file,
 // relative to the import_prefix of the generator.Generator.
 const (
-	apiPkgPath     = "github.com/ebelanja/go-micro/api"
+	apiPkgPath     = "xinhari.com/xinhari/api"
 	contextPkgPath = "context"
-	clientPkgPath  = "github.com/ebelanja/go-micro/client"
-	serverPkgPath  = "github.com/ebelanja/go-micro/server"
+	clientPkgPath  = "xinhari.com/xinhari/client"
+	serverPkgPath  = "xinhari.com/xinhari/server"
 )
 
 func init() {

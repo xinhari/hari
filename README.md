@@ -62,7 +62,7 @@ query them directly.
 
 To write applications which run on Micro you can use the framework Go Micro.
 
-- **go-micro:** Leverage the powerful [Go Micro](https://github.com/ebelanja/go-micro) framework to develop microservices easily and quickly.
+- **go-micro:** Leverage the powerful [Go Micro](https://xinhari.com/xinhari) framework to develop microservices easily and quickly.
 Go Micro abstracts away the complexity of distributed systems and provides simpler abstractions to build highly scalable microservices.
 
 ## Install

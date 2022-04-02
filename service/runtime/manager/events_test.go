@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ebelanja/go-micro/runtime"
-	"github.com/ebelanja/go-micro/store/memory"
 	"xinhari.com/hari/internal/namespace"
+	"xinhari.com/xinhari/runtime"
+	"xinhari.com/xinhari/store/memory"
 )
 
 func TestEvents(t *testing.T) {

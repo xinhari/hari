@@ -158,7 +158,7 @@ func copyAPIProto(c config) (string, error) {
 
 	contents, err := ioutil.ReadDir(filepath.Join(basedir, "pkg", "mod", "github.com", "ebelanja"))
 	if err != nil {
-		return "", errors.New("Unable to find go-micro version. Please try `go get github.com/ebelanja/go-micro`")
+		return "", errors.New("Unable to find go-micro version. Please try `go get xinhari.com/xinhari`")
 	}
 	newestDir := ""
 	for _, v := range contents {
@@ -167,7 +167,7 @@ func copyAPIProto(c config) (string, error) {
 		}
 	}
 	if newestDir == "" {
-		return "", errors.New("Unable to find go-micro version. Please try `go get github.com/ebelanja/go-micro`")
+		return "", errors.New("Unable to find go-micro version. Please try `go get xinhari.com/xinhari`")
 	}
 
 	input, err := ioutil.ReadFile(fmt.Sprintf("%s/pkg/mod/github.com/ebelanja/%s/api/proto/api.proto", basedir, newestDir))

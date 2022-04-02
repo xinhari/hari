@@ -4,9 +4,9 @@ import (
 	"context"
 	"sync"
 
-	"github.com/ebelanja/go-micro/debug/log"
-	"github.com/ebelanja/go-micro/errors"
 	pb "xinhari.com/hari/service/debug/log/proto"
+	"xinhari.com/xinhari/debug/log"
+	"xinhari.com/xinhari/errors"
 )
 
 type Log struct {

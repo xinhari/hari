@@ -7,11 +7,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ebelanja/go-micro/errors"
-	"github.com/ebelanja/go-micro/metadata"
-	"github.com/ebelanja/go-micro/store"
-	pb "github.com/ebelanja/go-micro/store/service/proto"
 	"xinhari.com/hari/internal/namespace"
+	"xinhari.com/xinhari/errors"
+	"xinhari.com/xinhari/metadata"
+	"xinhari.com/xinhari/store"
+	pb "xinhari.com/xinhari/store/service/proto"
 )
 
 type Store struct {

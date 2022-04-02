@@ -4,12 +4,12 @@ import (
 	"os"
 	"path"
 
-	"github.com/ebelanja/go-micro"
-	log "github.com/ebelanja/go-micro/logger"
 	"github.com/netdata/go-orchestrator"
 	"github.com/netdata/go-orchestrator/cli"
 	"github.com/netdata/go-orchestrator/pkg/multipath"
 	plugin "xinhari.com/hari/service/debug/collector/micro"
+	"xinhari.com/xinhari"
+	log "xinhari.com/xinhari/logger"
 )
 
 var (

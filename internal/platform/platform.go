@@ -7,11 +7,11 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/ebelanja/go-micro/config/cmd"
-	log "github.com/ebelanja/go-micro/logger"
-	gorun "github.com/ebelanja/go-micro/runtime"
-	signalutil "github.com/ebelanja/go-micro/util/signal"
 	"github.com/micro/cli/v2"
+	"xinhari.com/xinhari/config/cmd"
+	log "xinhari.com/xinhari/logger"
+	gorun "xinhari.com/xinhari/runtime"
+	signalutil "xinhari.com/xinhari/util/signal"
 
 	// include usage
 

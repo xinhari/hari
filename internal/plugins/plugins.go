@@ -2,12 +2,12 @@
 package plugins
 
 import (
-	"github.com/ebelanja/go-micro/config/cmd"
+	"xinhari.com/xinhari/config/cmd"
 
 	// import specific plugins
-	ckStore "github.com/ebelanja/go-micro/store/cockroach"
-	fileStore "github.com/ebelanja/go-micro/store/file"
-	memStore "github.com/ebelanja/go-micro/store/memory"
+	ckStore "xinhari.com/xinhari/store/cockroach"
+	fileStore "xinhari.com/xinhari/store/file"
+	memStore "xinhari.com/xinhari/store/memory"
 
 	// we only use CF internally for certs
 	cfStore "xinhari.com/hari/internal/plugins/store/cloudflare"

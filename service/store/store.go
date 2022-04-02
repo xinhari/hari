@@ -1,15 +1,15 @@
 package store
 
 import (
-	"github.com/ebelanja/go-micro"
-	log "github.com/ebelanja/go-micro/logger"
-	"github.com/ebelanja/go-micro/store"
-	pb "github.com/ebelanja/go-micro/store/service/proto"
 	"github.com/micro/cli/v2"
 	"github.com/pkg/errors"
 	mcli "xinhari.com/hari/client/cli"
 	"xinhari.com/hari/internal/helper"
 	"xinhari.com/hari/service/store/handler"
+	"xinhari.com/xinhari"
+	log "xinhari.com/xinhari/logger"
+	"xinhari.com/xinhari/store"
+	pb "xinhari.com/xinhari/store/service/proto"
 )
 
 var (

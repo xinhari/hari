@@ -5,9 +5,9 @@ import (
 	"time"
 
 	"github.com/micro/cli/v2"
-	"github.com/ebelanja/go-micro"
-	"github.com/ebelanja/go-micro/debug/service"
-	log "github.com/ebelanja/go-micro/logger"
+	"xinhari.com/xinhari"
+	"xinhari.com/xinhari/debug/service"
+	log "xinhari.com/xinhari/logger"
 )
 
 const (

@@ -7,10 +7,10 @@ import (
 	"regexp"
 	"strings"
 
-	res "github.com/ebelanja/go-micro/api/resolver"
-	"github.com/ebelanja/go-micro/client/selector"
 	"golang.org/x/net/publicsuffix"
 	"xinhari.com/hari/internal/namespace"
+	res "xinhari.com/xinhari/api/resolver"
+	"xinhari.com/xinhari/client/selector"
 )
 
 var (

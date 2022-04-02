@@ -6,13 +6,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ebelanja/go-micro/client"
-	"github.com/ebelanja/go-micro/config/cmd"
-	debug "github.com/ebelanja/go-micro/debug/service/proto"
-	"github.com/ebelanja/go-micro/errors"
-	"github.com/ebelanja/go-micro/registry"
-	"github.com/ebelanja/go-micro/util/ring"
 	stats "xinhari.com/hari/service/debug/stats/proto"
+	"xinhari.com/xinhari/client"
+	"xinhari.com/xinhari/config/cmd"
+	debug "xinhari.com/xinhari/debug/service/proto"
+	"xinhari.com/xinhari/errors"
+	"xinhari.com/xinhari/registry"
+	"xinhari.com/xinhari/util/ring"
 )
 
 // New initialises and returns a new Stats service handler

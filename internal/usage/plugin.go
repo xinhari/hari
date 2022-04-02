@@ -7,10 +7,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ebelanja/go-micro/registry"
-	"github.com/ebelanja/go-micro/util/backoff"
 	"github.com/micro/cli/v2"
 	"xinhari.com/hari/plugin"
+	"xinhari.com/xinhari/registry"
+	"xinhari.com/xinhari/util/backoff"
 )
 
 func init() {

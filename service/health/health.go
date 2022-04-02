@@ -5,14 +5,14 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/ebelanja/go-micro"
-	"github.com/ebelanja/go-micro/client"
-	proto "github.com/ebelanja/go-micro/debug/service/proto"
-	log "github.com/ebelanja/go-micro/logger"
 	"github.com/micro/cli/v2"
 	"golang.org/x/net/context"
 	mcli "xinhari.com/hari/client/cli"
 	qcli "xinhari.com/hari/internal/command/cli"
+	"xinhari.com/xinhari"
+	"xinhari.com/xinhari/client"
+	proto "xinhari.com/xinhari/debug/service/proto"
+	log "xinhari.com/xinhari/logger"
 )
 
 var (

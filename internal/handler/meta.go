@@ -3,18 +3,18 @@ package handler
 import (
 	"net/http"
 
-	"github.com/ebelanja/go-micro"
-	"github.com/ebelanja/go-micro/api/handler"
-	"github.com/ebelanja/go-micro/api/handler/event"
-	"github.com/ebelanja/go-micro/api/router"
-	"github.com/ebelanja/go-micro/client"
-	"github.com/ebelanja/go-micro/errors"
+	"xinhari.com/xinhari"
+	"xinhari.com/xinhari/api/handler"
+	"xinhari.com/xinhari/api/handler/event"
+	"xinhari.com/xinhari/api/router"
+	"xinhari.com/xinhari/client"
+	"xinhari.com/xinhari/errors"
 
 	// TODO: only import handler package
-	aapi "github.com/ebelanja/go-micro/api/handler/api"
-	ahttp "github.com/ebelanja/go-micro/api/handler/http"
-	arpc "github.com/ebelanja/go-micro/api/handler/rpc"
-	aweb "github.com/ebelanja/go-micro/api/handler/web"
+	aapi "xinhari.com/xinhari/api/handler/api"
+	ahttp "xinhari.com/xinhari/api/handler/http"
+	arpc "xinhari.com/xinhari/api/handler/rpc"
+	aweb "xinhari.com/xinhari/api/handler/web"
 )
 
 type metaHandler struct {

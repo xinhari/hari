@@ -5,15 +5,15 @@ import (
 	"context"
 	"time"
 
-	"github.com/ebelanja/go-micro"
-	log "github.com/ebelanja/go-micro/logger"
-	"github.com/ebelanja/go-micro/registry"
-	"github.com/ebelanja/go-micro/registry/service"
-	pb "github.com/ebelanja/go-micro/registry/service/proto"
 	"github.com/micro/cli/v2"
 	rcli "xinhari.com/hari/client/cli"
 	"xinhari.com/hari/internal/helper"
 	"xinhari.com/hari/service/registry/handler"
+	"xinhari.com/xinhari"
+	log "xinhari.com/xinhari/logger"
+	"xinhari.com/xinhari/registry"
+	"xinhari.com/xinhari/registry/service"
+	pb "xinhari.com/xinhari/registry/service/proto"
 )
 
 var (

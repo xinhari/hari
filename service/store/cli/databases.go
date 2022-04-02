@@ -6,8 +6,8 @@ import (
 	"fmt"
 
 	"github.com/micro/cli/v2"
-	"github.com/ebelanja/go-micro/config/cmd"
-	storeproto "github.com/ebelanja/go-micro/store/service/proto"
+	"xinhari.com/xinhari/config/cmd"
+	storeproto "xinhari.com/xinhari/store/service/proto"
 )
 
 // Databases is the entrypoint for micro store databases

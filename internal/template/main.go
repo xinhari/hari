@@ -4,8 +4,8 @@ var (
 	MainFNC = `package main
 
 import (
-  log	"github.com/ebelanja/go-micro/logger"
-	"github.com/ebelanja/go-micro"
+  log	"xinhari.com/xinhari/logger"
+	"xinhari.com/xinhari"
 	"{{.Dir}}/handler"
 	"{{.Dir}}/subscriber"
 )
@@ -36,8 +36,8 @@ func main() {
 	MainSRV = `package main
 
 import (
-	log "github.com/ebelanja/go-micro/logger"
-	"github.com/ebelanja/go-micro"
+	log "xinhari.com/xinhari/logger"
+	"xinhari.com/xinhari"
 	"{{.Dir}}/handler"
 	"{{.Dir}}/subscriber"
 
@@ -69,9 +69,9 @@ func main() {
 	MainAPI = `package main
 
 import (
-	log "github.com/ebelanja/go-micro/logger"
+	log "xinhari.com/xinhari/logger"
 
-	"github.com/ebelanja/go-micro"
+	"xinhari.com/xinhari"
 	"{{.Dir}}/handler"
 	"{{.Dir}}/client"
 
@@ -103,9 +103,9 @@ func main() {
 	MainWEB = `package main
 
 import (
-        log "github.com/ebelanja/go-micro/logger"
+        log "xinhari.com/xinhari/logger"
 	      "net/http"
-        "github.com/ebelanja/go-micro/web"
+        "xinhari.com/xinhari/web"
         "{{.Dir}}/handler"
 )
 

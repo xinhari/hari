@@ -3,9 +3,9 @@ package manager
 import (
 	"testing"
 
-	"github.com/ebelanja/go-micro/runtime"
-	"github.com/ebelanja/go-micro/store/memory"
 	"xinhari.com/hari/internal/namespace"
+	"xinhari.com/xinhari/runtime"
+	"xinhari.com/xinhari/store/memory"
 )
 
 func TestServices(t *testing.T) {

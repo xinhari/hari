@@ -1,6 +1,6 @@
 package manager
 
-import "github.com/ebelanja/go-micro/store"
+import "xinhari.com/xinhari/store"
 
 // Options for the runtime manager
 type Options struct {
