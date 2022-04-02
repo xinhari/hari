@@ -28,7 +28,7 @@ func testServerAuth(t *t) {
 func basicAuthSuite(serv server, t *t) {
 	// Execute first command in read to wait for store service
 	// to start up
-	try("Calling micro auth list accounts", t, func() ([]byte, error) {
+	try("Calling hari auth list accounts", t, func() ([]byte, error) {
 		readCmd := exec.Command("hari", serv.envFlag(), "auth", "list", "accounts")
 		outp, err := readCmd.CombinedOutput()
 		if err != nil {
