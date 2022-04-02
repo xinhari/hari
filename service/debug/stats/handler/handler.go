@@ -12,7 +12,7 @@ import (
 	"github.com/ebelanja/go-micro/errors"
 	"github.com/ebelanja/go-micro/registry"
 	"github.com/ebelanja/go-micro/util/ring"
-	stats "github.com/ebelanja/hari/service/debug/stats/proto"
+	stats "xinhari.com/hari/service/debug/stats/proto"
 )
 
 // New initialises and returns a new Stats service handler

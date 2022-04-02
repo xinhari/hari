@@ -5,7 +5,7 @@ import (
 	"github.com/ebelanja/go-micro/runtime"
 	"github.com/ebelanja/go-micro/store"
 	"github.com/ebelanja/go-micro/store/memory"
-	"github.com/ebelanja/hari/internal/namespace"
+	"xinhari.com/hari/internal/namespace"
 )
 
 // Init initializes the runtime

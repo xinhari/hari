@@ -3,7 +3,7 @@ package tunnel
 import (
 	"fmt"
 
-	"github.com/ebelanja/hari/plugin"
+	"xinhari.com/hari/plugin"
 )
 
 var (

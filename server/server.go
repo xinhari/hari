@@ -10,9 +10,9 @@ import (
 	log "github.com/ebelanja/go-micro/logger"
 	gorun "github.com/ebelanja/go-micro/runtime"
 	handler "github.com/ebelanja/go-micro/util/file"
-	"github.com/ebelanja/hari/internal/platform"
-	"github.com/ebelanja/hari/internal/update"
 	"github.com/micro/cli/v2"
+	"xinhari.com/hari/internal/platform"
+	"xinhari.com/hari/internal/update"
 )
 
 var (

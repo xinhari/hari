@@ -9,8 +9,8 @@ import (
 
 	"github.com/ebelanja/go-micro/registry"
 	"github.com/ebelanja/go-micro/util/backoff"
-	"github.com/ebelanja/hari/plugin"
 	"github.com/micro/cli/v2"
+	"xinhari.com/hari/plugin"
 )
 
 func init() {

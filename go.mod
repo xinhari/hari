@@ -1,4 +1,4 @@
-module github.com/ebelanja/hari
+module xinhari.com/hari
 
 go 1.13
 

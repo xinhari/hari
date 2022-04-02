@@ -6,8 +6,8 @@ import (
 	"os"
 	"strings"
 
-	storecli "github.com/ebelanja/hari/service/store/cli"
 	"github.com/micro/cli/v2"
+	storecli "xinhari.com/hari/service/store/cli"
 
 	"github.com/chzyer/readline"
 )

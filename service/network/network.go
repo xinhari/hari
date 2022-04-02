@@ -23,12 +23,12 @@ import (
 	"github.com/ebelanja/go-micro/transport/quic"
 	"github.com/ebelanja/go-micro/tunnel"
 	"github.com/ebelanja/go-micro/util/mux"
-	mcli "github.com/ebelanja/hari/client/cli"
-	"github.com/ebelanja/hari/internal/helper"
-	"github.com/ebelanja/hari/service/network/api"
-	netdns "github.com/ebelanja/hari/service/network/dns"
-	"github.com/ebelanja/hari/service/network/handler"
 	"github.com/micro/cli/v2"
+	mcli "xinhari.com/hari/client/cli"
+	"xinhari.com/hari/internal/helper"
+	"xinhari.com/hari/service/network/api"
+	netdns "xinhari.com/hari/service/network/dns"
+	"xinhari.com/hari/service/network/handler"
 )
 
 var (

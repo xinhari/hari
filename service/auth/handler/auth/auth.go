@@ -17,8 +17,8 @@ import (
 	"github.com/ebelanja/go-micro/logger"
 	"github.com/ebelanja/go-micro/store"
 	memStore "github.com/ebelanja/go-micro/store/memory"
-	"github.com/ebelanja/hari/internal/namespace"
 	"golang.org/x/crypto/bcrypt"
+	"xinhari.com/hari/internal/namespace"
 )
 
 const (

@@ -7,10 +7,10 @@ import (
 	"github.com/ebelanja/go-micro/client"
 	"github.com/ebelanja/go-micro/client/grpc"
 	"github.com/ebelanja/go-micro/metadata"
-	"github.com/ebelanja/hari/client/cli/util"
-	cliutil "github.com/ebelanja/hari/client/cli/util"
-	"github.com/ebelanja/hari/internal/config"
 	ccli "github.com/micro/cli/v2"
+	"xinhari.com/hari/client/cli/util"
+	cliutil "xinhari.com/hari/client/cli/util"
+	"xinhari.com/hari/internal/config"
 )
 
 // New returns a wrapped grpc client which will inject the

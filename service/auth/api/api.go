@@ -5,7 +5,7 @@ import (
 	log "github.com/ebelanja/go-micro/logger"
 	"github.com/micro/cli/v2"
 
-	pb "github.com/ebelanja/hari/service/auth/api/proto"
+	pb "xinhari.com/hari/service/auth/api/proto"
 )
 
 var (

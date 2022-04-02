@@ -8,8 +8,8 @@ import (
 	"github.com/ebelanja/go-micro/logger"
 	"github.com/ebelanja/go-micro/runtime"
 	"github.com/ebelanja/go-micro/store"
-	"github.com/ebelanja/hari/internal/namespace"
 	"github.com/google/uuid"
+	"xinhari.com/hari/internal/namespace"
 )
 
 var (

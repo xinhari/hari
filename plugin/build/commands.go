@@ -8,8 +8,8 @@ import (
 
 	log "github.com/ebelanja/go-micro/logger"
 	goplugin "github.com/ebelanja/go-micro/plugin"
-	"github.com/ebelanja/hari/plugin"
 	"github.com/micro/cli/v2"
+	"xinhari.com/hari/plugin"
 )
 
 func build(ctx *cli.Context) error {

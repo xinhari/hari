@@ -20,10 +20,10 @@ import (
 	"github.com/ebelanja/go-micro/runtime/local/git"
 	srvRuntime "github.com/ebelanja/go-micro/runtime/service"
 	"github.com/ebelanja/go-micro/util/file"
-	cliutil "github.com/ebelanja/hari/client/cli/util"
-	"github.com/ebelanja/hari/internal/client"
-	"github.com/ebelanja/hari/service/runtime/handler"
 	"github.com/micro/cli/v2"
+	cliutil "xinhari.com/hari/client/cli/util"
+	"xinhari.com/hari/internal/client"
+	"xinhari.com/hari/service/runtime/handler"
 )
 
 const (

@@ -9,10 +9,10 @@ import (
 	log "github.com/ebelanja/go-micro/logger"
 	"github.com/ebelanja/go-micro/runtime"
 	pb "github.com/ebelanja/go-micro/runtime/service/proto"
-	"github.com/ebelanja/hari/service/runtime/handler"
-	"github.com/ebelanja/hari/service/runtime/manager"
-	"github.com/ebelanja/hari/service/runtime/profile"
 	"github.com/micro/cli/v2"
+	"xinhari.com/hari/service/runtime/handler"
+	"xinhari.com/hari/service/runtime/manager"
+	"xinhari.com/hari/service/runtime/profile"
 )
 
 var (

@@ -9,7 +9,7 @@ import (
 	pb "github.com/ebelanja/go-micro/auth/service/proto"
 	"github.com/ebelanja/go-micro/errors"
 	"github.com/ebelanja/go-micro/store"
-	"github.com/ebelanja/hari/internal/namespace"
+	"xinhari.com/hari/internal/namespace"
 )
 
 // List returns all auth accounts

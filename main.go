@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/ebelanja/hari/cmd"
+	"xinhari.com/hari/cmd"
 )
 
 func main() {

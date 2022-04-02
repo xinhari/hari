@@ -27,16 +27,16 @@ import (
 	httpapi "github.com/ebelanja/go-micro/api/server/http"
 	log "github.com/ebelanja/go-micro/logger"
 	"github.com/ebelanja/go-micro/sync/memory"
-	"github.com/ebelanja/hari/client/api/auth"
-	"github.com/ebelanja/hari/internal/handler"
-	"github.com/ebelanja/hari/internal/helper"
-	"github.com/ebelanja/hari/internal/namespace"
-	rrmicro "github.com/ebelanja/hari/internal/resolver/api"
-	"github.com/ebelanja/hari/internal/stats"
-	"github.com/ebelanja/hari/plugin"
 	"github.com/go-acme/lego/v3/providers/dns/cloudflare"
 	"github.com/gorilla/mux"
 	"github.com/micro/cli/v2"
+	"xinhari.com/hari/client/api/auth"
+	"xinhari.com/hari/internal/handler"
+	"xinhari.com/hari/internal/helper"
+	"xinhari.com/hari/internal/namespace"
+	rrmicro "xinhari.com/hari/internal/resolver/api"
+	"xinhari.com/hari/internal/stats"
+	"xinhari.com/hari/plugin"
 )
 
 var (

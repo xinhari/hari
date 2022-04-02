@@ -6,7 +6,7 @@ import (
 	"github.com/ebelanja/go-micro"
 	"github.com/ebelanja/go-micro/auth"
 	"github.com/ebelanja/go-micro/errors"
-	pb "github.com/ebelanja/hari/service/auth/api/proto"
+	pb "xinhari.com/hari/service/auth/api/proto"
 )
 
 // Handler is an impementation of the auth api

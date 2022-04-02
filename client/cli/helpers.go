@@ -14,9 +14,9 @@ import (
 	cbytes "github.com/ebelanja/go-micro/codec/bytes"
 	"github.com/ebelanja/go-micro/config/cmd"
 	"github.com/ebelanja/go-micro/util/file"
-	cliutil "github.com/ebelanja/hari/client/cli/util"
-	clic "github.com/ebelanja/hari/internal/command/cli"
 	"github.com/micro/cli/v2"
+	cliutil "xinhari.com/hari/client/cli/util"
+	clic "xinhari.com/hari/internal/command/cli"
 )
 
 type exec func(*cli.Context, []string) ([]byte, error)

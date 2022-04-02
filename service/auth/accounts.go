@@ -10,8 +10,8 @@ import (
 
 	"github.com/ebelanja/go-micro/auth"
 	pb "github.com/ebelanja/go-micro/auth/service/proto"
-	"github.com/ebelanja/hari/internal/client"
 	"github.com/micro/cli/v2"
+	"xinhari.com/hari/internal/client"
 )
 
 func listAccounts(ctx *cli.Context) {

@@ -10,8 +10,8 @@ import (
 
 	pb "github.com/ebelanja/go-micro/auth/service/proto"
 	"github.com/ebelanja/go-micro/errors"
-	"github.com/ebelanja/hari/internal/client"
 	"github.com/micro/cli/v2"
+	"xinhari.com/hari/internal/client"
 )
 
 func listRules(ctx *cli.Context) {

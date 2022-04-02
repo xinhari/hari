@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"github.com/ebelanja/go-micro/client"
-	stats "github.com/ebelanja/hari/service/debug/stats/proto"
 	"github.com/netdata/go-orchestrator/module"
+	stats "xinhari.com/hari/service/debug/stats/proto"
 )
 
 // Config is the go-micro collector configuration

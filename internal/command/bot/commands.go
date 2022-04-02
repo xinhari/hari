@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"github.com/ebelanja/go-micro/agent/command"
-	clic "github.com/ebelanja/hari/internal/command/cli"
 	"github.com/micro/cli/v2"
+	clic "xinhari.com/hari/internal/command/cli"
 )
 
 // Echo returns the same message

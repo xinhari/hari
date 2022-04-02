@@ -9,8 +9,8 @@ import (
 
 	res "github.com/ebelanja/go-micro/api/resolver"
 	"github.com/ebelanja/go-micro/client/selector"
-	"github.com/ebelanja/hari/internal/namespace"
 	"golang.org/x/net/publicsuffix"
+	"xinhari.com/hari/internal/namespace"
 )
 
 var (

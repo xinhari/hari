@@ -10,10 +10,10 @@ import (
 	"github.com/ebelanja/go-micro/registry"
 	"github.com/ebelanja/go-micro/registry/service"
 	pb "github.com/ebelanja/go-micro/registry/service/proto"
-	rcli "github.com/ebelanja/hari/client/cli"
-	"github.com/ebelanja/hari/internal/helper"
-	"github.com/ebelanja/hari/service/registry/handler"
 	"github.com/micro/cli/v2"
+	rcli "xinhari.com/hari/client/cli"
+	"xinhari.com/hari/internal/helper"
+	"xinhari.com/hari/service/registry/handler"
 )
 
 var (

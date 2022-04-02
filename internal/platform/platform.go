@@ -15,8 +15,8 @@ import (
 
 	// include usage
 
-	"github.com/ebelanja/hari/internal/update"
-	_ "github.com/ebelanja/hari/internal/usage"
+	"xinhari.com/hari/internal/update"
+	_ "xinhari.com/hari/internal/usage"
 )
 
 var (

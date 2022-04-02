@@ -4,9 +4,9 @@ import (
 	"net/url"
 
 	"github.com/ebelanja/go-micro/logger"
-	"github.com/ebelanja/hari/service/store/snapshot"
 	"github.com/micro/cli/v2"
 	"github.com/pkg/errors"
+	"xinhari.com/hari/service/store/snapshot"
 )
 
 // Snapshot in the entrypoint for micro store snapshot

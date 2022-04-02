@@ -9,10 +9,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/ebelanja/hari/internal/config"
-	"github.com/ebelanja/hari/internal/platform"
-	"github.com/ebelanja/hari/service/runtime/profile"
 	ccli "github.com/micro/cli/v2"
+	"xinhari.com/hari/internal/config"
+	"xinhari.com/hari/internal/platform"
+	"xinhari.com/hari/service/runtime/profile"
 )
 
 const (

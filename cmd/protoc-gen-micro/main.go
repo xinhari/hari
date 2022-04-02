@@ -52,9 +52,9 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/ebelanja/hari/cmd/protoc-gen-micro/generator"
-	_ "github.com/ebelanja/hari/cmd/protoc-gen-micro/plugin/micro"
 	"github.com/golang/protobuf/proto"
+	"xinhari.com/hari/cmd/protoc-gen-micro/generator"
+	_ "xinhari.com/hari/cmd/protoc-gen-micro/plugin/micro"
 )
 
 func main() {

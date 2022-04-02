@@ -11,7 +11,7 @@ import (
 	"github.com/ebelanja/go-micro/errors"
 	"github.com/ebelanja/go-micro/store"
 	memStore "github.com/ebelanja/go-micro/store/memory"
-	"github.com/ebelanja/hari/internal/namespace"
+	"xinhari.com/hari/internal/namespace"
 )
 
 const (

@@ -10,8 +10,8 @@ import (
 	log "github.com/ebelanja/go-micro/logger"
 	"github.com/ebelanja/go-micro/router"
 	pb "github.com/ebelanja/go-micro/router/service/proto"
-	"github.com/ebelanja/hari/service/router/handler"
 	"github.com/micro/cli/v2"
+	"xinhari.com/hari/service/router/handler"
 )
 
 var (

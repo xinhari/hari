@@ -7,13 +7,13 @@ import (
 	"github.com/ebelanja/go-micro/debug/log/kubernetes"
 	dservice "github.com/ebelanja/go-micro/debug/service"
 	ulog "github.com/ebelanja/go-micro/logger"
-	logHandler "github.com/ebelanja/hari/service/debug/log/handler"
-	pblog "github.com/ebelanja/hari/service/debug/log/proto"
-	statshandler "github.com/ebelanja/hari/service/debug/stats/handler"
-	pbstats "github.com/ebelanja/hari/service/debug/stats/proto"
-	tracehandler "github.com/ebelanja/hari/service/debug/trace/handler"
-	pbtrace "github.com/ebelanja/hari/service/debug/trace/proto"
 	"github.com/micro/cli/v2"
+	logHandler "xinhari.com/hari/service/debug/log/handler"
+	pblog "xinhari.com/hari/service/debug/log/proto"
+	statshandler "xinhari.com/hari/service/debug/stats/handler"
+	pbstats "xinhari.com/hari/service/debug/stats/proto"
+	tracehandler "xinhari.com/hari/service/debug/trace/handler"
+	pbtrace "xinhari.com/hari/service/debug/trace/proto"
 )
 
 var (

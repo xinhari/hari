@@ -13,9 +13,9 @@ import (
 	"github.com/ebelanja/go-micro/proxy/mucp"
 	"github.com/ebelanja/go-micro/runtime"
 	"github.com/ebelanja/go-micro/server"
-	"github.com/ebelanja/hari/service/handler/exec"
-	"github.com/ebelanja/hari/service/handler/file"
 	"github.com/micro/cli/v2"
+	"xinhari.com/hari/service/handler/exec"
+	"xinhari.com/hari/service/handler/file"
 )
 
 func Run(ctx *cli.Context, opts ...micro.Option) {

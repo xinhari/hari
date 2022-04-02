@@ -20,9 +20,9 @@ import (
 	"github.com/ebelanja/go-micro/metadata"
 	"github.com/ebelanja/go-micro/registry"
 	"github.com/ebelanja/go-micro/registry/service"
-	inclient "github.com/ebelanja/hari/internal/client"
-	dns "github.com/ebelanja/hari/service/network/dns/proto/dns"
 	"github.com/micro/cli/v2"
+	inclient "xinhari.com/hari/internal/client"
+	dns "xinhari.com/hari/service/network/dns/proto/dns"
 
 	"github.com/olekukonko/tablewriter"
 	"github.com/serenize/snaker"

@@ -5,7 +5,7 @@ This is protobuf code generation for micro. We use protoc-gen-micro to reduce bo
 ## Install
 
 ```
-go get github.com/ebelanja/hari/cmd/protoc-gen-micro@main
+go get xinhari.com/hari/cmd/protoc-gen-micro@main
 ```
 
 Also required: 

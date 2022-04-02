@@ -11,10 +11,10 @@ import (
 	"github.com/ebelanja/go-micro/config/cmd"
 	proto "github.com/ebelanja/go-micro/config/source/service/proto"
 	log "github.com/ebelanja/go-micro/logger"
-	"github.com/ebelanja/hari/internal/client"
-	"github.com/ebelanja/hari/internal/helper"
-	"github.com/ebelanja/hari/service/config/handler"
 	"github.com/micro/cli/v2"
+	"xinhari.com/hari/internal/client"
+	"xinhari.com/hari/internal/helper"
+	"xinhari.com/hari/service/config/handler"
 )
 
 var (

@@ -17,7 +17,7 @@ import (
 	"github.com/ebelanja/go-micro/agent/command"
 	"github.com/ebelanja/go-micro/agent/input"
 	log "github.com/ebelanja/go-micro/logger"
-	botc "github.com/ebelanja/hari/internal/command/bot"
+	botc "xinhari.com/hari/internal/command/bot"
 
 	proto "github.com/ebelanja/go-micro/agent/proto"
 

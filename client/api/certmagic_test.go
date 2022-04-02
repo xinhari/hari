@@ -12,8 +12,8 @@ import (
 	"github.com/ebelanja/go-micro/api/server/acme"
 	cert "github.com/ebelanja/go-micro/api/server/acme/certmagic"
 	"github.com/ebelanja/go-micro/sync/memory"
-	cfstore "github.com/ebelanja/hari/internal/plugins/store/cloudflare"
 	"github.com/go-acme/lego/v3/providers/dns/cloudflare"
+	cfstore "xinhari.com/hari/internal/plugins/store/cloudflare"
 )
 
 func TestCertMagic(t *testing.T) {

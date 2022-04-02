@@ -31,7 +31,7 @@ import (
 	"github.com/ebelanja/go-micro/sync/memory"
 	"github.com/ebelanja/go-micro/util/mux"
 	"github.com/ebelanja/go-micro/util/wrapper"
-	"github.com/ebelanja/hari/internal/helper"
+	"xinhari.com/hari/internal/helper"
 )
 
 var (

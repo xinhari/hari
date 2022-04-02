@@ -11,10 +11,10 @@ import (
 	"os"
 	"time"
 
-	pb "github.com/ebelanja/hari/internal/usage/proto"
-	"github.com/ebelanja/hari/internal/version"
 	"github.com/golang/protobuf/proto"
 	"github.com/google/uuid"
+	pb "xinhari.com/hari/internal/usage/proto"
+	"xinhari.com/hari/internal/version"
 )
 
 var (

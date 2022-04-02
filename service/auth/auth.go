@@ -15,14 +15,14 @@ import (
 	"github.com/ebelanja/go-micro/config/cmd"
 	"github.com/ebelanja/go-micro/errors"
 	log "github.com/ebelanja/go-micro/logger"
-	cliutil "github.com/ebelanja/hari/client/cli/util"
-	"github.com/ebelanja/hari/internal/client"
-	"github.com/ebelanja/hari/internal/config"
-	"github.com/ebelanja/hari/internal/helper"
-	"github.com/ebelanja/hari/service/auth/api"
-	authHandler "github.com/ebelanja/hari/service/auth/handler/auth"
-	rulesHandler "github.com/ebelanja/hari/service/auth/handler/rules"
 	"github.com/micro/cli/v2"
+	cliutil "xinhari.com/hari/client/cli/util"
+	"xinhari.com/hari/internal/client"
+	"xinhari.com/hari/internal/config"
+	"xinhari.com/hari/internal/helper"
+	"xinhari.com/hari/service/auth/api"
+	authHandler "xinhari.com/hari/service/auth/handler/auth"
+	rulesHandler "xinhari.com/hari/service/auth/handler/rules"
 )
 
 var (
