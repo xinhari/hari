@@ -16,12 +16,12 @@ var (
 )
 
 // Run the micro auth api
-func Run(ctx *cli.Context, srvOpts ...micro.Option) {
+func Run(ctx *cli.Context, srvOpts ...xinhari.Option) {
 	log.Init(log.WithFields(map[string]interface{}{"service": "auth"}))
 
-	service := micro.NewService(
-		micro.Name(Name),
-		micro.Address(Address),
+	service := xinhari.NewService(
+		xinhari.Name(Name),
+		xinhari.Address(Address),
 	)
 
 	pb.RegisterAuthHandler(service.Server(), NewHandler(service))

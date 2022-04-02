@@ -18,7 +18,7 @@ var (
 	Address = ":8001"
 )
 
-func Run(ctx *cli.Context, srvOpts ...micro.Option) {
+func Run(ctx *cli.Context, srvOpts ...xinhari.Option) {
 	log.Init(log.WithFields(map[string]interface{}{"service": "broker"}))
 
 	if len(ctx.String("server_name")) > 0 {
@@ -34,21 +34,21 @@ func Run(ctx *cli.Context, srvOpts ...micro.Option) {
 	}
 
 	// service opts
-	srvOpts = append(srvOpts, micro.Name(Name))
+	srvOpts = append(srvOpts, xinhari.Name(Name))
 	if i := time.Duration(ctx.Int("register_ttl")); i > 0 {
-		srvOpts = append(srvOpts, micro.RegisterTTL(i*time.Second))
+		srvOpts = append(srvOpts, xinhari.RegisterTTL(i*time.Second))
 	}
 	if i := time.Duration(ctx.Int("register_interval")); i > 0 {
-		srvOpts = append(srvOpts, micro.RegisterInterval(i*time.Second))
+		srvOpts = append(srvOpts, xinhari.RegisterInterval(i*time.Second))
 	}
 
 	// set address
 	if len(Address) > 0 {
-		srvOpts = append(srvOpts, micro.Address(Address))
+		srvOpts = append(srvOpts, xinhari.Address(Address))
 	}
 
 	// new service
-	service := micro.NewService(srvOpts...)
+	service := xinhari.NewService(srvOpts...)
 
 	// connect to the broker
 	service.Options().Broker.Connect()
@@ -63,7 +63,7 @@ func Run(ctx *cli.Context, srvOpts ...micro.Option) {
 	service.Run()
 }
 
-func Commands(options ...micro.Option) []*cli.Command {
+func Commands(options ...xinhari.Option) []*cli.Command {
 	command := &cli.Command{
 		Name:  "broker",
 		Usage: "Run the message broker",

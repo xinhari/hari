@@ -24,9 +24,9 @@ var (
 
 func main() {
 	// New Service
-	service := micro.NewService(
-		micro.Name("go.micro.debug.collector"),
-		micro.Version("latest"),
+	service := xinhari.NewService(
+		xinhari.Name("go.micro.debug.collector"),
+		xinhari.Version("latest"),
 	)
 
 	if len(os.Args) > 1 {

@@ -15,7 +15,7 @@ type Runtime struct {
 	// The runtime used to manage services
 	Runtime runtime.Runtime
 	// The client used to publish events
-	Client micro.Publisher
+	Client xinhari.Publisher
 }
 
 func (r *Runtime) Read(ctx context.Context, req *pb.ReadRequest, rsp *pb.ReadResponse) error {

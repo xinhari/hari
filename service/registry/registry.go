@@ -78,7 +78,7 @@ func (s *subscriber) Process(ctx context.Context, event *pb.Event) error {
 	return nil
 }
 
-func Run(ctx *cli.Context, srvOpts ...micro.Option) {
+func Run(ctx *cli.Context, srvOpts ...xinhari.Option) {
 	log.Init(log.WithFields(map[string]interface{}{"service": "registry"}))
 
 	if len(ctx.String("server_name")) > 0 {
@@ -94,28 +94,28 @@ func Run(ctx *cli.Context, srvOpts ...micro.Option) {
 	}
 
 	// service opts
-	srvOpts = append(srvOpts, micro.Name(Name))
+	srvOpts = append(srvOpts, xinhari.Name(Name))
 	if i := time.Duration(ctx.Int("register_ttl")); i > 0 {
-		srvOpts = append(srvOpts, micro.RegisterTTL(i*time.Second))
+		srvOpts = append(srvOpts, xinhari.RegisterTTL(i*time.Second))
 	}
 	if i := time.Duration(ctx.Int("register_interval")); i > 0 {
-		srvOpts = append(srvOpts, micro.RegisterInterval(i*time.Second))
+		srvOpts = append(srvOpts, xinhari.RegisterInterval(i*time.Second))
 	}
 
 	// set address
 	if len(Address) > 0 {
-		srvOpts = append(srvOpts, micro.Address(Address))
+		srvOpts = append(srvOpts, xinhari.Address(Address))
 	}
 
 	// new service
-	service := micro.NewService(srvOpts...)
+	service := xinhari.NewService(srvOpts...)
 	// get server id
 	id := service.Server().Options().Id
 
 	// register the handler
 	pb.RegisterRegistryHandler(service.Server(), &handler.Registry{
 		Id:        id,
-		Publisher: micro.NewPublisher(Topic, service.Client()),
+		Publisher: xinhari.NewPublisher(Topic, service.Client()),
 		Registry:  service.Options().Registry,
 		Auth:      service.Options().Auth,
 	})
@@ -126,7 +126,7 @@ func Run(ctx *cli.Context, srvOpts ...micro.Option) {
 	}
 }
 
-func Commands(options ...micro.Option) []*cli.Command {
+func Commands(options ...xinhari.Option) []*cli.Command {
 	command := &cli.Command{
 		Name:  "registry",
 		Usage: "Run the service registry",

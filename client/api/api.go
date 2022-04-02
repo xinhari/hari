@@ -56,7 +56,7 @@ var (
 	ACMECA                = acme.LetsEncryptProductionCA
 )
 
-func Run(ctx *cli.Context, srvOpts ...micro.Option) {
+func Run(ctx *cli.Context, srvOpts ...xinhari.Option) {
 	log.Init(log.WithFields(map[string]interface{}{"service": "api"}))
 
 	if len(ctx.String("server_name")) > 0 {
@@ -90,10 +90,10 @@ func Run(ctx *cli.Context, srvOpts ...micro.Option) {
 	apiNamespace := Namespace + "." + Type
 
 	// append name to opts
-	srvOpts = append(srvOpts, micro.Name(Name))
+	srvOpts = append(srvOpts, xinhari.Name(Name))
 
 	// initialise service
-	service := micro.NewService(srvOpts...)
+	service := xinhari.NewService(srvOpts...)
 
 	// Init plugins
 	for _, p := range Plugins() {
@@ -319,7 +319,7 @@ func Run(ctx *cli.Context, srvOpts ...micro.Option) {
 	}
 }
 
-func Commands(options ...micro.Option) []*cli.Command {
+func Commands(options ...xinhari.Option) []*cli.Command {
 	command := &cli.Command{
 		Name:  "api",
 		Usage: "Run the api gateway",

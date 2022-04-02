@@ -224,8 +224,8 @@ func (n *Network) Nodes(ctx context.Context, req *map[string]interface{}, rsp *m
 
 func Run(ctx *cli.Context) {
 	// create the api service
-	api := micro.NewService(
-		micro.Name("go.micro.api.network"),
+	api := xinhari.NewService(
+		xinhari.Name("go.micro.api.network"),
 	)
 
 	// create the network client
@@ -251,7 +251,7 @@ func Run(ctx *cli.Context) {
 	}
 
 	// register the handler
-	micro.RegisterHandler(api.Server(), netHandler, goapi.WithEndpoint(ep))
+	xinhari.RegisterHandler(api.Server(), netHandler, goapi.WithEndpoint(ep))
 
 	// run the api
 	api.Run()

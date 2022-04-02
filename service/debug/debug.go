@@ -23,7 +23,7 @@ var (
 	Address = ":8089"
 )
 
-func Run(ctx *cli.Context, srvOpts ...micro.Option) {
+func Run(ctx *cli.Context, srvOpts ...xinhari.Option) {
 	ulog.Init(ulog.WithFields(map[string]interface{}{"service": "debug"}))
 
 	// Init plugins
@@ -40,14 +40,14 @@ func Run(ctx *cli.Context, srvOpts ...micro.Option) {
 	}
 
 	if len(Address) > 0 {
-		srvOpts = append(srvOpts, micro.Address(Address))
+		srvOpts = append(srvOpts, xinhari.Address(Address))
 	}
 
 	// append name
-	srvOpts = append(srvOpts, micro.Name(Name))
+	srvOpts = append(srvOpts, xinhari.Name(Name))
 
 	// new service
-	service := micro.NewService(srvOpts...)
+	service := xinhari.NewService(srvOpts...)
 
 	// default log initialiser
 	newLog := func(service string) log.Log {
@@ -119,7 +119,7 @@ func Run(ctx *cli.Context, srvOpts ...micro.Option) {
 }
 
 // Commands populates the debug commands
-func Commands(options ...micro.Option) []*cli.Command {
+func Commands(options ...xinhari.Option) []*cli.Command {
 	command := []*cli.Command{
 		{
 			Name:  "debug",

@@ -43,7 +43,7 @@ var (
 	Address = ":10001"
 )
 
-func Commands(options ...micro.Option) []*cli.Command {
+func Commands(options ...xinhari.Option) []*cli.Command {
 	command := &cli.Command{
 		Name:  "server",
 		Usage: "Run the micro server",
@@ -197,9 +197,9 @@ func Run(context *cli.Context) error {
 	// start the console
 	// cli.Init(context)
 
-	server := micro.NewService(
-		micro.Name(Name),
-		micro.Address(Address),
+	server := xinhari.NewService(
+		xinhari.Name(Name),
+		xinhari.Address(Address),
 	)
 
 	// @todo make this configurable

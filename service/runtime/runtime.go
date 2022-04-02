@@ -23,7 +23,7 @@ var (
 )
 
 // Run the runtime service
-func Run(ctx *cli.Context, srvOpts ...micro.Option) {
+func Run(ctx *cli.Context, srvOpts ...xinhari.Option) {
 	log.Init(log.WithFields(map[string]interface{}{"service": "runtime"}))
 
 	// Get the profile
@@ -53,7 +53,7 @@ func Run(ctx *cli.Context, srvOpts ...micro.Option) {
 	}
 
 	if len(Address) > 0 {
-		srvOpts = append(srvOpts, micro.Address(Address))
+		srvOpts = append(srvOpts, xinhari.Address(Address))
 	}
 
 	// create runtime
@@ -63,10 +63,10 @@ func Run(ctx *cli.Context, srvOpts ...micro.Option) {
 	}
 
 	// append name
-	srvOpts = append(srvOpts, micro.Name(Name))
+	srvOpts = append(srvOpts, xinhari.Name(Name))
 
 	// new service
-	service := micro.NewService(srvOpts...)
+	service := xinhari.NewService(srvOpts...)
 
 	// create a new runtime manager
 	manager := manager.New(muRuntime,
@@ -83,7 +83,7 @@ func Run(ctx *cli.Context, srvOpts ...micro.Option) {
 	// register the runtime handler
 	pb.RegisterRuntimeHandler(service.Server(), &handler.Runtime{
 		// Client to publish events
-		Client: micro.NewEvent("go.micro.runtime.events", service.Client()),
+		Client: xinhari.NewEvent("go.micro.runtime.events", service.Client()),
 		// using the micro runtime
 		Runtime: manager,
 	})
@@ -130,7 +130,7 @@ func Flags() []cli.Flag {
 	}
 }
 
-func Commands(options ...micro.Option) []*cli.Command {
+func Commands(options ...xinhari.Option) []*cli.Command {
 	command := []*cli.Command{
 		{
 			Name:  "runtime",

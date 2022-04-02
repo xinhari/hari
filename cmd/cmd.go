@@ -12,7 +12,7 @@ import (
 	"xinhari.com/hari/plugin/build"
 	"xinhari.com/hari/server"
 	"xinhari.com/hari/service"
-	micro "xinhari.com/xinhari"
+	"xinhari.com/xinhari"
 	"xinhari.com/xinhari/config/cmd"
 	gostore "xinhari.com/xinhari/store"
 
@@ -324,7 +324,7 @@ func buildVersion() string {
 }
 
 // Init initialised the command line
-func Init(options ...micro.Option) {
+func Init(options ...xinhari.Option) {
 	Setup(cmd.App(), options...)
 
 	cmd.Init(
@@ -357,7 +357,7 @@ func (s commands) Less(i, j int) bool {
 }
 
 // Setup sets up a cli.App
-func Setup(app *ccli.App, options ...micro.Option) {
+func Setup(app *ccli.App, options ...xinhari.Option) {
 	// Add the various commands
 	app.Commands = append(app.Commands, new.Commands()...)
 	app.Commands = append(app.Commands, runtime.Commands(options...)...)

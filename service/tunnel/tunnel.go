@@ -33,7 +33,7 @@ var (
 )
 
 // Run runs the micro server
-func Run(ctx *cli.Context, srvOpts ...micro.Option) {
+func Run(ctx *cli.Context, srvOpts ...xinhari.Option) {
 	log.Init(log.WithFields(map[string]interface{}{"service": "tunnel"}))
 
 	// Init plugins
@@ -64,10 +64,10 @@ func Run(ctx *cli.Context, srvOpts ...micro.Option) {
 	}
 
 	// Initialise service
-	service := micro.NewService(
-		micro.Name(Name),
-		micro.RegisterTTL(time.Duration(ctx.Int("register_ttl"))*time.Second),
-		micro.RegisterInterval(time.Duration(ctx.Int("register_interval"))*time.Second),
+	service := xinhari.NewService(
+		xinhari.Name(Name),
+		xinhari.RegisterTTL(time.Duration(ctx.Int("register_ttl"))*time.Second),
+		xinhari.RegisterInterval(time.Duration(ctx.Int("register_interval"))*time.Second),
 	)
 
 	// local tunnel router
@@ -166,7 +166,7 @@ func Run(ctx *cli.Context, srvOpts ...micro.Option) {
 	}
 }
 
-func Commands(options ...micro.Option) []*cli.Command {
+func Commands(options ...xinhari.Option) []*cli.Command {
 	command := &cli.Command{
 		Name:  "tunnel",
 		Usage: "Run the micro network tunnel",

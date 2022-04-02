@@ -88,14 +88,14 @@ var (
 )
 
 // run the auth service
-func Run(ctx *cli.Context, srvOpts ...micro.Option) {
+func Run(ctx *cli.Context, srvOpts ...xinhari.Option) {
 	log.Init(log.WithFields(map[string]interface{}{"service": "auth"}))
 
 	if len(ctx.String("address")) > 0 {
 		Address = ctx.String("address")
 	}
 	if len(Address) > 0 {
-		srvOpts = append(srvOpts, micro.Address(Address))
+		srvOpts = append(srvOpts, xinhari.Address(Address))
 	}
 
 	// Init plugins
@@ -124,8 +124,8 @@ func Run(ctx *cli.Context, srvOpts ...micro.Option) {
 	ruleH.Init(auth.Store(st))
 
 	// setup service
-	srvOpts = append(srvOpts, micro.Name(Name))
-	service := micro.NewService(srvOpts...)
+	srvOpts = append(srvOpts, xinhari.Name(Name))
+	service := xinhari.NewService(srvOpts...)
 
 	// register handlers
 	pb.RegisterAuthHandler(service.Server(), authH)
@@ -219,7 +219,7 @@ func whoami(ctx *cli.Context) {
 }
 
 //Commands for auth
-func Commands(srvOpts ...micro.Option) []*cli.Command {
+func Commands(srvOpts ...xinhari.Option) []*cli.Command {
 	commands := []*cli.Command{
 		{
 			Name:  "auth",

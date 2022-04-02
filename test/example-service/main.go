@@ -10,9 +10,9 @@ import (
 
 func main() {
 	// New Service
-	service := micro.NewService(
-		micro.Name("go.micro.service.example"),
-		micro.Version("latest"),
+	service := xinhari.NewService(
+		xinhari.Name("go.micro.service.example"),
+		xinhari.Version("latest"),
 	)
 
 	// Initialise service

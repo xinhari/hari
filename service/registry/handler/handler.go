@@ -19,7 +19,7 @@ type Registry struct {
 	// service id
 	Id string
 	// the publisher
-	Publisher micro.Publisher
+	Publisher xinhari.Publisher
 	// internal registry
 	Registry registry.Registry
 	// auth to verify clients

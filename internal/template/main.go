@@ -12,9 +12,9 @@ import (
 
 func main() {
 	// New Service
-	function := micro.NewFunction(
-		micro.Name("{{.FQDN}}"),
-		micro.Version("latest"),
+	function := xinhari.NewFunction(
+		xinhari.Name("{{.FQDN}}"),
+		xinhari.Version("latest"),
 	)
 
 	// Initialise function
@@ -46,9 +46,9 @@ import (
 
 func main() {
 	// New Service
-	service := micro.NewService(
-		micro.Name("{{.FQDN}}"),
-		micro.Version("latest"),
+	service := xinhari.NewService(
+		xinhari.Name("{{.FQDN}}"),
+		xinhari.Version("latest"),
 	)
 
 	// Initialise service
@@ -58,7 +58,7 @@ func main() {
 	{{dehyphen .Alias}}.Register{{title .Alias}}Handler(service.Server(), new(handler.{{title .Alias}}))
 
 	// Register Struct as Subscriber
-	micro.RegisterSubscriber("{{.FQDN}}", service.Server(), new(subscriber.{{title .Alias}}))
+	xinhari.RegisterSubscriber("{{.FQDN}}", service.Server(), new(subscriber.{{title .Alias}}))
 
 	// Run service
 	if err := service.Run(); err != nil {
@@ -80,15 +80,15 @@ import (
 
 func main() {
 	// New Service
-	service := micro.NewService(
-		micro.Name("{{.FQDN}}"),
-		micro.Version("latest"),
+	service := xinhari.NewService(
+		xinhari.Name("{{.FQDN}}"),
+		xinhari.Version("latest"),
 	)
 
 	// Initialise service
 	service.Init(
 		// create wrap for the {{title .Alias}} service client
-		micro.WrapHandler(client.{{title .Alias}}Wrapper(service)),
+		xinhari.WrapHandler(client.{{title .Alias}}Wrapper(service)),
 	)
 
 	// Register Handler

@@ -18,7 +18,7 @@ import (
 	"xinhari.com/xinhari/server"
 )
 
-func Run(ctx *cli.Context, opts ...micro.Option) {
+func Run(ctx *cli.Context, opts ...xinhari.Option) {
 	log.Init(log.WithFields(map[string]interface{}{"service": "service"}))
 
 	name := ctx.String("name")
@@ -40,15 +40,15 @@ func Run(ctx *cli.Context, opts ...micro.Option) {
 	}
 
 	if len(metadata) > 0 {
-		opts = append(opts, micro.Metadata(metadata))
+		opts = append(opts, xinhari.Metadata(metadata))
 	}
 
 	if len(name) > 0 {
-		opts = append(opts, micro.Name(name))
+		opts = append(opts, xinhari.Name(name))
 	}
 
 	if len(address) > 0 {
-		opts = append(opts, micro.Address(address))
+		opts = append(opts, xinhari.Address(address))
 	}
 
 	if len(endpoint) == 0 {
@@ -103,7 +103,7 @@ func Run(ctx *cli.Context, opts ...micro.Option) {
 	log.Infof("Service [%s] Serving %s at endpoint %s\n", p.String(), name, endpoint)
 
 	// new service
-	service := micro.NewService(opts...)
+	service := xinhari.NewService(opts...)
 
 	// create new muxer
 	//	muxer := mux.New(name, p)
@@ -117,7 +117,7 @@ func Run(ctx *cli.Context, opts ...micro.Option) {
 	service.Run()
 }
 
-func Commands(options ...micro.Option) []*cli.Command {
+func Commands(options ...xinhari.Option) []*cli.Command {
 	command := &cli.Command{
 		Name:  "service",
 		Usage: "Run a micro service",

@@ -30,7 +30,7 @@ import (
 type bot struct {
 	exit    chan bool
 	ctx     *cli.Context
-	service micro.Service
+	service xinhari.Service
 
 	sync.RWMutex
 	inputs   map[string]input.Input
@@ -81,7 +81,7 @@ func help(commands map[string]command.Command, serviceCommands []string) command
 	})
 }
 
-func newBot(ctx *cli.Context, inputs map[string]input.Input, commands map[string]command.Command, service micro.Service) *bot {
+func newBot(ctx *cli.Context, inputs map[string]input.Input, commands map[string]command.Command, service xinhari.Service) *bot {
 	commands["^help$"] = help(commands, nil)
 
 	return &bot{
@@ -409,12 +409,12 @@ func run(ctx *cli.Context) error {
 	}
 
 	// setup service
-	service := micro.NewService(
-		micro.Name(Name),
-		micro.RegisterTTL(
+	service := xinhari.NewService(
+		xinhari.Name(Name),
+		xinhari.RegisterTTL(
 			time.Duration(ctx.Int("register_ttl"))*time.Second,
 		),
-		micro.RegisterInterval(
+		xinhari.RegisterInterval(
 			time.Duration(ctx.Int("register_interval"))*time.Second,
 		),
 	)

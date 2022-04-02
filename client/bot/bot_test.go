@@ -103,8 +103,8 @@ func TestBot(t *testing.T) {
 		}),
 	}
 
-	service := micro.NewService(
-		micro.Registry(memory.NewRegistry()),
+	service := xinhari.NewService(
+		xinhari.Registry(memory.NewRegistry()),
 	)
 
 	bot := newBot(ctx, inputs, commands, service)

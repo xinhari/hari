@@ -78,24 +78,24 @@ type rtr struct {
 	// router is the micro router
 	router.Router
 	// publisher to publish router adverts
-	micro.Publisher
+	xinhari.Publisher
 }
 
 // newRouter creates new micro router and returns it
-func newRouter(service micro.Service, router router.Router) *rtr {
+func newRouter(service xinhari.Service, router router.Router) *rtr {
 	s := &sub{
 		router: router,
 	}
 
 	// register subscriber
-	if err := micro.RegisterSubscriber(Topic, service.Server(), s); err != nil {
+	if err := xinhari.RegisterSubscriber(Topic, service.Server(), s); err != nil {
 		log.Errorf("failed to subscribe to adverts: %s", err)
 		os.Exit(1)
 	}
 
 	return &rtr{
 		Router:    router,
-		Publisher: micro.NewPublisher(Topic, service.Client()),
+		Publisher: xinhari.NewPublisher(Topic, service.Client()),
 	}
 }
 
@@ -156,8 +156,8 @@ func (r *rtr) Stop() error {
 	return nil
 }
 
-// Run runs the micro server
-func Run(ctx *cli.Context, srvOpts ...micro.Option) {
+// Run runs the xinhari server
+func Run(ctx *cli.Context, srvOpts ...xinhari.Option) {
 	log.Init(log.WithFields(map[string]interface{}{"service": "router"}))
 
 	// Init plugins
@@ -197,11 +197,11 @@ func Run(ctx *cli.Context, srvOpts ...micro.Option) {
 	}
 
 	// Initialise service
-	service := micro.NewService(
-		micro.Name(Name),
-		micro.Address(Address),
-		micro.RegisterTTL(time.Duration(ctx.Int("register_ttl"))*time.Second),
-		micro.RegisterInterval(time.Duration(ctx.Int("register_interval"))*time.Second),
+	service := xinhari.NewService(
+		xinhari.Name(Name),
+		xinhari.Address(Address),
+		xinhari.RegisterTTL(time.Duration(ctx.Int("register_ttl"))*time.Second),
+		xinhari.RegisterInterval(time.Duration(ctx.Int("register_interval"))*time.Second),
 	)
 
 	r := router.NewRouter(
@@ -279,7 +279,7 @@ func Run(ctx *cli.Context, srvOpts ...micro.Option) {
 	log.Info("successfully stopped")
 }
 
-func Commands(options ...micro.Option) []*cli.Command {
+func Commands(options ...xinhari.Option) []*cli.Command {
 	command := &cli.Command{
 		Name:  "router",
 		Usage: "Run the micro network router",
