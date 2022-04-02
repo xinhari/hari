@@ -6,4 +6,4 @@ echo -e "Running '$ETCD_CMD'\nBEGIN ETCD OUTPUT\n"
 
 exec $ETCD_CMD &
 sleep 4
-/micro $*
+/hari $*
