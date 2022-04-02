@@ -13,7 +13,7 @@ func TestEnvBasic(t *testing.T) {
 }
 
 func testEnvBasic(t *t) {
-	outp, err := exec.Command("micro", "-env=platform", "env").CombinedOutput()
+	outp, err := exec.Command("hari", "-env=platform", "env").CombinedOutput()
 	if err != nil {
 		t.Fatal(err)
 		return
@@ -32,7 +32,7 @@ func TestEnvOverrides(t *testing.T) {
 }
 
 func testEnvOverrides(t *t) {
-	outp, err := exec.Command("micro", "-env=platform", "env").CombinedOutput()
+	outp, err := exec.Command("hari", "-env=platform", "env").CombinedOutput()
 	if err != nil {
 		t.Fatal(err)
 		return
@@ -42,7 +42,7 @@ func testEnvOverrides(t *t) {
 		return
 	}
 
-	outp, err = exec.Command("micro", "-e=platform", "env").CombinedOutput()
+	outp, err = exec.Command("hari", "-e=platform", "env").CombinedOutput()
 	if err != nil {
 		t.Fatal(err)
 		return
