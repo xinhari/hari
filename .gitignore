@@ -29,6 +29,6 @@ coverage.txt
 coverage.out
 
 # ignore locally built binaries
-micro
-!micro/
+hari
+!hari/
 dist

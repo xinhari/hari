@@ -36,6 +36,6 @@ RUN cd ${GOPATH}/src/example-service && go get && \
 # RUN go get github.com/ebelanja/micro-services/logspammer
 RUN go get xinhari.com/xinhari
 
-COPY ./micro /micro
+COPY ./hari /hari
 
 ENTRYPOINT ["sh", "/bin/run.sh"]

@@ -29,6 +29,6 @@ test: vet
 	go test -v ./...
 
 clean:
-	rm -rf ./micro
+	rm -rf ./hari
 
 .PHONY: build clean vet test docker
