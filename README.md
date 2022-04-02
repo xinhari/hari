@@ -1,10 +1,10 @@
-# Micro [![License](https://img.shields.io/:license-apache-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![GoDoc](https://godoc.org/xinhari.com/hari?status.svg)](https://godoc.org/xinhari.com/hari) [![Travis CI](https://travis-ci.org/ebelanja/micro.svg?branch=main)](https://travis-ci.org/ebelanja/micro) [![Go Report Card](https://goreportcard.com/badge/ebelanja/micro)](https://goreportcard.com/report/xinhari.com/hari)
+# Hari [![License](https://img.shields.io/:license-apache-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![GoDoc](https://godoc.org/xinhari.com/hari?status.svg)](https://godoc.org/xinhari.com/hari) [![Travis CI](https://travis-ci.org/ebelanja/micro.svg?branch=main)](https://travis-ci.org/ebelanja/micro) [![Go Report Card](https://goreportcard.com/badge/ebelanja/micro)](https://goreportcard.com/report/xinhari.com/hari)
 
-Micro is a distributed systems runtime for the Cloud and beyond.
+Hari is a distributed systems runtime for the Cloud and beyond.
 
 ## Overview
 
-Micro addresses the key requirements for building distributed systems. It leverages the microservices
+Hari addresses the key requirements for building distributed systems. It leverages the microservices
 architecture pattern and provides a set of services which act as the building blocks of a platform. Micro deals
 with the complexity of distributed systems and provides simpler programmable abstractions to build on.
 
@@ -62,7 +62,7 @@ query them directly.
 
 To write applications which run on Micro you can use the framework Go Micro.
 
-- **go-micro:** Leverage the powerful [Go Micro](https://xinhari.com/xinhari) framework to develop microservices easily and quickly.
+- **xinhari:** Leverage the powerful [Go Micro](https://xinhari.com/xinhari) framework to develop microservices easily and quickly.
 Go Micro abstracts away the complexity of distributed systems and provides simpler abstractions to build highly scalable microservices.
 
 ## Install
