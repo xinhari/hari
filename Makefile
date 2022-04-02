@@ -1,8 +1,8 @@
-NAME=micro
-IMAGE_NAME=micro/$(NAME)
+NAME=hari
+IMAGE_NAME=xinhari/$(NAME)
 GIT_COMMIT=$(shell git rev-parse --short HEAD)
 GIT_TAG=$(shell git describe --abbrev=0 --tags --always --match "v*")
-GIT_IMPORT=github.com/ebelanja/hari/cmd
+GIT_IMPORT=github.com/xinhari/hari/cmd
 CGO_ENABLED=0
 BUILD_DATE=$(shell date +%s)
 LDFLAGS=-X $(GIT_IMPORT).GitCommit=$(GIT_COMMIT) -X $(GIT_IMPORT).GitTag=$(GIT_TAG) -X $(GIT_IMPORT).BuildDate=$(BUILD_DATE)
