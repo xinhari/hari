@@ -62,8 +62,8 @@ query them directly.
 
 To write applications which run on Micro you can use the framework Go Micro.
 
-- **xinhari:** Leverage the powerful [Go Micro](https://xinhari.com/xinhari) framework to develop microservices easily and quickly.
-Go Micro abstracts away the complexity of distributed systems and provides simpler abstractions to build highly scalable microservices.
+- **xinhari:** Leverage the powerful [Xinhari](https://xinhari.com/xinhari) framework to develop microservices easily and quickly.
+Xinhari abstracts away the complexity of distributed systems and provides simpler abstractions to build highly scalable microservices.
 
 ## Install
 
@@ -76,20 +76,20 @@ go get xinhari.com/hari
 Docker image
 
 ```
-docker pull ebelanja/micro
+docker pull xinhari/hari
 ```
 
 Latest release binaries
 
 ```
 # MacOS
-curl -fsSL https://raw.githubusercontent.com/ebelanja/micro/main/scripts/install.sh | /bin/bash
+curl -fsSL https://raw.githubusercontent.com/xinhari/hari/main/scripts/install.sh | /bin/bash
 
 # Linux
-wget -q  https://raw.githubusercontent.com/ebelanja/micro/main/scripts/install.sh -O - | /bin/bash
+wget -q  https://raw.githubusercontent.com/xinhari/hari/main/scripts/install.sh -O - | /bin/bash
 
 # Windows
-powershell -Command "iwr -useb https://raw.githubusercontent.com/ebelanja/micro/main/scripts/install.ps1 | iex"
+powershell -Command "iwr -useb https://raw.githubusercontent.com/xinhari/hari/main/scripts/install.ps1 | iex"
 ```
 
 ## Getting Started
@@ -97,26 +97,26 @@ powershell -Command "iwr -useb https://raw.githubusercontent.com/ebelanja/micro/
 Boot the entire runtime environment locally
 
 ```
-micro server
+hari server
 ```
 
 ### Create a service
 
 ```
 # generate a service (follow instructions in output)
-micro new example
+hari new example
 
 # set to use server
-micro env set server
+hari env set server
 
 # run the service
-micro run example
+hari run example
 
 # list services
-micro list services
+hari list services
 
 # call a service
-micro call go.micro.service.example Example.Call '{"name": "John"}'
+hari call go.micro.service.example Example.Call '{"name": "John"}'
 ```
 
 ## Usage
@@ -124,9 +124,9 @@ micro call go.micro.service.example Example.Call '{"name": "John"}'
 See all the options
 
 ```
-micro --help
+hari --help
 ```
 
-<!--
-See the [docs](https://dev.m3o.com) for detailed information on the architecture, installation and use of the platform.
--->
+
+See the [docs](https://xinhari.com/docs) for detailed information on the architecture, installation and use of the platform.
+
