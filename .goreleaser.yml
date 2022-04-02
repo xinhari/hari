@@ -8,7 +8,7 @@ before:
   hooks:
     - go mod download
 builds:
-- binary: micro
+- binary: hari
   env:
     - CGO_ENABLED=0
     - GO111MODULE=on
