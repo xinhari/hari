@@ -15,7 +15,7 @@ echo "Checking dependencies..."
 which protoc
 which protoc-gen-go
 
-MOD=Mgithub.com/micro/go-micro/api/proto/api.proto=xinhari.com/xinhari/api/proto
+MOD=Mxinhari.com/xinhari/api/proto/api.proto=xinhari.com/xinhari/api/proto
 
 # modify the proto paths
 function modify_paths() {
@@ -29,7 +29,7 @@ function modify_paths() {
 
 modify_paths
 echo Modifiers used: $MOD
-##Mgithub.com/micro/go-micro/api/proto/api.proto=xinhari.com/xinhari/api/proto
+##Mxinhari.com/xinhari/api/proto/api.proto=xinhari.com/xinhari/api/proto
 
 echo "Building protobuf code..."
 DIR=`pwd`
