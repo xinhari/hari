@@ -1,4 +1,4 @@
-# Hari [![License](https://img.shields.io/:license-apache-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![GoDoc](https://godoc.org/xinhari.com/hari?status.svg)](https://godoc.org/xinhari.com/hari) [![Travis CI](https://travis-ci.org/ebelanja/micro.svg?branch=main)](https://travis-ci.org/ebelanja/micro) [![Go Report Card](https://goreportcard.com/badge/ebelanja/micro)](https://goreportcard.com/report/xinhari.com/hari)
+# Hari [![License](https://img.shields.io/:license-apache-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![GoDoc](https://godoc.org/xinhari.com/hari?status.svg)](https://godoc.org/xinhari.com/hari) [![Travis CI](https://travis-ci.org/xinhari/hari.svg?branch=main)](https://travis-ci.org/xinhari/hari) [![Go Report Card](https://goreportcard.com/badge/xinhari.com/hari)](https://goreportcard.com/report/xinhari.com/hari)
 
 Hari is a distributed systems runtime for the Cloud and beyond.
 
