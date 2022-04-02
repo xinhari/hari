@@ -31,5 +31,5 @@ require (
 	golang.org/x/tools v0.0.0-20191216173652-a0e659d51361
 	google.golang.org/genproto v0.0.0-20191216164720-4f79533eabd1
 	google.golang.org/grpc v1.26.0
-	xinhari.com/xinhari v1.0.0-alpha.1
+	xinhari.com/xinhari v1.0.0-alpha.2
 )

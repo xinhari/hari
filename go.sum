@@ -732,5 +732,5 @@ k8s.io/kubernetes v1.13.0/go.mod h1:ocZa8+6APFNC2tX1DZASIbocyYT5jHzqFVsY5aoB7Jk=
 rsc.io/binaryregexp v0.2.0/go.mod h1:qTv7/COck+e2FymRvadv62gMdZztPaShugOCi3I+8D8=
 sigs.k8s.io/yaml v1.1.0 h1:4A07+ZFc2wgJwo8YNlQpr1rVlgUDlxXHhPJciaPY5gs=
 sigs.k8s.io/yaml v1.1.0/go.mod h1:UJmg0vDUVViEyp3mgSv9WPwZCDxu4rQW1olrI1uml+o=
-xinhari.com/xinhari v1.0.0-alpha.1 h1:g3ZYGS3g1N+sXVC3rl6pdp7QgXU6j4O+Rg7ceP94Uqw=
-xinhari.com/xinhari v1.0.0-alpha.1/go.mod h1:GY1tu4d3X9HT0ajEID3YZGFhHOPeyFpybm7iOCQ0Ozo=
+xinhari.com/xinhari v1.0.0-alpha.2 h1:El02gga9MvoEqNPhysdxVgiPxWirggoP2qwCX/8rMdU=
+xinhari.com/xinhari v1.0.0-alpha.2/go.mod h1:GY1tu4d3X9HT0ajEID3YZGFhHOPeyFpybm7iOCQ0Ozo=
