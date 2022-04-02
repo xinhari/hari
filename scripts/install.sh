@@ -2,13 +2,13 @@
 set -euo pipefail
 
 # GitHub Org and Repo to get archives from
-GITHUB_ORG="ebelanja"
-GITHUB_REPO="micro"
+GITHUB_ORG="xinhari"
+GITHUB_REPO="hari"
 
 # micro install directory
 MICRO_INSTALL_DIR="/usr/local/bin"
 # micro cli name
-MICRO_CLI_NAME="micro"
+MICRO_CLI_NAME="hari"
 # micro cli install path
 MICRO_CLI_PATH="${MICRO_INSTALL_DIR}/${MICRO_CLI_NAME}"
 
@@ -81,20 +81,20 @@ getLatestRelease() {
     local release_url="https://api.github.com/repos/${GITHUB_ORG}/${GITHUB_REPO}/releases"
     local latest_release=""
 
-    echo "Getting the latest micro release"
+    echo "Getting the latest hari release"
     if [ "$HTTP_CLIENT" == "curl" ]; then
         latest_release=$(curl -s $release_url | grep \"tag_name\" | awk 'NR==1{print $2}' |  sed -n 's/\"\(.*\)\",/\1/p')
     else
         latest_release=$(wget -q --header="Accept: application/json" -O - $release_url | grep \"tag_name\" | awk 'NR==1{print $2}' |  sed -n 's/\"\(.*\)\",/\1/p')
     fi
-    echo "Latest micro release found: ${latest_release}"
+    echo "Latest hari release found: ${latest_release}"
 
     LATEST_RELEASE_TAG=$latest_release
     CLI_ARCHIVE="${MICRO_CLI_NAME}-${LATEST_RELEASE_TAG}-${OS}-${ARCH}.tar.gz"
     DOWNLOAD_BASE="https://github.com/${GITHUB_ORG}/${GITHUB_REPO}/releases/download"
     DOWNLOAD_URL="${DOWNLOAD_BASE}/${LATEST_RELEASE_TAG}/${CLI_ARCHIVE}"
 
-    TMP_ROOT=$(mktemp -dt micro-install-XXXXXX)
+    TMP_ROOT=$(mktemp -dt hari-install-XXXXXX)
     TMP_FILE="$TMP_ROOT/$CLI_ARCHIVE"
 
     echo "Downloading $DOWNLOAD_URL ..."
@@ -115,7 +115,7 @@ installFile() {
     local tmp_root_cli="$TMP_ROOT/$MICRO_CLI_NAME"
 
     if [ ! -f "$tmp_root_cli" ]; then
-        echo "Failed to unpack micro cli binary."
+        echo "Failed to unpack hari cli binary."
         exit 1
     fi
 
@@ -149,9 +149,9 @@ cleanup() {
 }
 
 printInfo() {
-    echo -e "\nTo get started with micro please visit official documentation https://micro.mu/docs"
-    echo "To start contributing to micro please visit https://github.com/ebelanja"
-    echo "Join micro community on slack https://micro.mu/slack"
+    echo -e "\nTo get started with micro please visit official documentation https://xinhari.com/docs"
+    echo "To start contributing to micro please visit https://github.com/xinhari"
+    echo "Join micro community on slack https://xinhari.com/slack"
 }
 
 # catch errors and print help
