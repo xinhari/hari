@@ -12,7 +12,7 @@ import (
 	"xinhari.com/hari/plugin/build"
 	"xinhari.com/hari/server"
 	"xinhari.com/hari/service"
-	"xinhari.com/xinhari"
+	micro "xinhari.com/xinhari"
 	"xinhari.com/xinhari/config/cmd"
 	gostore "xinhari.com/xinhari/store"
 
@@ -52,8 +52,8 @@ var (
 	GitTag    string
 	BuildDate string
 
-	name        = "micro"
-	description = "A microservice runtime\n\n	 Use `micro [command] --help` to see command specific help."
+	name        = "hari"
+	description = "A microservice runtime\n\n	 Use `hari [command] --help` to see command specific help."
 	version     = "latest"
 )
 
@@ -383,7 +383,7 @@ func Setup(app *ccli.App, options ...micro.Option) {
 	// add the init command for our internal operator
 	app.Commands = append(app.Commands, &ccli.Command{
 		Name:  "init",
-		Usage: "Run the micro operator",
+		Usage: "Run the hari operator",
 		Action: func(c *ccli.Context) error {
 			platform.Init(c)
 			return nil

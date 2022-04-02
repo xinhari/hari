@@ -7,8 +7,6 @@ import (
 	"os/exec"
 	"strings"
 	"testing"
-
-	"xinhari.com/xinhari/util/log"
 )
 
 func TestNew(t *testing.T) {
@@ -40,13 +38,13 @@ func testNew(t *t) {
 			defer func() {
 				exec.Command("rm", "-r", "./"+tc.svcName).CombinedOutput()
 			}()
-			outp, err := exec.Command("micro", "new", "--type", tc.sType, tc.svcName).CombinedOutput()
+			outp, err := exec.Command("hari", "new", "--type", tc.sType, tc.svcName).CombinedOutput()
 			if err != nil {
 				t.Fatal(err)
 				return
 			}
 			if !tc.skipProtoc && !strings.Contains(string(outp), "protoc") {
-				t.Fatalf("micro new lacks protobuf install instructions %v", string(outp))
+				t.Fatalf("hari new lacks protobuf install instructions %v", string(outp))
 				return
 			}
 
@@ -122,7 +120,7 @@ func testWrongCommands(t *t) {
 		t.Fatal("Wrong command should error")
 	}
 
-	if !strings.Contains(string(outp), "Unrecognized micro command") {
+	if !strings.Contains(string(outp), "Unrecognized hari command") {
 		t.Fatalf("Unexpected output for unrecognized command: %v", string(outp))
 	}
 
@@ -133,7 +131,7 @@ func testWrongCommands(t *t) {
 	}
 
 	// @todod for some reason this one returns multiple lines so we don't check for line count now
-	if !strings.Contains(string(outp), "Unrecognized subcommand for micro config") {
+	if !strings.Contains(string(outp), "Unrecognized subcommand for hari config") {
 		t.Fatalf("Unexpected output for unrecognized subcommand: %v", string(outp))
 	}
 }
@@ -164,7 +162,6 @@ func testHelps(t *t) {
 		comm = exec.Command("hari", commandName, "--help")
 		outp, err = comm.CombinedOutput()
 
-		log.Info(comm)
 		if err != nil {
 			t.Fatal(fmt.Errorf("Command %v output is wrong: %v", commandName, string(outp)))
 			break
@@ -178,9 +175,9 @@ func testHelps(t *t) {
 
 func TestUnrecognisedCommand(t *testing.T) {
 	t.Parallel()
-	outp, _ := exec.Command("micro", "foobar").CombinedOutput()
-	if !strings.Contains(string(outp), "Unrecognized micro command: foobar. Please refer to 'micro --help'") {
-		t.Fatalf("micro foobar does not return correct error %v", string(outp))
+	outp, _ := exec.Command("hari", "foobar").CombinedOutput()
+	if !strings.Contains(string(outp), "Unrecognized hari command: foobar. Please refer to 'hari --help'") {
+		t.Fatalf("hari foobar does not return correct error %v", string(outp))
 		return
 	}
 }

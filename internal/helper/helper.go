@@ -88,9 +88,9 @@ func UnexpectedCommand(ctx *cli.Context) error {
 			commandName = arg
 		}
 	}
-	return fmt.Errorf("Unrecognized micro command: %s. Please refer to 'micro --help'", commandName)
+	return fmt.Errorf("Unrecognized hari command: %s. Please refer to 'hari --help'", commandName)
 }
 
 func MissingCommand(ctx *cli.Context) error {
-	return fmt.Errorf("No command provided to micro. Please refer to 'micro --help'")
+	return fmt.Errorf("No command provided to hari. Please refer to 'hari --help'")
 }
