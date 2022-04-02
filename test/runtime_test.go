@@ -23,7 +23,7 @@ func testServerModeCall(t *t) {
 	t.Parallel()
 	serv := newServer(t)
 
-	callCmd := exec.Command("micro", serv.envFlag(), "call", "go.micro.runtime", "Runtime.Read", "{}")
+	callCmd := exec.Command("hari", serv.envFlag(), "call", "go.micro.runtime", "Runtime.Read", "{}")
 	outp, err := callCmd.CombinedOutput()
 	if err == nil {
 		t.Fatalf("Call to server should fail, got no error, output: %v", string(outp))
@@ -34,7 +34,7 @@ func testServerModeCall(t *t) {
 	defer serv.close()
 
 	try("Calling Runtime.Read", t, func() ([]byte, error) {
-		outp, err = exec.Command("micro", serv.envFlag(), "call", "go.micro.runtime", "Runtime.Read", "{}").CombinedOutput()
+		outp, err = exec.Command("hari", serv.envFlag(), "call", "go.micro.runtime", "Runtime.Read", "{}").CombinedOutput()
 		if err != nil {
 			return outp, errors.New("Call to runtime read should succeed")
 		}
@@ -52,15 +52,15 @@ func testRunLocalSource(t *t) {
 	serv.launch()
 	defer serv.close()
 
-	runCmd := exec.Command("micro", serv.envFlag(), "run", "./example-service")
+	runCmd := exec.Command("hari", serv.envFlag(), "run", "./example-service")
 	outp, err := runCmd.CombinedOutput()
 	if err != nil {
-		t.Fatalf("micro run failure, output: %v", string(outp))
+		t.Fatalf("hari run failure, output: %v", string(outp))
 		return
 	}
 
 	try("Find test/example", t, func() ([]byte, error) {
-		psCmd := exec.Command("micro", serv.envFlag(), "status")
+		psCmd := exec.Command("hari", serv.envFlag(), "status")
 		outp, err = psCmd.CombinedOutput()
 		if err != nil {
 			return outp, err
@@ -75,7 +75,7 @@ func testRunLocalSource(t *t) {
 	}, 15*time.Second)
 
 	try("Find go.micro.service.example in list", t, func() ([]byte, error) {
-		outp, err := exec.Command("micro", serv.envFlag(), "list", "services").CombinedOutput()
+		outp, err := exec.Command("hari", serv.envFlag(), "list", "services").CombinedOutput()
 		if err != nil {
 			return outp, err
 		}
@@ -96,15 +96,15 @@ func testRunAndKill(t *t) {
 	serv.launch()
 	defer serv.close()
 
-	runCmd := exec.Command("micro", serv.envFlag(), "run", "./example-service")
+	runCmd := exec.Command("hari", serv.envFlag(), "run", "./example-service")
 	outp, err := runCmd.CombinedOutput()
 	if err != nil {
-		t.Fatalf("micro run failure, output: %v", string(outp))
+		t.Fatalf("hari run failure, output: %v", string(outp))
 		return
 	}
 
 	try("Find test/example", t, func() ([]byte, error) {
-		psCmd := exec.Command("micro", serv.envFlag(), "status")
+		psCmd := exec.Command("hari", serv.envFlag(), "status")
 		outp, err = psCmd.CombinedOutput()
 		if err != nil {
 			return outp, err
@@ -119,7 +119,7 @@ func testRunAndKill(t *t) {
 	}, 15*time.Second)
 
 	try("Find go.micro.service.example in list", t, func() ([]byte, error) {
-		outp, err := exec.Command("micro", serv.envFlag(), "list", "services").CombinedOutput()
+		outp, err := exec.Command("hari", serv.envFlag(), "list", "services").CombinedOutput()
 		if err != nil {
 			return outp, err
 		}
@@ -129,14 +129,14 @@ func testRunAndKill(t *t) {
 		return outp, err
 	}, 50*time.Second)
 
-	outp, err = exec.Command("micro", serv.envFlag(), "kill", "test/example-service").CombinedOutput()
+	outp, err = exec.Command("hari", serv.envFlag(), "kill", "test/example-service").CombinedOutput()
 	if err != nil {
 		t.Fatalf("micro kill failure, output: %v", string(outp))
 		return
 	}
 
 	try("Find test/example", t, func() ([]byte, error) {
-		psCmd := exec.Command("micro", serv.envFlag(), "status")
+		psCmd := exec.Command("hari", serv.envFlag(), "status")
 		outp, err = psCmd.CombinedOutput()
 		if err != nil {
 			return outp, err
@@ -151,7 +151,7 @@ func testRunAndKill(t *t) {
 	}, 15*time.Second)
 
 	try("Find go.micro.service.example in list", t, func() ([]byte, error) {
-		outp, err := exec.Command("micro", serv.envFlag(), "list", "services").CombinedOutput()
+		outp, err := exec.Command("hari", serv.envFlag(), "list", "services").CombinedOutput()
 		if err != nil {
 			return outp, err
 		}
@@ -190,16 +190,16 @@ func testLocalOutsideRepo(t *t) {
 		return
 	}
 
-	runCmd := exec.Command("micro", serv.envFlag(), "run", ".")
+	runCmd := exec.Command("hari", serv.envFlag(), "run", ".")
 	runCmd.Dir = folderPath
 	outp, err = runCmd.CombinedOutput()
 	if err != nil {
-		t.Fatalf("micro run failure, output: %v", string(outp))
+		t.Fatalf("hari run failure, output: %v", string(outp))
 		return
 	}
 
 	try("Find "+dirname, t, func() ([]byte, error) {
-		psCmd := exec.Command("micro", serv.envFlag(), "status")
+		psCmd := exec.Command("hari", serv.envFlag(), "status")
 		outp, err = psCmd.CombinedOutput()
 		if err != nil {
 			return outp, err
@@ -219,7 +219,7 @@ func testLocalOutsideRepo(t *t) {
 	}, 12*time.Second)
 
 	try("Find go.micro.service.example in list", t, func() ([]byte, error) {
-		outp, err := exec.Command("micro", serv.envFlag(), "list", "services").CombinedOutput()
+		outp, err := exec.Command("hari", serv.envFlag(), "list", "services").CombinedOutput()
 		if err != nil {
 			return outp, err
 		}
@@ -255,15 +255,15 @@ func testRunGithubSource(t *t) {
 	serv.launch()
 	defer serv.close()
 
-	runCmd := exec.Command("micro", serv.envFlag(), "run", "github.com/ebelanja/micro-examples/helloworld")
+	runCmd := exec.Command("hari", serv.envFlag(), "run", "github.com/ebelanja/micro-examples/helloworld")
 	outp, err := runCmd.CombinedOutput()
 	if err != nil {
-		t.Fatalf("micro run failure, output: %v", string(outp))
+		t.Fatalf("hari run failure, output: %v", string(outp))
 		return
 	}
 
 	try("Find hello world", t, func() ([]byte, error) {
-		psCmd := exec.Command("micro", serv.envFlag(), "status")
+		psCmd := exec.Command("hari", serv.envFlag(), "status")
 		outp, err = psCmd.CombinedOutput()
 		if err != nil {
 			return outp, err
@@ -276,7 +276,7 @@ func testRunGithubSource(t *t) {
 	}, 60*time.Second)
 
 	try("Call hello world", t, func() ([]byte, error) {
-		callCmd := exec.Command("micro", serv.envFlag(), "call", "go.micro.service.helloworld", "Helloworld.Call", `{"name": "Joe"}`)
+		callCmd := exec.Command("hari", serv.envFlag(), "call", "go.micro.service.helloworld", "Helloworld.Call", `{"name": "Joe"}`)
 		outp, err := callCmd.CombinedOutput()
 		if err != nil {
 			return outp, err
@@ -305,15 +305,15 @@ func testRunLocalUpdateAndCall(t *t) {
 	defer serv.close()
 
 	// Run the example service
-	runCmd := exec.Command("micro", serv.envFlag(), "run", "./example-service")
+	runCmd := exec.Command("hari", serv.envFlag(), "run", "./example-service")
 	outp, err := runCmd.CombinedOutput()
 	if err != nil {
-		t.Fatalf("micro run failure, output: %v", string(outp))
+		t.Fatalf("hari run failure, output: %v", string(outp))
 		return
 	}
 
 	try("Finding example service with micro status", t, func() ([]byte, error) {
-		psCmd := exec.Command("micro", serv.envFlag(), "status")
+		psCmd := exec.Command("hari", serv.envFlag(), "status")
 		outp, err = psCmd.CombinedOutput()
 		if err != nil {
 			return outp, err
@@ -328,7 +328,7 @@ func testRunLocalUpdateAndCall(t *t) {
 	}, 15*time.Second)
 
 	try("Call example service", t, func() ([]byte, error) {
-		callCmd := exec.Command("micro", serv.envFlag(), "call", "go.micro.service.example", "Example.Call", `{"name": "Joe"}`)
+		callCmd := exec.Command("hari", serv.envFlag(), "call", "go.micro.service.example", "Example.Call", `{"name": "Joe"}`)
 		outp, err := callCmd.CombinedOutput()
 		if err != nil {
 			return outp, err
@@ -350,7 +350,7 @@ func testRunLocalUpdateAndCall(t *t) {
 		replaceStringInFile(t, "./example-service/handler/handler.go", "Hi", "Hello")
 	}()
 
-	updateCmd := exec.Command("micro", serv.envFlag(), "update", "./example-service")
+	updateCmd := exec.Command("hari", serv.envFlag(), "update", "./example-service")
 	outp, err = updateCmd.CombinedOutput()
 	if err != nil {
 		t.Fatal(err)
@@ -358,7 +358,7 @@ func testRunLocalUpdateAndCall(t *t) {
 	}
 
 	try("Call example service after modification", t, func() ([]byte, error) {
-		callCmd := exec.Command("micro", serv.envFlag(), "call", "go.micro.service.example", "Example.Call", `{"name": "Joe"}`)
+		callCmd := exec.Command("hari", serv.envFlag(), "call", "go.micro.service.example", "Example.Call", `{"name": "Joe"}`)
 		outp, err = callCmd.CombinedOutput()
 		if err != nil {
 			return outp, err
@@ -385,15 +385,15 @@ func testExistingLogs(t *t) {
 	serv.launch()
 	defer serv.close()
 
-	runCmd := exec.Command("micro", serv.envFlag(), "run", "github.com/ebelanja/micro-services/logspammer")
+	runCmd := exec.Command("hari", serv.envFlag(), "run", "github.com/ebelanja/micro-services/logspammer")
 	outp, err := runCmd.CombinedOutput()
 	if err != nil {
-		t.Fatalf("micro run failure, output: %v", string(outp))
+		t.Fatalf("hari run failure, output: %v", string(outp))
 		return
 	}
 
 	try("logspammer logs", t, func() ([]byte, error) {
-		psCmd := exec.Command("micro", serv.envFlag(), "logs", "-n", "5", "ebelanja/micro-services/logspammer")
+		psCmd := exec.Command("hari", serv.envFlag(), "logs", "-n", "5", "ebelanja/micro-services/logspammer")
 		outp, err = psCmd.CombinedOutput()
 		if err != nil {
 			return outp, err
@@ -416,15 +416,15 @@ func testStreamLogsAndThirdPartyRepo(t *t) {
 	serv.launch()
 	defer serv.close()
 
-	runCmd := exec.Command("micro", serv.envFlag(), "run", "github.com/ebelanja/micro-services/logspammer")
+	runCmd := exec.Command("hari", serv.envFlag(), "run", "github.com/ebelanja/micro-services/logspammer")
 	outp, err := runCmd.CombinedOutput()
 	if err != nil {
-		t.Fatalf("micro run failure, output: %v", string(outp))
+		t.Fatalf("hari run failure, output: %v", string(outp))
 		return
 	}
 
 	try("logspammer logs", t, func() ([]byte, error) {
-		psCmd := exec.Command("micro", serv.envFlag(), "logs", "-n", "5", "ebelanja/micro-services/logspammer")
+		psCmd := exec.Command("hari", serv.envFlag(), "logs", "-n", "5", "ebelanja/micro-services/logspammer")
 		outp, err = psCmd.CombinedOutput()
 		if err != nil {
 			return outp, err
@@ -437,7 +437,7 @@ func testStreamLogsAndThirdPartyRepo(t *t) {
 	}, 50*time.Second)
 
 	// Test streaming logs
-	cmd := exec.Command("micro", serv.envFlag(), "logs", "-n", "1", "-f", "ebelanja-micro-services-logspammer")
+	cmd := exec.Command("hari", serv.envFlag(), "logs", "-n", "1", "-f", "ebelanja-micro-services-logspammer")
 
 	time.Sleep(7 * time.Second)
 

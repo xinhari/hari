@@ -29,7 +29,7 @@ func basicAuthSuite(serv server, t *t) {
 	// Execute first command in read to wait for store service
 	// to start up
 	try("Calling micro auth list accounts", t, func() ([]byte, error) {
-		readCmd := exec.Command("micro", serv.envFlag(), "auth", "list", "accounts")
+		readCmd := exec.Command("hari", serv.envFlag(), "auth", "list", "accounts")
 		outp, err := readCmd.CombinedOutput()
 		if err != nil {
 			return outp, err
@@ -42,7 +42,7 @@ func basicAuthSuite(serv server, t *t) {
 	}, 15*time.Second)
 
 	try("Calling micro auth list rules", t, func() ([]byte, error) {
-		readCmd := exec.Command("micro", serv.envFlag(), "auth", "list", "rules")
+		readCmd := exec.Command("hari", serv.envFlag(), "auth", "list", "rules")
 		outp, err := readCmd.CombinedOutput()
 		if err != nil {
 			return outp, err
@@ -55,7 +55,7 @@ func basicAuthSuite(serv server, t *t) {
 
 	accessToken := ""
 	try("Try to get token with default account", t, func() ([]byte, error) {
-		readCmd := exec.Command("micro", serv.envFlag(), "call", "go.micro.auth", "Auth.Token", `{"id":"default","secret":"password"}`)
+		readCmd := exec.Command("hari", serv.envFlag(), "call", "go.micro.auth", "Auth.Token", `{"id":"default","secret":"password"}`)
 		outp, err := readCmd.CombinedOutput()
 		if err != nil {
 			return outp, err
@@ -73,7 +73,7 @@ func basicAuthSuite(serv server, t *t) {
 	}, 8*time.Second)
 
 	try("Try to log in with token we got", t, func() ([]byte, error) {
-		readCmd := exec.Command("micro", serv.envFlag(), "login", "--token", accessToken)
+		readCmd := exec.Command("hari", serv.envFlag(), "login", "--token", accessToken)
 		outp, err := readCmd.CombinedOutput()
 		if err != nil {
 			return outp, err

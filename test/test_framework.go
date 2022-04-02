@@ -106,10 +106,10 @@ func newServer(t *t, opts ...options) server {
 	exec.Command("docker", "rm", fname).CombinedOutput()
 
 	// create env and set proxy address
-	exec.Command("micro", "env", "add", fname, fmt.Sprintf("127.0.0.1:%v", portnum)).CombinedOutput()
+	exec.Command("hari", "env", "add", fname, fmt.Sprintf("127.0.0.1:%v", portnum)).CombinedOutput()
 
 	cmd := exec.Command("docker", "run", "--name", fname,
-		fmt.Sprintf("-p=%v:8081", portnum), "micro", "server")
+		fmt.Sprintf("-p=%v:8081", portnum), "hari", "server")
 	if len(opts) == 1 && opts[0].auth == "jwt" {
 
 		base64 := "base64 -w0"
@@ -132,9 +132,9 @@ func newServer(t *t, opts ...options) server {
 			"-e", "MICRO_AUTH=jwt",
 			"-e", "MICRO_AUTH_PRIVATE_KEY="+strings.Trim(string(privKey), "\n"),
 			"-e", "MICRO_AUTH_PUBLIC_KEY="+strings.Trim(string(pubKey), "\n"),
-			"micro", "server")
+			"hari", "server")
 	}
-	//fmt.Println("docker", "run", "--name", fname, fmt.Sprintf("-p=%v:8081", portnum), "micro", "server")
+	//fmt.Println("docker", "run", "--name", fname, fmt.Sprintf("-p=%v:8081", portnum), "hari", "server")
 	return server{
 		cmd:           cmd,
 		t:             t,
@@ -151,7 +151,7 @@ func (s server) launch() {
 	}()
 	// @todo find a way to know everything is up and running
 	try("Calling micro server", s.t, func() ([]byte, error) {
-		outp, err := exec.Command("micro", s.envFlag(), "list", "services").CombinedOutput()
+		outp, err := exec.Command("hari", s.envFlag(), "list", "services").CombinedOutput()
 		if !strings.Contains(string(outp), "runtime") ||
 			!strings.Contains(string(outp), "router") ||
 			!strings.Contains(string(outp), "registry") ||

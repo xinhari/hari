@@ -23,8 +23,8 @@ func testConfig(t *t) {
 	serv.launch()
 	defer serv.close()
 
-	try("Calling micro config read", t, func() ([]byte, error) {
-		getCmd := exec.Command("micro", serv.envFlag(), "config", "get", "somekey")
+	try("Calling hari config read", t, func() ([]byte, error) {
+		getCmd := exec.Command("hari", serv.envFlag(), "config", "get", "somekey")
 		outp, err := getCmd.CombinedOutput()
 		if err == nil {
 			return outp, errors.New("config gete should fail")
@@ -38,8 +38,8 @@ func testConfig(t *t) {
 	// This needs to be retried to the the "error listing rules"
 	// error log output that happens when the auth service is not yet available.
 
-	try("Calling micro config set", t, func() ([]byte, error) {
-		setCmd := exec.Command("micro", serv.envFlag(), "config", "set", "somekey", "val1")
+	try("Calling hari config set", t, func() ([]byte, error) {
+		setCmd := exec.Command("hari", serv.envFlag(), "config", "set", "somekey", "val1")
 		outp, err := setCmd.CombinedOutput()
 		if err != nil {
 			return outp, err
@@ -50,8 +50,8 @@ func testConfig(t *t) {
 		return outp, err
 	}, 5*time.Second)
 
-	try("micro config get somekey", t, func() ([]byte, error) {
-		getCmd := exec.Command("micro", serv.envFlag(), "config", "get", "somekey")
+	try("hari config get somekey", t, func() ([]byte, error) {
+		getCmd := exec.Command("hari", serv.envFlag(), "config", "get", "somekey")
 		outp, err := getCmd.CombinedOutput()
 		if err != nil {
 			return outp, err
@@ -62,7 +62,7 @@ func testConfig(t *t) {
 		return outp, err
 	}, 8*time.Second)
 
-	delCmd := exec.Command("micro", serv.envFlag(), "config", "del", "somekey")
+	delCmd := exec.Command("hari", serv.envFlag(), "config", "del", "somekey")
 	outp, err := delCmd.CombinedOutput()
 	if err != nil {
 		t.Fatalf(string(outp))
@@ -73,8 +73,8 @@ func testConfig(t *t) {
 		return
 	}
 
-	try("micro config get somekey", t, func() ([]byte, error) {
-		getCmd := exec.Command("micro", serv.envFlag(), "config", "get", "somekey")
+	try("hari config get somekey", t, func() ([]byte, error) {
+		getCmd := exec.Command("hari", serv.envFlag(), "config", "get", "somekey")
 		outp, err = getCmd.CombinedOutput()
 		if err == nil {
 			return outp, errors.New("getting somekey should fail")
@@ -86,7 +86,7 @@ func testConfig(t *t) {
 	}, 8*time.Second)
 
 	// Testing dot notation
-	setCmd := exec.Command("micro", serv.envFlag(), "config", "set", "someotherkey.subkey", "otherval1")
+	setCmd := exec.Command("hari", serv.envFlag(), "config", "set", "someotherkey.subkey", "otherval1")
 	outp, err = setCmd.CombinedOutput()
 	if err != nil {
 		t.Fatal(err)
@@ -97,8 +97,8 @@ func testConfig(t *t) {
 		return
 	}
 
-	try("micro config get someotherkey.subkey", t, func() ([]byte, error) {
-		getCmd := exec.Command("micro", serv.envFlag(), "config", "get", "someotherkey.subkey")
+	try("hari config get someotherkey.subkey", t, func() ([]byte, error) {
+		getCmd := exec.Command("hari", serv.envFlag(), "config", "get", "someotherkey.subkey")
 		outp, err = getCmd.CombinedOutput()
 		if err != nil {
 			return outp, err
@@ -135,18 +135,18 @@ func testConfigReadFromService(t *t) {
 		return
 	}
 
-	runCmd := exec.Command("micro", serv.envFlag(), "run", ".")
+	runCmd := exec.Command("hari", serv.envFlag(), "run", ".")
 	runCmd.Dir = folderPath
 	outp, err = runCmd.CombinedOutput()
 	if err != nil {
-		t.Fatalf("micro run failure, output: %v", string(outp))
+		t.Fatalf("hari run failure, output: %v", string(outp))
 		return
 	}
 
 	// This needs to be retried to the the "error listing rules"
 	// error log output that happens when the auth service is not yet available.
-	try("Calling micro config set", t, func() ([]byte, error) {
-		setCmd := exec.Command("micro", serv.envFlag(), "config", "set", "key.subkey", "val1")
+	try("Calling hari config set", t, func() ([]byte, error) {
+		setCmd := exec.Command("hari", serv.envFlag(), "config", "set", "key.subkey", "val1")
 		outp, err := setCmd.CombinedOutput()
 		if err != nil {
 			return outp, err
@@ -158,7 +158,7 @@ func testConfigReadFromService(t *t) {
 	}, 5*time.Second)
 
 	try("Try logs read", t, func() ([]byte, error) {
-		setCmd := exec.Command("micro", serv.envFlag(), "logs", "-n", "1", dirname)
+		setCmd := exec.Command("hari", serv.envFlag(), "logs", "-n", "1", dirname)
 		outp, err := setCmd.CombinedOutput()
 		if err != nil {
 			return outp, err
