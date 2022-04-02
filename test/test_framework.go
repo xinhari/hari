@@ -134,7 +134,7 @@ func newServer(t *t, opts ...options) server {
 			"-e", "MICRO_AUTH_PUBLIC_KEY="+strings.Trim(string(pubKey), "\n"),
 			"hari", "server")
 	}
-	fmt.Println("docker", "run", "--name", fname, fmt.Sprintf("-p=%v:8081", portnum), "hari", "server")
+	// fmt.Println("docker", "run", "--name", fname, fmt.Sprintf("-p=%v:8081", portnum), "hari", "server")
 	return server{
 		cmd:           cmd,
 		t:             t,
