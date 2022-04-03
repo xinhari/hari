@@ -657,5 +657,5 @@ honnef.co/go/tools v0.0.1-2019.2.3/go.mod h1:a3bituU0lyd329TUQxRnasdCoJDkEUEAqEt
 k8s.io/kubernetes v1.13.0/go.mod h1:ocZa8+6APFNC2tX1DZASIbocyYT5jHzqFVsY5aoB7Jk=
 rsc.io/binaryregexp v0.2.0/go.mod h1:qTv7/COck+e2FymRvadv62gMdZztPaShugOCi3I+8D8=
 sigs.k8s.io/yaml v1.1.0/go.mod h1:UJmg0vDUVViEyp3mgSv9WPwZCDxu4rQW1olrI1uml+o=
-xinhari.com/xinhari v1.0.0-alpha.2 h1:El02gga9MvoEqNPhysdxVgiPxWirggoP2qwCX/8rMdU=
-xinhari.com/xinhari v1.0.0-alpha.2/go.mod h1:GY1tu4d3X9HT0ajEID3YZGFhHOPeyFpybm7iOCQ0Ozo=
+xinhari.com/xinhari v0.1.0-alpha h1:J1RxrPp//ITPtSmjwYSOVsmbCcwuHALmSbkYWXxn3sw=
+xinhari.com/xinhari v0.1.0-alpha/go.mod h1:GY1tu4d3X9HT0ajEID3YZGFhHOPeyFpybm7iOCQ0Ozo=
