@@ -393,7 +393,7 @@ func Setup(app *ccli.App, options ...xinhari.Option) {
 
 	sort.Sort(commands(app.Commands))
 
-	// boot micro runtime
+	// boot hari runtime
 	app.Action = func(c *ccli.Context) error {
 		if c.Args().Len() > 0 {
 			command := c.Args().First()
