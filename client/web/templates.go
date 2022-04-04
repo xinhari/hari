@@ -61,7 +61,7 @@ var (
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span> 
                 </button>
-                <a class="navbar-brand logo" href="/"><!-- <img src="https://xinhari.com/logo.png" height=50px width=auto style="margin-bottom: 5px;" /> -->Xinhari</a>
+                <a class="navbar-brand logo" href="/" style="margin-bottom: 5px; margin-top: 20px"><!-- <img src="https://xinhari.com/logo.png" height=50px width=auto style="margin-bottom: 5px;" /> -->Xinhari</a>
               </div>
               <div class="collapse navbar-collapse" id="navBar">
 	        <ul class="nav navbar-nav navbar-right" id="dev">
