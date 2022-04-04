@@ -133,4 +133,3 @@ hari --help
 Advanced development of Micro 2
 
 See the [docs](https://xinhari.com/docs) for detailed information on the architecture, installation and use of the platform.
-
