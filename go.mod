@@ -2,6 +2,9 @@ module xinhari.com/hari
 
 go 1.13
 
+// set your local xinhari framework
+replace xinhari.com/xinhari => /home/agus7fauzi/Workspace/xinhari
+
 require (
 	github.com/aws/aws-sdk-go v1.23.0
 	github.com/boltdb/bolt v1.3.1
