@@ -2,8 +2,8 @@ module xinhari.com/hari
 
 go 1.13
 
-// set your local xinhari framework
-replace xinhari.com/xinhari => /home/agus7fauzi/Workspace/xinhari
+// set your local xinhari framework directory
+replace xinhari.com/xinhari => ../xinhari
 
 require (
 	github.com/aws/aws-sdk-go v1.23.0
