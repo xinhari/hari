@@ -2,7 +2,7 @@
 
 Hari is a distributed systems runtime for the Cloud and beyond.
 
-## Overview
+## About Hari
 
 Hari addresses the key requirements for building distributed systems. It leverages the microservices
 architecture pattern and provides a set of services which act as the building blocks of a platform. Xinhari deals
@@ -11,7 +11,7 @@ with the complexity of distributed systems and provides simpler programmable abs
 Technology is constantly evolving. The infrastructure stack is always changing. Hari is a platform which
 addresses these issues with a pluggable foundation and strongly defined apis to build on. Plug into any stack or cloud.
 
-## Features
+## Hari Features
 
 The runtime is composed of the following features:
 
