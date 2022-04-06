@@ -19,7 +19,7 @@ The runtime is composed of the following features:
 
 Services are the core services that makeup the runtime. They provide a programmable abstraction layer for distributed systems infrastructure.
 
-- **auth:** Authentication and authorization is a core requirement for any production ready platform. Micro builds in an auth service 
+- **auth:** Authentication and authorization is a core requirement for any production ready platform. Xinhari builds in an auth service 
 for managing service to service and user to service authentication.
 
 - **broker:** A message broker allowing for async messaging. Microservices are event driven architectures and should provide messaging as a first
@@ -32,7 +32,7 @@ sources and enables you to update config without needing to restart services.
 help understand the overall scope of the system from one location. 
 
 - **network:** A drop in service to service networking solution. Offload service discovery, load balancing and fault tolerance to the network.
-The micro network dynamically builds a latency based routing table based on the local registry. It includes support for multi-cloud networking.
+The xinhari network dynamically builds a latency based routing table based on the local registry. It includes support for multi-cloud networking.
 
 - **registry:** The registry provides service discovery to locate other services, store feature rich metadata and endpoint information. It's a
 service explorer which lets you centrally and dynamically store this info at runtime.
