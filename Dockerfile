@@ -15,4 +15,7 @@ RUN apk add ca-certificates && \
     rm -rf /var/cache/apk/* /tmp/* && \
     [ ! -e /etc/nsswitch.conf ] && echo 'hosts: files dns' > /etc/nsswitch.conf
 
+# Increase UDP receive buffer size for max performance of QUIC
+RUN sysctl -w net.core.rmem_max=2500000
+
 ENTRYPOINT ["/hari"]

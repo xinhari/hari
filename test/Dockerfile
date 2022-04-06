@@ -38,4 +38,7 @@ RUN go get xinhari.com/xinhari
 
 COPY ./hari /hari
 
+# Increase UDP receive buffer size for max performance of QUIC
+RUN sysctl -w net.core.rmem_max=2500000
+
 ENTRYPOINT ["sh", "/bin/run.sh"]

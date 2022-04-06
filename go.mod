@@ -13,9 +13,9 @@ require (
 	github.com/chzyer/test v0.0.0-20180213035817-a1ea475d72b1 // indirect
 	github.com/cloudflare/cloudflare-go v0.10.9
 	github.com/dustin/go-humanize v1.0.0
-	github.com/fsnotify/fsnotify v1.4.7
+	github.com/fsnotify/fsnotify v1.4.9
 	github.com/go-acme/lego/v3 v3.4.0
-	github.com/golang/protobuf v1.4.2
+	github.com/golang/protobuf v1.5.2
 	github.com/google/uuid v1.1.1
 	github.com/gorilla/handlers v1.4.2
 	github.com/gorilla/mux v1.7.3
@@ -27,11 +27,11 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/serenize/snaker v0.0.0-20171204205717-a683aaf2d516
 	github.com/spf13/viper v1.6.3
-	github.com/stretchr/testify v1.4.0
+	github.com/stretchr/testify v1.5.1
 	github.com/xlab/treeprint v0.0.0-20181112141820-a009c3971eca
-	golang.org/x/crypto v0.0.0-20200510223506-06a226fb4e37
-	golang.org/x/net v0.0.0-20200520182314-0ba52f642ac2
-	golang.org/x/tools v0.0.0-20191216173652-a0e659d51361
+	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9
+	golang.org/x/net v0.0.0-20210428140749-89ef3d95e781
+	golang.org/x/tools v0.1.1
 	google.golang.org/genproto v0.0.0-20191216164720-4f79533eabd1
 	google.golang.org/grpc v1.26.0
 	xinhari.com/xinhari v0.1.0-alpha
