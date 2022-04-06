@@ -1,4 +1,4 @@
-FROM golang:1.13-alpine AS build-collector
+FROM golang:1.18-alpine AS build-collector
 
 RUN mkdir -p /tmp/build
 WORKDIR /tmp/build

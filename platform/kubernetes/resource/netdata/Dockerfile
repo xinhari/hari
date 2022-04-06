@@ -1,4 +1,4 @@
-FROM golang:1.13 AS buildplugin
+FROM golang:1.18 AS buildplugin
 ENV GO111MODULE on
 ENV CGO_ENABLED 0
 RUN mkdir /tmp/build
