@@ -2,8 +2,7 @@ module xinhari.com/hari
 
 go 1.18
 
-// set your local xinhari framework directory
-replace xinhari.com/xinhari => ../xinhari
+replace google.golang.org/grpc => google.golang.org/grpc v1.26.0
 
 require (
 	github.com/aws/aws-sdk-go v1.23.0
@@ -32,7 +31,7 @@ require (
 	golang.org/x/tools v0.1.1
 	google.golang.org/genproto v0.0.0-20191216164720-4f79533eabd1
 	google.golang.org/grpc v1.26.0
-	xinhari.com/xinhari v0.1.0-alpha
+	xinhari.com/xinhari v1.0.0-beta
 )
 
 require (
@@ -44,7 +43,8 @@ require (
 	github.com/cheekybits/genny v1.0.0 // indirect
 	github.com/chzyer/logex v1.1.10 // indirect
 	github.com/chzyer/test v0.0.0-20180213035817-a1ea475d72b1 // indirect
-	github.com/coreos/etcd v3.3.18+incompatible // indirect
+	github.com/coreos/etcd v3.3.27+incompatible // indirect
+	github.com/coreos/go-semver v0.3.0 // indirect
 	github.com/coreos/go-systemd v0.0.0-20190719114852-fd7a80b32e1f // indirect
 	github.com/coreos/pkg v0.0.0-20180928190104-399ea9e2e55f // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.0 // indirect
