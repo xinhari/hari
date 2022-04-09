@@ -25,11 +25,9 @@ func protoComments(goDir, alias string) []string {
 		"\ndownload protoc zip packages (protoc-$VERSION-$PLATFORM.zip) and install:\n",
 		"visit https://github.com/protocolbuffers/protobuf/releases",
 		"\ndownload protobuf for xinhari:\n",
-		"go install github.com/golang/protobuf/proto",
-		"go install github.com/golang/protobuf/protoc-gen-go",
-		"go install xinhari.com/hari/cmd/protoc-gen-xinhari",
-		"\ncompile the proto file " + alias + ".proto:\n",
+		"make init",
 		"cd " + goDir,
+		"\ncompile the proto file " + alias + ".proto:\n",
 		"make proto\n",
 	}
 }
