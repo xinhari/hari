@@ -76,7 +76,7 @@ go get xinhari.com/hari
 Docker image
 
 ```
-docker pull xinhari/hari
+docker pull agus7fauzi/hari
 ```
 
 Linux install
