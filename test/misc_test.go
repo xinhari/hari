@@ -47,6 +47,12 @@ func testNew(t *t) {
 				t.Fatalf("hari new lacks protobuf install instructions %v", string(outp))
 				return
 			}
+			outp, err = exec.Command("ls").CombinedOutput()
+			if err != nil {
+				t.Fatal(err)
+				return
+			}
+			fmt.Println(outp)
 			outp, err = exec.Command("cd", tc.svcName).CombinedOutput()
 			if err != nil {
 				t.Fatal(err)
