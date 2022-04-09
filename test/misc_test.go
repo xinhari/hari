@@ -1,4 +1,4 @@
-// +build integration
+//go:build integration
 
 package test
 
@@ -48,10 +48,11 @@ func testNew(t *t) {
 				return
 			}
 
+			fmt.Print(string(outp))
 			lines := strings.Split(string(outp), "\n")
 			// executing install instructions
 			for _, line := range lines {
-				if strings.HasPrefix(line, "go get") {
+				if strings.HasPrefix(line, "go install") {
 					parts := strings.Split(line, " ")
 					getOutp, getErr := exec.Command(parts[0], parts[1:]...).CombinedOutput()
 					if getErr != nil {
