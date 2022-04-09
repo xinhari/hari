@@ -8,7 +8,7 @@ MODIFY=Mproto/imports/api.proto=xinhari.com/xinhari/api/proto
 {{if ne .Type "web"}}
 .PHONY: init
 init:
-	go install github.com/golang/protobuf/proto@latest
+	go get -u github.com/golang/protobuf/proto
 	go install github.com/golang/protobuf/protoc-gen-go@latest
 	go install github.com/xinhari/hari/cmd/protoc-gen-xinhari@latest
 	go install github.com/cosmtrek/air@latest
