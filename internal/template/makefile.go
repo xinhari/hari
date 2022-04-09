@@ -10,7 +10,7 @@ MODIFY=Mproto/imports/api.proto=xinhari.com/xinhari/api/proto
 init:
 	go get -u github.com/golang/protobuf/proto
 	go install github.com/golang/protobuf/protoc-gen-go@latest
-	go install github.com/xinhari/hari/cmd/protoc-gen-xinhari@latest
+	go install xinhari.com/hari/cmd/protoc-gen-xinhari@latest
 	go install github.com/cosmtrek/air@latest
 
 .PHONY: proto
