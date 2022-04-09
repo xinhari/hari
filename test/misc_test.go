@@ -53,13 +53,19 @@ func testNew(t *t) {
 				return
 			}
 			fmt.Println(string(outp))
-			outp, err = exec.Command("cd", tc.svcName).CombinedOutput()
+			outp, err = exec.Command("bash", "-c", "\"cd "+tc.svcName+"\"").CombinedOutput()
 			if err != nil {
 				t.Fatal(err)
 				return
 			}
 
 			fmt.Print(string(outp))
+			outp, err = exec.Command("ls").CombinedOutput()
+			if err != nil {
+				t.Fatal(err)
+				return
+			}
+			fmt.Println(string(outp))
 			lines := strings.Split(string(outp), "\n")
 			// executing install instructions
 			for _, line := range lines {
