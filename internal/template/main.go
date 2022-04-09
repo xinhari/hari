@@ -8,13 +8,15 @@ import (
 	"xinhari.com/xinhari"
 	"{{.Dir}}/handler"
 	"{{.Dir}}/subscriber"
+	
+	_ "github.com/joho/godotenv/autoload"
 )
 
 func main() {
 	// New Service
 	function := xinhari.NewFunction(
 		xinhari.Name("{{.FQDN}}"),
-		xinhari.Version("latest"),
+		xinhari.Version("0.1.0"),
 	)
 
 	// Initialise function
