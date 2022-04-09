@@ -47,48 +47,32 @@ func testNew(t *t) {
 				t.Fatalf("hari new lacks protobuf install instructions %v", string(outp))
 				return
 			}
-			outp, err = exec.Command("ls").CombinedOutput()
-			if err != nil {
-				t.Fatal(err)
-				return
-			}
-			fmt.Println(string(outp))
-			outp, err = exec.Command("/bin/sh -c 'cd " + tc.svcName + "'").CombinedOutput()
-			if err != nil {
-				t.Fatal(err)
-				return
-			}
 
-			fmt.Print(string(outp))
-			outp, err = exec.Command("ls").CombinedOutput()
-			if err != nil {
-				t.Fatal(err)
-				return
-			}
-			fmt.Println(string(outp))
 			lines := strings.Split(string(outp), "\n")
 			// executing install instructions
 			for _, line := range lines {
-				fmt.Print(line)
-				if strings.HasPrefix(line, "make") {
-					parts := strings.Split(line, " ")
-					getOutp, getErr := exec.Command(parts[0], parts[1:]...).CombinedOutput()
-					if getErr != nil {
-						t.Fatal(string(getOutp))
+				if !tc.skipProtoc && strings.HasPrefix(line, "make init") {
+					mp := strings.Split(line, " ")
+					protocCmd := exec.Command(mp[0], mp[1:]...)
+					protocCmd.Dir = "./" + tc.svcName
+					pOutp, pErr := protocCmd.CombinedOutput()
+					if pErr != nil {
+						t.Log("That didn't work ", pErr)
+						t.Fatal(string(pOutp))
 						return
 					}
 				}
-				// if !tc.skipProtoc && strings.HasPrefix(line, "make proto") {
-				// 	mp := strings.Split(line, " ")
-				// 	protocCmd := exec.Command(mp[0], mp[1:]...)
-				// 	protocCmd.Dir = "./" + tc.svcName
-				// 	pOutp, pErr := protocCmd.CombinedOutput()
-				// 	if pErr != nil {
-				// 		t.Log("That didn't work ", pErr)
-				// 		t.Fatal(string(pOutp))
-				// 		return
-				// 	}
-				// }
+				if !tc.skipProtoc && strings.HasPrefix(line, "make proto") {
+					mp := strings.Split(line, " ")
+					protocCmd := exec.Command(mp[0], mp[1:]...)
+					protocCmd.Dir = "./" + tc.svcName
+					pOutp, pErr := protocCmd.CombinedOutput()
+					if pErr != nil {
+						t.Log("That didn't work ", pErr)
+						t.Fatal(string(pOutp))
+						return
+					}
+				}
 			}
 			if tc.skipBuild {
 				return
