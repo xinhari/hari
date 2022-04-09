@@ -4,14 +4,15 @@ var (
 	Makefile = `
 GOPATH:=$(shell go env GOPATH)
 MODIFY=Mproto/imports/api.proto=xinhari.com/xinhari/api/proto
-.PHONY: init
-init:
-	go install github.com/golang/protobuf/proto
-	go install github.com/golang/protobuf/protoc-gen-go
-	go install github.com/xinhari/hari/cmd/protoc-gen-xinhari
-	go install github.com/cosmtrek/air@latest
 
 {{if ne .Type "web"}}
+.PHONY: init
+init:
+	go install github.com/golang/protobuf/proto@latest
+	go install github.com/golang/protobuf/protoc-gen-go@latest
+	go install github.com/xinhari/hari/cmd/protoc-gen-xinhari@latest
+	go install github.com/cosmtrek/air@latest
+
 .PHONY: proto
 proto:
     {{if eq .UseGoPath true}}
