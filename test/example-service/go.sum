@@ -597,3 +597,5 @@ rsc.io/binaryregexp v0.2.0/go.mod h1:qTv7/COck+e2FymRvadv62gMdZztPaShugOCi3I+8D8
 rsc.io/quote/v3 v3.1.0/go.mod h1:yEA65RcK8LyAZtP9Kv3t0HmxON59tX3rD+tICJqUlj0=
 rsc.io/sampler v1.3.0/go.mod h1:T1hPZKmBbMNahiBKFy5HrXp6adAjACjK9JXDnKaTXpA=
 sigs.k8s.io/yaml v1.1.0 h1:4A07+ZFc2wgJwo8YNlQpr1rVlgUDlxXHhPJciaPY5gs=
+xinhari.com/xinhari v1.0.0-beta h1:+1BfbzLBpVW4XB8g3IkpYkmCszns/QVIIO42TtXvGnw=
+xinhari.com/xinhari v1.0.0-beta/go.mod h1:T69w5WZoGIRfpwzd5cQ4j96X2838zFa9+qUoc5ag4FI=

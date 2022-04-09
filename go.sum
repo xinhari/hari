@@ -793,3 +793,5 @@ rsc.io/binaryregexp v0.2.0/go.mod h1:qTv7/COck+e2FymRvadv62gMdZztPaShugOCi3I+8D8
 sigs.k8s.io/yaml v1.1.0 h1:4A07+ZFc2wgJwo8YNlQpr1rVlgUDlxXHhPJciaPY5gs=
 sourcegraph.com/sourcegraph/go-diff v0.5.0/go.mod h1:kuch7UrkMzY0X+p9CRK03kfuPQ2zzQcaEFbx8wA8rck=
 sourcegraph.com/sqs/pbtypes v0.0.0-20180604144634-d3ebe8f20ae4/go.mod h1:ketZ/q3QxT9HOBeFhu6RdvsftgpsbFHBF5Cas6cDKZ0=
+xinhari.com/xinhari v1.0.0-beta h1:+1BfbzLBpVW4XB8g3IkpYkmCszns/QVIIO42TtXvGnw=
+xinhari.com/xinhari v1.0.0-beta/go.mod h1:T69w5WZoGIRfpwzd5cQ4j96X2838zFa9+qUoc5ag4FI=
