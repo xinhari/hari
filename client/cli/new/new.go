@@ -1,4 +1,4 @@
-// Package new generates micro service templates
+// Package new generates xinhari service templates
 package new
 
 import (
@@ -24,10 +24,10 @@ func protoComments(goDir, alias string) []string {
 	return []string{
 		"\ndownload protoc zip packages (protoc-$VERSION-$PLATFORM.zip) and install:\n",
 		"visit https://github.com/protocolbuffers/protobuf/releases",
-		"\ndownload protobuf for micro:\n",
-		"go get -u github.com/golang/protobuf/proto",
-		"go get -u github.com/golang/protobuf/protoc-gen-go",
-		"go get xinhari.com/hari/cmd/protoc-gen-micro",
+		"\ndownload protobuf for xinhari:\n",
+		"go install github.com/golang/protobuf/proto",
+		"go install github.com/golang/protobuf/protoc-gen-go",
+		"go install xinhari.com/hari/cmd/protoc-gen-xinhari",
 		"\ncompile the proto file " + alias + ".proto:\n",
 		"cd " + goDir,
 		"make proto\n",
