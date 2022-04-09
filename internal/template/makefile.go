@@ -12,6 +12,7 @@ init:
 	go install github.com/golang/protobuf/protoc-gen-go@latest
 	go install xinhari.com/hari/cmd/protoc-gen-xinhari@latest
 	go install github.com/cosmtrek/air@latest
+	go mod tidy
 
 .PHONY: proto
 proto:
