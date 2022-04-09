@@ -52,6 +52,7 @@ func testNew(t *t) {
 			lines := strings.Split(string(outp), "\n")
 			// executing install instructions
 			for _, line := range lines {
+				fmt.Print(line)
 				if strings.HasPrefix(line, "go install") {
 					parts := strings.Split(line, " ")
 					getOutp, getErr := exec.Command(parts[0], parts[1:]...).CombinedOutput()
