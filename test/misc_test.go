@@ -55,8 +55,6 @@ func testNew(t *t) {
 				fmt.Print(line)
 				if strings.HasPrefix(line, "make") {
 					parts := strings.Split(line, " ")
-					fmt.Print(parts[0])
-					fmt.Print(parts[1:]...)
 					getOutp, getErr := exec.Command(parts[0], parts[1:]...).CombinedOutput()
 					if getErr != nil {
 						t.Fatal(string(getOutp))
