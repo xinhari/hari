@@ -53,7 +53,7 @@ func testNew(t *t) {
 				return
 			}
 			fmt.Println(string(outp))
-			outp, err = exec.Command("bash", "-c", "\"cd "+tc.svcName+"\"").CombinedOutput()
+			outp, err = exec.Command("sh", "-c", "\"cd "+tc.svcName+"\"").CombinedOutput()
 			if err != nil {
 				t.Fatal(err)
 				return
