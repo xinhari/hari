@@ -52,7 +52,7 @@ func testNew(t *t) {
 				t.Fatal(err)
 				return
 			}
-			fmt.Println(outp)
+			fmt.Println(string(outp))
 			outp, err = exec.Command("cd", tc.svcName).CombinedOutput()
 			if err != nil {
 				t.Fatal(err)
