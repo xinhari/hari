@@ -19,7 +19,7 @@ jobs:
     name: Hari server integration tests
     runs-on: ubuntu-latest
     steps:
-      - name: Set the environment variable  
+    - name: Set the environment variable  
       run: |
         echo "ACTIONS_ALLOW_UNSECURE_COMMANDS=true" >> $GITHUB_ENV
 
