@@ -2,8 +2,6 @@ module xinhari.com/hari
 
 go 1.18
 
-replace google.golang.org/grpc => google.golang.org/grpc v1.26.0
-
 require (
 	github.com/aws/aws-sdk-go v1.23.0
 	github.com/boltdb/bolt v1.3.1
