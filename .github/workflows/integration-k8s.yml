@@ -19,6 +19,10 @@ jobs:
     name: Hari server integration tests
     runs-on: ubuntu-latest
     steps:
+      - name: Set the environment variable  
+      run: |
+        echo "ACTIONS_ALLOW_UNSECURE_COMMANDS=true" >> $GITHUB_ENV
+
     - name: Checkout
       uses: actions/checkout@v1
     - name: Setup Kind
