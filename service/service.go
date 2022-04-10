@@ -1,4 +1,4 @@
-// Package service provides a micro service
+// Package service provides a xinhari service
 package service
 
 import (
