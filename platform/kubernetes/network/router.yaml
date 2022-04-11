@@ -9,7 +9,7 @@ metadata:
   annotations:
     name: "go.micro.router"
     version: "latest"
-    source: "github.com/micro/micro"
+    source: "github.com/xinhari/hari"
     owner: "micro"
     group: "micro"
 spec:
@@ -53,7 +53,7 @@ spec:
           value: "true"
         args:
         - router
-        image: micro/micro
+        image: agus7fauzi/hari
         imagePullPolicy: Always
         ports:
         - containerPort: 8084

@@ -9,8 +9,8 @@ variable "image_pull_policy" {
 }
 
 variable "micro_image" {
-  description = "Micro docker image"
-  default     = "micro/micro"
+  description = "Hari docker image"
+  default     = "agus7fauzi/hari"
 }
 
 variable "etcd_image" {
@@ -24,8 +24,8 @@ variable "nats_image" {
 }
 
 variable "netdata_image" {
-  description = "Micro customised netdata image"
-  default     = "micro/netdata:latest"
+  description = "Xinhari customised netdata image"
+  default     = "agus7fauzi/netdata:latest"
 }
 
 variable "cockroachdb_image" {

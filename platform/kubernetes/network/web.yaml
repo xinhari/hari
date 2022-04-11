@@ -9,7 +9,7 @@ metadata:
   annotations:
     name: "go.micro.web"
     version: "latest"
-    source: "github.com/micro/micro"
+    source: "github.com/xinhari/hari"
     owner: "micro"
     group: "micro"
 spec:
@@ -67,7 +67,7 @@ spec:
               name: cloudflare-credentials
         args:
         - web
-        image: micro/micro
+        image: agus7fauzi/hari
         imagePullPolicy: Always
         ports:
         - containerPort: 443

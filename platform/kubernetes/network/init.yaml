@@ -54,7 +54,7 @@ metadata:
   annotations:
     name: "go.micro.init"
     version: "latest"
-    source: "github.com/micro/micro"
+    source: "github.com/xinhari/hari"
     owner: "micro"
     group: "micro"
 spec:
@@ -81,5 +81,5 @@ spec:
           value: "debug"
         args:
         - init
-        image: micro/micro
+        image: agus7fauzi/hari
         imagePullPolicy: Always

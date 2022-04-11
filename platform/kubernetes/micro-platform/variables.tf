@@ -13,7 +13,7 @@ variable "resource_namespace" {
 variable "micro_image" {
   type        = string
   description = "Micro docker image"
-  default     = "micro/micro:latest"
+  default     = "agus7fauzi/hari:latest"
 }
 
 variable "image_pull_policy" {

@@ -9,7 +9,7 @@ metadata:
   annotations:
     name: "go.micro.network"
     version: "latest"
-    source: "github.com/micro/micro"
+    source: "github.com/xinhari/hari"
     owner: "micro"
     group: "micro"
 spec:
@@ -64,7 +64,7 @@ spec:
           value: "0.0.0.0:8080"
         args:
         - network
-        image: micro/micro
+        image: agus7fauzi/hari
         imagePullPolicy: Always
         ports:
         - containerPort: 8080

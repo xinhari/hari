@@ -9,7 +9,7 @@ metadata:
   annotations:
     name: "go.micro.auth"
     version: "latest"
-    source: "github.com/micro/micro"
+    source: "github.com/xinhari/hari"
     owner: "micro"
     group: "micro"
 spec:
@@ -55,7 +55,7 @@ spec:
               key: private
         args:
         - auth
-        image: micro/micro
+        image: agus7fauzi/hari
         imagePullPolicy: Always
         ports:
         - containerPort: 8000
