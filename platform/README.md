@@ -4,7 +4,7 @@ This directory serves as platform bootstrapping for Hari.
 
 ## Overview
 
-The platform provides **Hari as a Service** as a fully managed solution. The platform is 
+The platform provides **Xinhari as a Service** as a fully managed solution. The platform is 
 bootstrapped onto Kubernetes on any major cloud provider, including load balancing and 
 dns management. This repository serves as the entrypoint and single location for all bootstrapping
 related source code and documentation.
