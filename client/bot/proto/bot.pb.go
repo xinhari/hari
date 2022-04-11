@@ -2,7 +2,7 @@
 // source: xinhari.com/hari/bot/proto/bot.proto
 
 /*
-Package go_micro_bot is a generated protocol buffer package.
+Package com_xinhari_bot is a generated protocol buffer package.
 
 It is generated from these files:
 	xinhari.com/hari/bot/proto/bot.proto
@@ -13,7 +13,7 @@ It has these top-level messages:
 	ExecRequest
 	ExecResponse
 */
-package go_micro_bot
+package com_xinhari_bot
 
 import proto "github.com/golang/protobuf/proto"
 import fmt "fmt"

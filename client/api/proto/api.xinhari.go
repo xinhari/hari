@@ -12,7 +12,7 @@ It has these top-level messages:
 	Request
 	Response
 */
-package go_micro_api
+package com_xinhari_api
 
 import proto "github.com/golang/protobuf/proto"
 import fmt "fmt"
