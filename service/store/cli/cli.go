@@ -1,8 +1,8 @@
-// Package cli implements the `micro store` subcommands
+// Package cli implements the `hari store` subcommands
 // for example:
-//   micro store snapshot
-//   micro store restore
-//   micro store sync
+//   hari store snapshot
+//   hari store restore
+//   hari store sync
 package cli
 
 import (

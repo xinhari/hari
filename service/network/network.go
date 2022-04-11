@@ -1,4 +1,4 @@
-// package network implements micro network node
+// package network implements xinhari network node
 package network
 
 import (

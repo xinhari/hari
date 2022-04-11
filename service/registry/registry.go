@@ -1,4 +1,4 @@
-// Package registry is the micro registry
+// Package registry is the xinhari registry
 package registry
 
 import (

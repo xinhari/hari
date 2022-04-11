@@ -1,4 +1,4 @@
-// Package runtime is the micro runtime
+// Package runtime is the xinhari runtime
 package runtime
 
 import (
