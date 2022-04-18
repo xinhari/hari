@@ -9,7 +9,7 @@ metadata:
   annotations:
     name: "go.micro.proxy"
     version: "latest"
-    source: "github.com/micro/micro"
+    source: "github.com/xinhari/hari"
     owner: "micro"
     group: "micro"
 spec:
@@ -67,7 +67,7 @@ spec:
               name: cloudflare-credentials
         args:
         - proxy
-        image: micro/micro
+        image: xinhari/hari
         imagePullPolicy: Always
         ports:
         - containerPort: 443

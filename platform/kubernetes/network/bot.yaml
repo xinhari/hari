@@ -9,7 +9,7 @@ metadata:
   annotations:
     name: "go.micro.bot"
     version: "latest"
-    source: "github.com/micro/micro"
+    source: "github.com/xinhari/hari"
     owner: "micro"
     group: "micro"
 spec:
@@ -31,7 +31,7 @@ spec:
             "bot",
             "--inputs=slack"
           ]
-          image: micro/micro
+          image: agus7fauzi/hari
           imagePullPolicy: Always
           env:
           - name: MICRO_AUTH

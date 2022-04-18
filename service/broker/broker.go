@@ -1,4 +1,4 @@
-// Package broker is the micro broker
+// Package broker is the xinhari broker
 package broker
 
 import (

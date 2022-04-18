@@ -5,7 +5,7 @@ The platform architecture doc describes what the platform is, what its composed 
 ## Overview
 
 The platform serves as a fully managed platform for microservices development. It builds on go-micro 
-and the micro runtime to provide **Micro as a Service**. It adds additionally functionality on top for 
+and the micro runtime to provide **Hari as a Service**. It adds additionally functionality on top for 
 infrastructure automation, account management, billing, alerting, etc.
 
 ## Features
@@ -25,8 +25,8 @@ infrastructure automation, account management, billing, alerting, etc.
 The platform layers on the existing open source tools and there's a clear separation of concerns. The breakdown 
 is as follows:
 
-- Platform - Micro as a Service. Fully managed platform - Hosted product and commercially licensed
-- Runtime - [Micro](https://github.com/micro/micro) is a runtime for services - Open source Apache 2.0 licensed
+- Platform - Hari as a Service. Fully managed platform - Hosted product and commercially licensed
+- Runtime - [Hari](https://github.com/xinhari/hari) is a runtime for services - Open source Apache 2.0 licensed
 - Framework - [Go Micro](https://github.com/micro/go-micro) is a framework for microservices development - Open source Apache 2.0 licensed
 
 ## Diagram

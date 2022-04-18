@@ -1,4 +1,4 @@
-// Package usage tracks micro usage
+// Package usage tracks xinhari usage
 package usage
 
 import (

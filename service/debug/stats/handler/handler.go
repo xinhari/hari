@@ -1,4 +1,4 @@
-// Package handler is the handler for the `micro debug stats` service
+// Package handler is the handler for the `hari debug stats` service
 package handler
 
 import (

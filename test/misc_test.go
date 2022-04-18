@@ -1,4 +1,4 @@
-// +build integration
+//go:build integration
 
 package test
 
@@ -51,11 +51,14 @@ func testNew(t *t) {
 			lines := strings.Split(string(outp), "\n")
 			// executing install instructions
 			for _, line := range lines {
-				if strings.HasPrefix(line, "go get") {
-					parts := strings.Split(line, " ")
-					getOutp, getErr := exec.Command(parts[0], parts[1:]...).CombinedOutput()
-					if getErr != nil {
-						t.Fatal(string(getOutp))
+				if !tc.skipProtoc && strings.HasPrefix(line, "make init") {
+					mp := strings.Split(line, " ")
+					protocCmd := exec.Command(mp[0], mp[1:]...)
+					protocCmd.Dir = "./" + tc.svcName
+					pOutp, pErr := protocCmd.CombinedOutput()
+					if pErr != nil {
+						t.Log("That didn't work ", pErr)
+						t.Fatal(string(pOutp))
 						return
 					}
 				}

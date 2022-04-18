@@ -1,4 +1,4 @@
-// Package infra provides functions for orchestrating a Micro platform
+// Package infra provides functions for orchestrating a Xinhari platform
 package infra
 
 import (

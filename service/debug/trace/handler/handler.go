@@ -1,4 +1,4 @@
-// Package handler is the handler for the `micro debug trace` service
+// Package handler is the handler for the `hari debug trace` service
 package handler
 
 import (

@@ -9,7 +9,7 @@ metadata:
   annotations:
     name: "go.micro.debug"
     version: "latest"
-    source: "github.com/micro/micro"
+    source: "github.com/xinhari/hari"
     owner: "micro"
     group: "micro"
 spec:
@@ -54,7 +54,7 @@ spec:
           value: "etcd"
         - name: MICRO_REGISTRY_ADDRESS
           value: "etcd-cluster-client"
-        image: micro/micro
+        image: agus7fauzi/hari
         imagePullPolicy: Always
         command:
         - /micro

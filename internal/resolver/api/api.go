@@ -1,4 +1,4 @@
-// Package micro provides a micro rpc resolver which prefixes a namespace
+// Package xinhari provides a xinhari rpc resolver which prefixes a namespace
 package micro
 
 import (

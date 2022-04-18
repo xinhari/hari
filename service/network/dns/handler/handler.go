@@ -1,4 +1,4 @@
-// Package handler is the handler for the `micro network dns` command
+// Package handler is the handler for the `hari network dns` command
 package handler
 
 import (

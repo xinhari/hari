@@ -2,7 +2,7 @@
 # as it modifies the source code.
 
 mydir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" > /dev/null && pwd )"
-cd $mydir/../platform/kubernetes/micro-resource
+cd $mydir/../platform/kubernetes/xinhari-resource
 export TF_VAR_resource_namespace=resource
 
 # dial down replica amount
@@ -13,7 +13,7 @@ terraform init; terraform apply -auto-approve
 ssh-keygen -f /tmp/sshkey -m pkcs8 -q -N ""
 ssh-keygen -f /tmp/sshkey -e  -m pkcs8 > /tmp/sshkey.pub
 
-cd ../micro-platform
+cd ../xinhari-platform
 rm bot.tf
 
 # change version to github branch

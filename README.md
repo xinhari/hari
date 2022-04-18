@@ -69,29 +69,29 @@ Xinhari abstracts away the complexity of distributed systems and provides simple
 
 From source
 
-```
+```bash
 go get xinhari.com/hari
 ```
 
 Docker image
 
-```
-docker pull xinhari/hari
+```bash
+docker pull agus7fauzi/hari
 ```
 
 Linux install
 
-```
+```bash
 wget -q  https://raw.githubusercontent.com/xinhari/hari/main/scripts/install.sh -O - | /bin/bash
 ```
 
 Mac OS install
-```
+```bash
 curl -fsSL https://raw.githubusercontent.com/xinhari/hari/main/scripts/install.sh | /bin/bash
 ```
 
 Windows install
-```
+```powershell
 powershell -Command "iwr -useb https://raw.githubusercontent.com/xinhari/hari/main/scripts/install.ps1 | iex"
 ```
 
@@ -99,13 +99,13 @@ powershell -Command "iwr -useb https://raw.githubusercontent.com/xinhari/hari/ma
 
 Boot the entire runtime environment locally
 
-```
+```bash
 hari server
 ```
 
 ### Create a service
 
-```
+```bash
 # generate a service (follow instructions in output)
 hari new example
 
@@ -126,7 +126,7 @@ hari call go.micro.service.example Example.Call '{"name": "John"}'
 
 See all the options
 
-```
+```bash
 hari --help
 ```
 
