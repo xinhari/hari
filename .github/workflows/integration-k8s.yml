@@ -29,7 +29,7 @@ jobs:
       uses: engineerd/setup-kind@v0.3.0
 
     - name: Publish to Registry
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: agus7fauzi/xinhari
         username: ${{ secrets.DOCKER_USERNAME }}
